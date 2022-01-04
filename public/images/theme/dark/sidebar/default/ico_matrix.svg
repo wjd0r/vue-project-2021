@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_metrix">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_metrix" clip-path="url(#clip-ico_metrix)">
+    <path id="ico-matrix" d="M2026.5-1167H2025v-24h1.5v22.5H2049v1.5Zm16.5-3v-6h6v6Zm-1.5,0h-6v-6h6v6h0Zm-5.4-.6h4.8v-4.8h-4.8Zm-8.1.6v-6h6v6Zm21-7.5h-6v-6h6v6h0Zm-5.4-.6h4.8v-4.8h-4.8Zm-8.1.6v-6h6v6Zm-1.5,0h-6v-6h6v6h0Zm-5.4-.6h4.8v-4.8h-4.8Zm14.4-6.9v-6h6v6Zm-1.5,0h-6v-6h6v6h0Zm-5.4-.6h4.8v-4.8h-4.8Zm-8.1.6v-6h6v6Z" transform="translate(-2025 1191)" fill="#a4a4a4"/>
+  </g>
+</svg>

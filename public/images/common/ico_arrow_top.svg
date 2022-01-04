@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_arrow_top">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_arrow_top" clip-path="url(#clip-ico_arrow_top)">
+    <path id="ico_arrow_bottom_01" d="M22.875,27.625,12,16.75,1.125,27.625,0,26.5,10.875,15.625,12,14.5l1.125,1.125L24,26.5Z" transform="translate(0 -9.5)" fill="#a6a6a6"/>
+  </g>
+</svg>

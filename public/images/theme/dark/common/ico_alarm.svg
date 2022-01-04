@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_alarm">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_alarm" clip-path="url(#clip-ico_alarm)">
+    <path id="ico_alarm_01" d="M20.625,18V11.625a8.624,8.624,0,0,0-7.5-8.55V1.125a1.125,1.125,0,0,0-2.25,0v1.95a8.624,8.624,0,0,0-7.5,8.55V18L0,21.75H9.75a2.25,2.25,0,0,0,4.5,0H24Z" fill="#a4a4a4"/>
+  </g>
+</svg>

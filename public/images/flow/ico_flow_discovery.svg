@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_1309" data-name="사각형 1309" width="32" height="32" fill="#5b48d9"/>
+    </clipPath>
+    <clipPath id="clip-ico_discovery">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="ico_discovery" clip-path="url(#clip-ico_discovery)">
+    <g id="ico_discovery-2" data-name="ico_discovery" clip-path="url(#clip-path)">
+      <path id="합치기_14" data-name="합치기 14" d="M47-2942.693v-2l.3-.3,9.7,9.687-1.3,1.3ZM25-2934v-32H47v10.7a7.866,7.866,0,0,0-4-2.049V-2959H29v2h9.749a7.911,7.911,0,0,0-3.051,2H29v2h5.3a9.343,9.343,0,0,0-.651,2H29v2h4.5a8.94,8.94,0,0,0,.4,2H29v2h5.9a7.41,7.41,0,0,0,1.949,2H29v2H43v-.651a7.816,7.816,0,0,0,3.449-1.6l.549.549v8.7Zm4-3h7v-2H29Zm0-24H43v-2H29Zm7.951,16H43v-2H35.651a5.37,5.37,0,0,1-.5-2H43v-2H35.3a5.9,5.9,0,0,1,.849-2H43v-2H38.249a6.463,6.463,0,0,1,3.251-.9,6.323,6.323,0,0,1,5.5,3.151v6.5a6.325,6.325,0,0,1-5.5,3.151,6.42,6.42,0,0,1-4.551-1.9Z" transform="translate(-25 2966)" fill="#5b48d9"/>
+    </g>
+  </g>
+</svg>

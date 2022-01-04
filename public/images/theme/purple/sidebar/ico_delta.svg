@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_delta">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_delta" clip-path="url(#clip-ico_delta)">
+    <path id="패스_527" data-name="패스 527" d="M2025.75-1167l6.75-6.751,2.625,1.688v-1.876h9v-3h-8.437l3.188-3.188v.938l5.25-3.375-1.725-1.088,6.6-6.6V-1167Zm-.75-24h23.25l-6.75,6.75-2.624-1.687v1.875h-9v3h8.438l-3.188,3.188v-.938l-5.25,3.375,1.724,1.088-6.6,6.6Z" transform="translate(-2025 1191)" fill="#2a0b44"/>
+  </g>
+</svg>

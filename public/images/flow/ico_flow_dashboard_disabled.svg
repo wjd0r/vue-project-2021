@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_1889" data-name="사각형 1889" width="32" height="32" fill="#a6a6a6"/>
+    </clipPath>
+    <clipPath id="clip-ico_flow_dashboard_disabled">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="ico_flow_dashboard_disabled" clip-path="url(#clip-ico_flow_dashboard_disabled)">
+    <g id="ico_dashbard" clip-path="url(#clip-path)">
+      <path id="합치기_8" data-name="합치기 8" d="M35-2934v-8H57v8Zm-10,0v-26h8v26Zm22-10v-16H57v16Zm-12,0v-7H45v7Zm0-9v-7H45v7Zm-10-9v-4H57v4Z" transform="translate(-25 2965.997)" fill="#a6a6a6"/>
+    </g>
+  </g>
+</svg>

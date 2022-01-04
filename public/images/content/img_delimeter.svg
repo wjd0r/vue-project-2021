@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="140" viewBox="0 0 320 140">
+  <defs>
+    <clipPath id="clip-img_delimeter">
+      <rect width="320" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="img_delimeter" clip-path="url(#clip-img_delimeter)">
+    <rect width="320" height="140" fill="#f2f2f2"/>
+    <text id="예시_1_" data-name="예시 1)" transform="translate(5 22)" font-size="15" font-family="SourceHanSansKR-Bold, Source Han Sans KR" font-weight="700"><tspan x="0" y="0">예시 1)</tspan></text>
+    <text id="Case_ID_Activity_Case_1_Inbound_Call_Case_2_Inbound_Call" data-name="Case ID, Activity
+Case 1, Inbound Call
+Case 2, Inbound Call" transform="translate(5 41)" font-size="13" font-family="SourceHanSansKR-Regular, Source Han Sans KR"><tspan x="0" y="0">Case ID, Activity</tspan><tspan x="0" y="21">Case 1, Inbound Call</tspan><tspan x="0" y="42">Case 2, Inbound Call</tspan></text>
+    <g id="그룹_2078" data-name="그룹 2078" transform="translate(186 -66)">
+      <text id="예시_2_" data-name="예시 2)" transform="translate(5 88)" font-size="15" font-family="SourceHanSansKR-Bold, Source Han Sans KR" font-weight="700"><tspan x="0" y="0">예시 2)</tspan></text>
+      <text id="Case_ID_Activity_Case_1_Inbound_Call_Case_2_Inbound_Call-2" data-name="Case ID| Activity|
+Case 1| Inbound Call
+Case 2| Inbound Call" transform="translate(5 107)" font-size="13" font-family="SourceHanSansKR-Regular, Source Han Sans KR"><tspan x="0" y="0">Case ID| Activity|</tspan><tspan x="0" y="21">Case 1| Inbound Call</tspan><tspan x="0" y="42">Case 2| Inbound Call</tspan></text>
+    </g>
+    <text id="_구분_문자_:_컬럼을_구분하는_문자로_또는_등으로_구분합니다." data-name="※ 구분 문자 : 컬럼을 구분하는 문자로 &apos;,&apos; 또는 &apos;|&apos;등으로
+       구분합니다." transform="translate(5 113)" font-size="14" font-family="SourceHanSansKR-Medium, Source Han Sans KR" font-weight="500" letter-spacing="-0.06em"><tspan x="0" y="0">※ 구분 문자 : 컬럼을 구분하는 문자로 &apos;,&apos; 또는 &apos;|&apos;등으로</tspan><tspan x="0" y="17" xml:space="preserve">       구분합니다.</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_rework">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_rework" clip-path="url(#clip-ico_rework)">
+    <path id="ico_rework_brown" d="M20.9,13A8.983,8.983,0,0,1,12,21a9.085,9.085,0,0,1-6.8-3.1l1.2-1.6A7.538,7.538,0,0,0,12,19a7,7,0,0,0,6.9-6H16l4-5.3L24,13ZM5.1,11A7,7,0,0,1,12,5a7.17,7.17,0,0,1,5.5,2.7l1.2-1.6A8.716,8.716,0,0,0,12,3a8.983,8.983,0,0,0-8.9,8H0l4,5.3L8,11Z" fill="#a4a4a4"/>
+  </g>
+</svg>

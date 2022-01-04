@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="140" viewBox="0 0 320 140">
+  <defs>
+    <clipPath id="clip-img_header_row_index">
+      <rect width="320" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="img_header_row_index" clip-path="url(#clip-img_header_row_index)">
+    <rect width="320" height="140" fill="#f2f2f2"/>
+    <g id="그룹_2079" data-name="그룹 2079" transform="translate(2)">
+      <g id="그룹_2076" data-name="그룹 2076" transform="translate(-5 -5)">
+        <g id="사각형_1986" data-name="사각형 1986" transform="translate(39 39)" fill="#fff" stroke="#d4d4d4" stroke-width="1">
+          <rect width="100" height="30" stroke="none"/>
+          <rect x="0.5" y="0.5" width="99" height="29" fill="none"/>
+        </g>
+        <g id="사각형_1983" data-name="사각형 1983" transform="translate(39 68)" fill="#fff" stroke="#d4d4d4" stroke-width="1">
+          <rect width="100" height="30" stroke="none"/>
+          <rect x="0.5" y="0.5" width="99" height="29" fill="none"/>
+        </g>
+        <g id="사각형_1993" data-name="사각형 1993" transform="translate(10 10)" fill="#e6e6e6" stroke="#a4a4a4" stroke-width="1">
+          <rect width="30" height="30" stroke="none"/>
+          <rect x="0.5" y="0.5" width="29" height="29" fill="none"/>
+        </g>
+        <g id="사각형_1990" data-name="사각형 1990" transform="translate(39 10)" fill="#e6e6e6" stroke="#a4a4a4" stroke-width="1">
+          <rect width="100" height="30" stroke="none"/>
+          <rect x="0.5" y="0.5" width="99" height="29" fill="none"/>
+        </g>
+        <g id="사각형_1994" data-name="사각형 1994" transform="translate(10 39)" fill="#e6e6e6" stroke="#a4a4a4" stroke-width="1">
+          <rect width="30" height="30" stroke="none"/>
+          <rect x="0.5" y="0.5" width="29" height="29" fill="none"/>
+        </g>
+        <g id="사각형_1995" data-name="사각형 1995" transform="translate(10 68)" fill="#e6e6e6" stroke="#a4a4a4" stroke-width="1">
+          <rect width="30" height="30" stroke="none"/>
+          <rect x="0.5" y="0.5" width="29" height="29" fill="none"/>
+        </g>
+        <text id="Case_ID" data-name="Case ID" transform="translate(89 60)" font-size="15" font-family="SourceHanSansKR-Regular, Source Han Sans KR" letter-spacing="-0.06em"><tspan x="-23.01" y="0">Case ID</tspan></text>
+        <text id="A" transform="translate(89 31)" font-size="15" font-family="SourceHanSansKR-Medium, Source Han Sans KR" font-weight="500" letter-spacing="-0.06em"><tspan x="-4.665" y="0">A</tspan></text>
+        <text id="_1" data-name="1" transform="translate(25 61)" font-size="15" font-family="SourceHanSansKR-Medium, Source Han Sans KR" font-weight="500" letter-spacing="-0.06em"><tspan x="-4.275" y="0">1</tspan></text>
+        <text id="_2" data-name="2" transform="translate(25 90)" font-size="15" font-family="SourceHanSansKR-Medium, Source Han Sans KR" font-weight="500" letter-spacing="-0.06em"><tspan x="-4.275" y="0">2</tspan></text>
+        <text id="Case_1" data-name="Case 1" transform="translate(89 90)" font-size="15" font-family="SourceHanSansKR-Regular, Source Han Sans KR" letter-spacing="-0.06em"><tspan x="-20.272" y="0">Case 1</tspan></text>
+        <path id="패스_547" data-name="패스 547" d="M20,0V20H0Z" transform="translate(15 15)" fill="#b4b4b4"/>
+      </g>
+      <g id="그룹_2077" data-name="그룹 2077" transform="translate(0 -5)">
+        <g id="사각형_1997" data-name="사각형 1997" transform="translate(212 39)" fill="#fff" stroke="#d4d4d4" stroke-width="1">
+          <rect width="100" height="30" stroke="none"/>
+          <rect x="0.5" y="0.5" width="99" height="29" fill="none"/>
+        </g>
+        <g id="사각형_1996" data-name="사각형 1996" transform="translate(212 68)" fill="#fff" stroke="#d4d4d4" stroke-width="1">
+          <rect width="100" height="30" stroke="none"/>
+          <rect x="0.5" y="0.5" width="99" height="29" fill="none"/>
+        </g>
+        <g id="사각형_2000" data-name="사각형 2000" transform="translate(183 10)" fill="#e6e6e6" stroke="#a4a4a4" stroke-width="1">
+          <rect width="30" height="30" stroke="none"/>
+          <rect x="0.5" y="0.5" width="29" height="29" fill="none"/>
+        </g>
+        <g id="사각형_2001" data-name="사각형 2001" transform="translate(212 10)" fill="#e6e6e6" stroke="#a4a4a4" stroke-width="1">
+          <rect width="100" height="30" stroke="none"/>
+          <rect x="0.5" y="0.5" width="99" height="29" fill="none"/>
+        </g>
+        <g id="사각형_1998" data-name="사각형 1998" transform="translate(183 39)" fill="#e6e6e6" stroke="#a4a4a4" stroke-width="1">
+          <rect width="30" height="30" stroke="none"/>
+          <rect x="0.5" y="0.5" width="29" height="29" fill="none"/>
+        </g>
+        <g id="사각형_1999" data-name="사각형 1999" transform="translate(183 68)" fill="#e6e6e6" stroke="#a4a4a4" stroke-width="1">
+          <rect width="30" height="30" stroke="none"/>
+          <rect x="0.5" y="0.5" width="29" height="29" fill="none"/>
+        </g>
+        <text id="Case_ID-2" data-name="Case ID" transform="translate(262 60)" font-size="15" font-family="SourceHanSansKR-Regular, Source Han Sans KR" letter-spacing="-0.06em"><tspan x="-23.01" y="0">Case ID</tspan></text>
+        <text id="A-2" data-name="A" transform="translate(262 31)" font-size="15" font-family="SourceHanSansKR-Medium, Source Han Sans KR" font-weight="500" letter-spacing="-0.06em"><tspan x="-4.665" y="0">A</tspan></text>
+        <text id="_0" data-name="0" transform="translate(198 61)" font-size="15" font-family="SourceHanSansKR-Medium, Source Han Sans KR" font-weight="500" letter-spacing="-0.06em"><tspan x="-4.275" y="0">0</tspan></text>
+        <text id="_1-2" data-name="1" transform="translate(198 90)" font-size="15" font-family="SourceHanSansKR-Medium, Source Han Sans KR" font-weight="500" letter-spacing="-0.06em"><tspan x="-4.275" y="0">1</tspan></text>
+        <text id="Case_1-2" data-name="Case 1" transform="translate(262 90)" font-size="15" font-family="SourceHanSansKR-Regular, Source Han Sans KR" letter-spacing="-0.06em"><tspan x="-20.272" y="0">Case 1</tspan></text>
+        <path id="패스_548" data-name="패스 548" d="M20,0V20H0Z" transform="translate(188 15)" fill="#b4b4b4"/>
+      </g>
+      <path id="합치기_97" data-name="합치기 97" d="M-4872,954.5h-20v-10h20V940l16,10-16,10Z" transform="translate(5032 -900.999)" fill="#f23005"/>
+    </g>
+    <text id="_제목_표시_줄_:_시작_행은_기존_엑셀_파일의_1행이_아닌_0행으로_시작됩니다." data-name="※ 제목 표시 줄 : 시작 행은 기존 엑셀 파일의 1행이 아닌
+       0행으로 시작됩니다." transform="translate(7 113)" font-size="14" font-family="SourceHanSansKR-Medium, Source Han Sans KR" font-weight="500" letter-spacing="-0.06em"><tspan x="0" y="0">※ 제목 표시 줄 : 시작 행은 기존 엑셀 파일의 1행이 아닌</tspan><tspan x="0" y="17" xml:space="preserve">       0행으로 시작됩니다.</tspan></text>
+  </g>
+</svg>

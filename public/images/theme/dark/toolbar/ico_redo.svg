@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_redo">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_redo" clip-path="url(#clip-ico_redo)">
+    <path id="ico_redo-2" data-name="ico_redo" d="M21.831,4.7l2.2-2.4v9.694H14.921l2.5-2.6C9.313,1.2-4.006,11.493,7.01,23.984-9.714,12.392,7.01-9.694,21.831,4.7Z" transform="translate(-0.034 0.016)" fill="#a4a4a4"/>
+  </g>
+</svg>

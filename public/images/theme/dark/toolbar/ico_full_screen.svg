@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_full_screen">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_full_screen" clip-path="url(#clip-ico_full_screen)">
+    <path id="ico-full-screen" d="M35-2942H25v-24H49v24Zm13-1v-22H26v13h9v9Zm-14,0v-8H26v8Zm2.1-11.5,5.6-5.6-2.1-2.1,6.3-.7-.7,6.3-2.1-2.1-5.6,5.6Z" transform="translate(-25 2966)" fill="#a4a4a4"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-ico_filter_disabled">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="ico_filter_disabled" clip-path="url(#clip-ico_filter_disabled)">
+    <path id="ico_filter_01" d="M32,0H0L13,15.45V26l6,6V15.45Z" fill="#a6a6a6"/>
+  </g>
+</svg>

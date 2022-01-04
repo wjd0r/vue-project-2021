@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-ico_gantt">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="ico_gantt" clip-path="url(#clip-ico_gantt)">
+    <path id="합치기_92" data-name="합치기 92" d="M-3250,4825v-32h2v30h30v2Zm25-5v-4h4v4Zm-16,0v-4h10v4Zm-4-7v-4h24v4Zm0-7v-4h16v4Zm14-7v-4h10v4Zm-14,0v-4h7v4Z" transform="translate(3250 -4793)" fill="#6f6f7a"/>
+  </g>
+</svg>

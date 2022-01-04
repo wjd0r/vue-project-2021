@@ -1,0 +1,69 @@
+<template>
+  <!-- 파이프라인 설정 -->
+  <div class="flow purple">
+    <div class="content-header">
+      <h4 class="title">Pipeline 설정</h4>
+    </div>
+    <div class="content-middle">
+      <div class="ico-flow ico-flow-filter" alt="필터 아이콘"></div>
+    </div>
+    <div class="content-body">
+      <p>
+        Pipeline 설정 내용
+      </p>
+    </div>
+  </div>
+  <!-- 파이프라인 설정 -->
+</template>
+
+<style lang="scss" scoped>
+
+</style>
+
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator';
+import { mapGetters } from 'vuex';
+
+@Component({
+ components: {
+
+ },
+ computed: mapGetters({
+
+ }),
+})
+export default class FlowboxPipeline extends Vue {
+ /* Prop 선언 */
+
+ /* mapGetters 변수 선언 */
+
+
+ /* 클래스 변수 선언 */
+
+
+ /* refs 선언 */
+
+
+ /* Watch 선언 */
+
+
+ /* navigator guard 선언 */
+
+
+ /* lifecycle hook 선언 (안 쓰는 hook은 지울 것) */
+
+ /* 
+ created(){
+   
+ }
+ */
+ /*
+ mounted() {
+   
+ }
+ */
+
+ /* 메소드 선언 */
+
+}
+</script>

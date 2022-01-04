@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_title_menu_dark">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_title_menu_dark" clip-path="url(#clip-ico_title_menu_dark)">
+    <path id="ico-title-menu" d="M25-2955a1,1,0,0,1,1-1,1,1,0,0,1,1,1,1,1,0,0,1-1,1A1,1,0,0,1,25-2955Zm0-5a1,1,0,0,1,1-1,1,1,0,0,1,1,1,1,1,0,0,1-1,1A1,1,0,0,1,25-2960Zm0-5a1,1,0,0,1,1-1,1,1,0,0,1,1,1,1,1,0,0,1-1,1A1,1,0,0,1,25-2965Z" transform="translate(-14 2972)" fill="#121212"/>
+  </g>
+</svg>

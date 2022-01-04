@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_gantt">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_gantt" clip-path="url(#clip-ico_gantt)">
+    <path id="ico-gantt" d="M2025-1167v-24h1.5v22.5H2049v1.5Zm18.75-3.75v-3h3v3Zm-12,0v-3h7.5v3Zm-3-5.25v-3h18v3Zm0-5.25v-3h12v3Zm10.5-5.25v-3h7.5v3Zm-10.5,0v-3H2034v3Z" transform="translate(-2025 1191)" fill="#2a0b44"/>
+  </g>
+</svg>

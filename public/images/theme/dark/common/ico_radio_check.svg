@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="8" viewBox="0 0 8 8">
+  <defs>
+    <clipPath id="clip-ico_radio_check">
+      <rect width="8" height="8"/>
+    </clipPath>
+  </defs>
+  <g id="ico_radio_check" clip-path="url(#clip-ico_radio_check)">
+    <circle id="ico_radio_check-2" data-name="ico_radio_check" cx="4" cy="4" r="4" fill="#121212"/>
+  </g>
+</svg>

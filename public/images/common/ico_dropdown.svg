@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_dropdown">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_dropdown" clip-path="url(#clip-ico_dropdown)">
+    <path id="다각형_7" data-name="다각형 7" d="M3.168,1.248a1,1,0,0,1,1.664,0l2.131,3.2A1,1,0,0,1,6.131,6H1.869a1,1,0,0,1-.832-1.555Z" transform="translate(16 15) rotate(180)" fill="#383d45"/>
+  </g>
+</svg>

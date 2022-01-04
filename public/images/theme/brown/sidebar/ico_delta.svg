@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_delta">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_delta" clip-path="url(#clip-ico_delta)">
+    <path id="합치기_7" data-name="합치기 7" d="M25.75-2942l6.75-6.75,2.625,1.688v-1.875h9v-3H35.688l3.188-3.187v.938l5.25-3.375-1.725-1.094,6.6-6.594V-2942ZM25-2966H48.25l-6.75,6.75-2.625-1.687v1.875h-9v3h8.438l-3.187,3.188v-.937l-5.25,3.375,1.725,1.086-6.6,6.6Z" transform="translate(-25 2965.998)" fill="#8c8079"/>
+  </g>
+</svg>

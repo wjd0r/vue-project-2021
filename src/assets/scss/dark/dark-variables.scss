@@ -1,0 +1,658 @@
+@charset "UTF-8";
+
+/* -------------------------
+Style Sheets Variable
+: Dark Theme
+------------------------- */
+
+/* -------------------------
+  Images
+------------------------- */
+
+/* Image : Common */
+$ico-menubar:                           url("../public/images/theme/dark/common/ico_menubar.svg") !default;
+$ico-alarm:                             url("../public/images/theme/dark/common/ico_alarm.svg") !default;
+$ico-help:                              url("../public/images/theme/dark/common/ico_help.svg") !default;
+$ico-minus:                             url("../public/images/theme/dark/common/ico_minus.svg") !default;
+$ico-plus:                              url("../public/images/theme/dark/common/ico_plus.svg") !default;
+$ico-filter-setting:                    url("../public/images/theme/dark/common/ico_setting.svg") !default;
+$ico-title-menu:                        url("../public/images/theme/dark/common/ico_title_menu.svg") !default;
+$ico-title-menu-dark:                   url("../public/images/theme/dark/common/ico_title_menu_dark.svg") !default;
+$ico-user:                              url("../public/images/theme/dark/common/ico_user.svg") !default;
+$ico-download:                          url("../public/images/theme/dark/common/ico_download.svg") !default;
+$ico-upload:                            url("../public/images/theme/dark/common/ico_upload.svg") !default;
+$ico-play:                              url("../public/images/theme/dark/common/ico_play.svg") !default;
+$ico-pause:                             url("../public/images/theme/dark/common/ico_pause.svg") !default;
+$ico-dashbard-editor:                   url("../public/images/theme/dark/common/ico_dashbard_editor.svg") !default;
+$ico-logout:                            url("../public/images/theme/dark/common/ico_logout.svg") !default;
+$ico-search:                            url("../public/images/theme/dark/common/ico_search.svg") !default;
+$ico-check:                             url("../public/images/theme/dark/common/ico_checkbox_check.svg") !default;
+$ico-radio-check:                       url("../public/images/theme/dark/common/ico_radio_check.svg") !default;
+
+$ico-arrow-top:                         url("../public/images/theme/dark/common/ico_arrow_top.svg") !default;
+$ico-arrow-right:                       url("../public/images/theme/dark/common/ico_arrow_right.svg") !default;
+$ico-arrow-bottom:                      url("../public/images/theme/dark/common/ico_arrow_bottom.svg") !default;
+$ico-arrow-left:                        url("../public/images/theme/dark/common/ico_arrow_left.svg") !default;
+$ico-arrow-top-dark:                    url("../public/images/theme/dark/common/ico_arrow_top_dark.svg") !default;
+$ico-arrow-right-dark:                  url("../public/images/theme/dark/common/ico_arrow_right_dark.svg") !default;
+$ico-arrow-bottom-dark:                 url("../public/images/theme/dark/common/ico_arrow_bottom_dark.svg") !default;
+$ico-arrow-left-dark:                   url("../public/images/theme/dark/common/ico_arrow_left_dark.svg") !default;
+$ico-dropdown-arrow:                    url("../public/images/theme/dark/common/ico_dropdown_arrow.svg") !default;
+$ico-arrow-blue:                        url("../public/images/theme/dark/common/ico_arrow_blue.svg") !default;
+$ico-arrow-red:                         url("../public/images/theme/dark/common/ico_arrow_red.svg") !default;
+$ico-bothsides:                         url("../public/images/theme/dark/common/ico_bothsides.svg") !default;
+$ico-bothsides-w:                       url("../public/images/theme/dark/common/ico_bothsides_w.svg") !default;
+$ico-arrow-top-bold:                    url("../public/images/theme/dark/common/ico_arrow_top_bold.svg") !default;
+$ico-arrow-right-bold:                  url("../public/images/theme/dark/common/ico_arrow_right_bold.svg") !default;
+$ico-arrow-bottom-bold:                 url("../public/images/theme/dark/common/ico_arrow_bottom_bold.svg") !default;
+$ico-arrow-left-bold:                   url("../public/images/theme/dark/common/ico_arrow_left_bold.svg") !default;
+
+$ico-csv:                               url("../public/images/theme/dark/common/ico_csv.svg") !default;
+$ico-csv-dark:                          url("../public/images/theme/dark/common/ico_csv_dark.svg") !default;
+$ico-xlsx:                              url("../public/images/theme/dark/common/ico_xlsx.svg") !default;
+$ico-xlsx-dark:                         url("../public/images/theme/dark/common/ico_xlsx_dark.svg") !default;
+$ico-mxml:                              url("../public/images/theme/dark/common/ico_mxml.svg") !default;
+$ico-mxml-dark:                         url("../public/images/theme/dark/common/ico_mxml_dark.svg") !default;
+$ico-xes:                               url("../public/images/theme/dark/common/ico_xes.svg") !default;
+$ico-xes-dark:                          url("../public/images/theme/dark/common/ico_xes_dark.svg") !default;
+
+$ico-close:                             url("../public/images/theme/dark/common/ico_close.svg") !default;
+$ico-close-dark:                        url("../public/images/theme/dark/common/ico_close_dark.svg") !default;
+$ico-close-bold:                        url("../public/images/theme/dark/common/ico_close_bold.svg") !default;
+$ico-close-w:                           url("../public/images/theme/dark/common/ico_close_w.svg") !default;
+$ico-delete:                            url("../public/images/theme/dark/common/ico_delete.svg") !default;
+$ico-error:                             url("../public/images/theme/dark/common/ico_error.svg") !default;
+$ico-fail:                              url("../public/images/theme/dark/common/ico_fail.svg") !default;
+$ico-warning:                           url("../public/images/theme/dark/common/ico_warning.svg") !default;
+$ico-complete:                          url("../public/images/theme/dark/common/ico_complete.svg") !default;
+$ico-success:                           url("../public/images/theme/dark/common/ico_success.svg") !default;
+$ico-progress:                          url("../public/images/theme/dark/common/ico_progress.svg") !default;
+$ico-readying:                          url("../public/images/theme/dark/common/ico_readying.svg") !default;
+
+/* Image : Contents */
+$img-delimeter:                         url("../public/images/theme/dark/content/img_delimeter.svg") !default;
+$img-header-row-index:                  url("../public/images/theme/dark/content/img_header_row_index.svg") !default;
+$img-filter-time-01:                    url("../public/images/theme/dark/content/img_filter_time_01.svg") !default;
+$img-filter-time-02:                    url("../public/images/theme/dark/content/img_filter_time_02.svg") !default;
+$img-filter-time-03:                    url("../public/images/theme/dark/content/img_filter_time_03.svg") !default;
+$img-filter-time-04:                    url("../public/images/theme/dark/content/img_filter_time_04.svg") !default;
+$img-filter-time-05:                    url("../public/images/theme/dark/content/img_filter_time_05.svg") !default;
+
+/* Image : Toolbar */
+$ico-undo:                              url("../public/images/theme/dark/toolbar/ico_undo.svg") !default;
+$ico-redo:                              url("../public/images/theme/dark/toolbar/ico_redo.svg") !default;
+$ico-png:                               url("../public/images/theme/dark/toolbar/ico_png.svg") !default;
+$ico-svg:                               url("../public/images/theme/dark/toolbar/ico_svg.svg") !default;
+$ico-clear:                             url("../public/images/theme/dark/toolbar/ico_clear.svg") !default;
+$ico-full-screen:                       url("../public/images/theme/dark/toolbar/ico_full_screen.svg") !default;
+$ico-front:                             url("../public/images/theme/dark/toolbar/ico_front.svg") !default;
+$ico-back:                              url("../public/images/theme/dark/toolbar/ico_back.svg") !default;
+$ico-graph-align:                       url("../public/images/theme/dark/toolbar/ico_graph_align.svg") !default;
+$ico-zoom-fit:                          url("../public/images/theme/dark/toolbar/ico_zoom_fit.svg") !default;
+$ico-error-report:                      url("../public/images/theme/dark/toolbar/ico_error_report.svg") !default;
+
+/* Image : Flow */
+$ico-log:                               url("../public/images/theme/dark/flow/ico_log.svg") !default;
+$ico-log-disabled:                      url("../public/images/theme/dark/flow/ico_log_disabled.svg") !default;
+$ico-log-db:                            url("../public/images/theme/dark/flow/ico_log_db.svg") !default;
+$ico-log-db-disabled:                   url("../public/images/theme/dark/flow/ico_log_db_disabled.svg") !default;
+$ico-database:                          url("../public/images/theme/dark/flow/ico_database.svg") !default;
+$ico-database-disabled:                 url("../public/images/theme/dark/flow/ico_database_disabled.svg") !default;
+$ico-flow-standard:                     url("../public/images/theme/dark/flow/ico_flow_standard.svg") !default;
+$ico-standard-disabled:                 url("../public/images/theme/dark/flow/ico_standard_disabled.svg") !default;
+$ico-flow-standard-editor:              url("../public/images/theme/dark/flow/ico_flow_standard_editor.svg") !default;
+$ico-flow-standard-editor-disabled:     url("../public/images/theme/dark/flow/ico_flow_standard_editor_disabled.svg") !default;
+$ico-folder:                            url("../public/images/theme/dark/flow/ico_folder.svg") !default;
+$ico-folder-disabled:                   url("../public/images/theme/dark/flow/ico_folder_disabled.svg") !default;
+$ico-file:                              url("../public/images/theme/dark/flow/ico_file.svg") !default;
+$ico-file-disabled:                     url("../public/images/theme/dark/flow/ico_file_disabled.svg") !default;
+$ico-flow-dashboard:                    url("../public/images/theme/dark/flow/ico_flow_dashboard.svg") !default;
+$ico-flow-dashboard-disabled:           url("../public/images/theme/dark/flow/ico_flow_dashboard_disabled.svg") !default;
+$ico-flow-discovery:                    url("../public/images/theme/dark/flow/ico_flow_discovery.svg") !default;
+$ico-flow-discovery-disabled:           url("../public/images/theme/dark/flow/ico_flow_discovery_disabled.svg") !default;
+$ico-flow-filter:                       url("../public/images/theme/dark/flow/ico_filter.svg") !default;
+$ico-flow-filter-disabled:              url("../public/images/theme/dark/flow/ico_filter_disabled.svg") !default;
+$ico-complete-disabled:                 url("../public/images/theme/dark/flow/ico_complete_disabled.svg") !default;
+$ico-flow-mapping:                      url("../public/images/theme/dark/flow/ico_flow_mapping.svg") !default;
+$ico-flow-mapping-disabled:             url("../public/images/theme/dark/flow/ico_flow_mapping_disabled.svg") !default;
+$ico-flow-data:                         url("../public/images/theme/dark/flow/ico_flow_data.svg") !default;
+
+/* Image : Flow(dark) */
+$ico-log-dark:                          url("../public/images/theme/dark/flow/ico_log_dark.svg") !default;
+$ico-log-db-dark:                       url("../public/images/theme/dark/flow/ico_log_db_dark.svg") !default;
+$ico-flow-standard-dark:                url("../public/images/theme/dark/flow/ico_flow_standard_dark.svg") !default;
+$ico-flow-standard-editor-dark:         url("../public/images/theme/dark/flow/ico_flow_standard_editor_dark.svg") !default;
+$ico-file-dark:                         url("../public/images/theme/dark/flow/ico_file_dark.svg") !default;
+$ico-folde-dark:                        url("../public/images/theme/dark/flow/ico_folder_dark.svg") !default;
+$ico-flow-filter-dark:                  url("../public/images/theme/dark/flow/ico_filter_dark.svg") !default;
+$ico-complete-dark:                     url("../public/images/theme/dark/flow/ico_complete_dark.svg") !default;
+$ico-flow-mapping-dark:                 url("../public/images/theme/dark/flow/ico_flow_mapping_dark.svg") !default;
+
+/* Image : sidebar(dark) */
+$ico-home-dark:                 url("../public/images/theme/dark/sidebar/ico_home_dark.svg") !default;
+$ico-discovery-dark:            url("../public/images/theme/dark/sidebar/ico_discovery_dark.svg") !default;
+$ico-dashboard-dark:            url("../public/images/theme/dark/sidebar/ico_dashboard_dark.svg") !default;
+$ico-delta-dark:                url("../public/images/theme/dark/sidebar/ico_delta_dark.svg") !default;
+$ico-logreplay-dark:            url("../public/images/theme/dark/sidebar/ico_logreplay_dark.svg") !default;
+$ico-matrix-dark:               url("../public/images/theme/dark/sidebar/ico_matrix_dark.svg") !default;
+$ico-social-dark:               url("../public/images/theme/dark/sidebar/ico_social_dark.svg") !default;
+$ico-dotted-dark:               url("../public/images/theme/dark/sidebar/ico_dotted_dark.svg") !default;
+$ico-gantt-dark:                url("../public/images/theme/dark/sidebar/ico_gantt_dark.svg") !default;
+
+$ico-datasource-dark:           url("../public/images/theme/dark/sidebar/ico_datasource_dark.svg") !default;
+$ico-data-dark:                 url("../public/images/theme/dark/sidebar/ico_data_dark.svg") !default;
+$ico-standard-dark:             url("../public/images/theme/dark/sidebar/ico_standard_dark.svg") !default;
+
+$ico-user-dark:                 url("../public/images/theme/dark/sidebar/ico_user_dark.svg") !default;
+$ico-manage-dark:               url("../public/images/theme/dark/sidebar/ico_manage_dark.svg") !default;
+$ico-setting-dark:              url("../public/images/theme/dark/sidebar/ico_setting_dark.svg") !default;
+
+.theme-dark{
+  /* -------------------------
+  Images
+  ------------------------- */
+  /*logo*/
+  --logo-ipr-fullname:          url("../public/images/theme/dark/logo_ipr_fullname.svg");
+  --logo-ipr:                   url("../public/images/theme/dark/logo_ipr.svg");
+
+  /*sidebar*/
+  --ico-home:                   url("../public/images/theme/dark/sidebar/default/ico_home.svg");
+  --ico-discovery:              url("../public/images/theme/dark/sidebar/default/ico_discovery.svg");
+  --ico-dashboard:              url("../public/images/theme/dark/sidebar/default/ico_dashboard.svg");
+  --ico-delta:                  url("../public/images/theme/dark/sidebar/default/ico_delta.svg");
+  --ico-logreplay:              url("../public/images/theme/dark/sidebar/default/ico_logreplay.svg");
+  --ico-matrix:                 url("../public/images/theme/dark/sidebar/default/ico_matrix.svg");
+  --ico-social:                 url("../public/images/theme/dark/sidebar/default/ico_social.svg");
+  --ico-dotted:                 url("../public/images/theme/dark/sidebar/default/ico_dotted.svg");
+  --ico-gantt:                  url("../public/images/theme/dark/sidebar/default/ico_gantt.svg");
+
+  /*Organize*/
+  --ico-data:                   url("../public/images/theme/dark/sidebar/default/ico_data.svg");
+  --ico-standard:               url("../public/images/theme/dark/sidebar/default/ico_standard.svg");
+  --ico-datasource:             url("../public/images/theme/dark/sidebar/default/ico_datasource.svg");
+
+  /*manage*/
+  --ico-user:                   url("../public/images/theme/dark/sidebar/default/ico_user.svg");
+  --ico-setting:                url("../public/images/theme/dark/sidebar/default/ico_setting.svg");
+  --ico-manage:                 url("../public/images/theme/dark/sidebar/default/ico_manage.svg");
+
+  /*process*/
+  --ico-filter:                 url("../public/images/theme/dark/process/ico_filter.svg");
+  --ico-list:                   url("../public/images/theme/dark/process/ico_list.svg");
+  --ico-editor:                 url("../public/images/theme/dark/process/ico_editor.svg");
+  --ico-horizontal:             url("../public/images/theme/dark/process/ico_horizontal_sort.svg");
+  --ico-vertical:               url("../public/images/theme/dark/process/ico_vertical_sort.svg");
+  --ico-map-show:               url("../public/images/theme/dark/process/ico_map_show.svg");
+  --ico-map-hide:               url("../public/images/theme/dark/process/ico_map_hide.svg");
+  --ico-table:                  url("../public/images/theme/dark/process/ico_table.svg");
+  --ico-bottleneck:             url("../public/images/theme/dark/process/ico_bottleneck.svg");
+  --ico-rework:                 url("../public/images/theme/dark/process/ico_rework.svg");
+  --ico-standard-editor:        url("../public/images/theme/dark/process/ico_standard_editor.svg");
+  --ico-graph-align:            url("../public/images/theme/dark/process/ico_graph_align.svg");
+  --ico-option-log:             url("../public/images/theme/dark/process/ico_option_log.svg");
+
+  /* -------------------------
+  Color
+  ------------------------- */
+  --bg-color:                  #121212;
+  --drag-color:                #F8F4EB;
+  //--drag-color:                #2E2A21;
+  
+  /*font*/
+  --font-color:                #D9D9D9;
+  --font-black-color:          #121212;
+  --placeholder-color :        #898989;
+  --font-sub-color:            #707070;
+  --notice-color:              #858585;
+
+  /*nav*/
+  --nav-link:                  #A4A4A4;
+  --nav-icon:                  #A4A4A4;
+
+  /*bg*/
+  --header-color:              #1E1E1E;
+  --sidebar-color:             #1E1E1E;
+  --container-color:           #2A2A2A;
+  --card-color:                #353535;
+  --form-color:                #5A5A5A;
+  --table-color:               #2A2A2A;
+  --disabled-color:            #202020;
+  --bg-disabled-color:         #202020;
+  --font-disabled-color:       #858585;
+
+  /*border*/
+  --border-default-color:      #262626;
+  --border-form-color:         #898989;
+  --border-focus-color:        #B8B8B8;
+  --border-disabled-color:     #4E4E4E;
+  --border-sub-color:          #242526;
+  --border-valid-color:        #FD535E;
+  --border-invalid-color:      #7BFFB6;
+
+  --table-border-color:        #262626;
+  --tbody-border-color:        #0C0D0F;
+  
+  /*common*/
+  --blue-color:                #2C9CFE;
+  --blue-hover-color:          #2780CF;
+  --blue-disabled-color:       #14202A;
+
+  --red-color:                 #FD535E;
+  --red-hover-color:           #CE464F;
+  --red-disabled-color:        #2A1819; 
+
+  --yellow-color:              #FEDB4B;
+  --yellow-hover-color:        #CFB340;
+  --yellow-disabled-color:     #2A2717; 
+
+  --green-color:               #7BFFB6;
+  --green-hover-color:         #66D095;
+  --green-disabled-color:      #1C2A23; 
+
+  --purple-color:              #6768FF;
+  --purple-hover-color:        #5657D0;
+  --purple-disabled-color:     #1A1A2A; 
+
+  --brown-color:               #BA8037;
+  --brown-hover-color:         #986A30;
+  --brown-disabled-color:      #231D15; 
+
+  /*default*/
+  --default-color:             #D1B77A;
+  --default-hover-color:       #876E48;
+  --default-disabled-color:    #383326;
+  --default-disabled-font-color: #726546;
+
+  --btn-default-color:         #D1B77A;
+  --btn-default-active-color:  #705C3D;
+  --btn-default-hover-color:   #876E48;
+  --btn-default-outline-color: #4C4432;
+
+  --active-color:              #D1B77A;
+  --hover-color:               #876E48;
+
+  --sub-color:                 #726546;
+  --sub-hover-color:           #5E543B;
+  --sub-active-color:          #4F4733;
+  --sub-default-color:         #2F2B22;
+
+  /*boxshadow*/
+  --box-shadow:                0px 0px 5px 2px rgb(0 0 0 , 0.5);
+  
+  /*slider-bar*/
+  --slider-bar-color:          #D1B77A;
+  --slider-bg-color:           #383326;
+  --slider-bar-active-color:   #F2F2F2;
+  --slider-color:              #D1B77A;
+  
+  --box-shabow-slider:         0.5px 0.5px 10px 6px rgba(140, 128, 121,0.5);
+  
+  /*progress */
+  --progress-bar-color :       #D1B77A;
+  --progress-bg-color :        #383326;
+  --progress-sub-color :       #726546;
+
+  /*node, arc*/
+  --ipr-node-fill:             #2A2A2A;
+  --ipr-node-stroke:           #4E4E4E;
+  --ipr-virtual:               #B8B8B8;
+  --ipr-normal:                #2C9CFE;
+  --ipr-highlight:             #FEDB4B;
+  --ipr-active:                #A46BFD;
+  --ipr-error:                 #FD535E;
+  --ipr-token:                 #F2A71B;
+  --ipr-handle:                #BA8037;
+}
+
+/* -------------------------
+theme : scroll
+------------------------- */
+.theme-dark{
+  --scroll-button-color:                 #262626; 
+  --scroll-button-hover-color:           #262626;
+  --scrollbar-track:                     #595959; /* 화살표를 제외한 스크롤 부분 */
+  --scrollbar-track-piece:               #595959; /* 스크롤 뒷배경 */
+  --scrollbar-thumb:                     #262626; /* 스크롤 움직이는 부분 */
+  --scrollbar-button:                    #262626;/* 스크롤 버튼 좌우상하 영역 */
+  --scrollbar-corner:                    #f6f6f6; /* 우측 하단의 코너 부분 */
+  --scrollbar-thumb-hover:               #1D1F1F;
+}
+/* -------------------------
+theme : img
+------------------------- */
+.theme-dark{
+  .logo-ipr-fullname{
+    background-image: url("../public/images/theme/dark/logo_ipr_fullname.svg");
+  }
+  .logo-ipr{
+    background-image: url("../public/images/theme/dark/logo_ipr.svg");
+  }
+  /*sidebar*/
+  .ico-home{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_home.svg");
+  }
+  .ico-dashboard{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_dashboard.svg");
+  }
+  .ico-discovery{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_discovery.svg");
+  }
+  .ico-delta{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_delta.svg");
+  }
+  .ico-logreplay{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_logreplay.svg");
+  }
+  .ico-matrix{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_matrix.svg");
+  }
+  .ico-social{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_social.svg");
+  }
+  .ico-dotted{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_dotted.svg");
+  }
+  .ico-gantt{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_gantt.svg");
+  }
+  .ico-data{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_data.svg");
+  }
+  .ico-standard{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_standard.svg");
+  }
+  .ico-datasource{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_datasource.svg");
+  }
+  .ico-user{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_user.svg");
+  }
+  .ico-setting{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_setting.svg");
+  }
+  .ico-manage{
+    background-image: url("../public/images/theme/dark/sidebar/default/ico_manage.svg");
+  }
+
+  /*process*/
+  .ico-filter{
+    background-image: url("../public/images/theme/dark/process/ico_filter.svg") !important;
+  }
+  .ico-list{
+    background-image: url("../public/images/theme/dark/process/ico_list.svg") !important;
+  }
+  .ico-horizontal{
+    background-image: url("../public/images/theme/dark/process/ico_horizontal_sort.svg") !important;
+  }
+  .ico-vertical{
+    background-image: url("../public/images/theme/dark/process/ico_vertical_sort.svg") !important;
+  }
+  .ico-map-show{
+    background-image: url("../public/images/theme/dark/process/ico_map_show.svg") !important;
+  }
+  .ico-map-hide{
+    background-image: url("../public/images/theme/dark/process/ico_map_hide.svg") !important;
+  }
+  .ico-table{
+    background-image: url("../public/images/theme/dark/process/ico_table.svg") !important;
+  }
+  .ico-bottleneck{
+    background-image: url("../public/images/theme/dark/process/ico_bottleneck.svg") !important; 
+  }
+  .ico-rework{
+    background-image: url("../public/images/theme/dark/process/ico_rework.svg") !important;
+  }
+  .ico-standard-editor{
+    background-image: url("../public/images/theme/dark/process/ico_standard_editor.svg") !important;
+  }
+  .ico-option-align{
+    background-image: url("../public/images/theme/dark/process/ico_graph_align.svg") !important;
+  }
+  .ico-option-log{
+    background-image: url("../public/images/theme/dark/process/ico_option_log.svg") !important;
+  }
+
+  /*Common*/
+  .ico-alarm{
+    background-image: url("../public/images/theme/dark/common/ico_alarm.svg") !important;
+  }
+  .ico-help{
+    background-image: url("../public/images/theme/dark/common/ico_help.svg") !important;
+  }
+  .ico-minus{
+    background-image: url("../public/images/theme/dark/common/ico_minus.svg") !important;
+  }
+  .ico-plus{
+    background-image: url("../public/images/theme/dark/common/ico_plus.svg") !important;
+  }
+  .ico-filter-setting{
+    background-image: url("../public/images/theme/dark/common/ico_setting.svg") !important;
+  }
+  .ico-title-menu{
+    background-image: url("../public/images/theme/dark/common/ico_title_menu.svg") !important;
+  }
+  .ico-title-menu-dark{
+    background-image: url("../public/images/theme/dark/common/ico_title_menu_dark.svg") !important;
+  }
+  .ico-download{
+    background-image: url("../public/images/theme/dark/common/ico_download.svg") !important;
+  }
+  .ico-upload{
+    background-image: url("../public/images/theme/dark/common/ico_upload.svg") !important;
+  }
+  .ico-play{
+    background-image: url("../public/images/theme/dark/common/ico_title_menu.svg") !important;
+  }
+  .ico-pause{
+    background-image: url("../public/images/theme/dark/common/ico_pause.svg") !important;
+  }
+  .ico-dashbard-editor{
+    background-image: url("../public/images/theme/dark/common/ico_dashbard_editor.svg") !important;
+  }
+  .ico-logout{
+    background-image: url("../public/images/theme/dark/common/ico_logout.svg") !important;
+  }
+  .ico-search{
+    background-image: url("../public/images/theme/dark/common/ico_search.svg") !important;
+  }
+  .ico-radio-check{
+    background-image: url("../public/images/theme/dark/common/ico_radio_check.svg") !important;
+  }
+  .ico-check{
+    background-image: url("../public/images/theme/dark/common/ico_checkbox_check.svg") !important;
+  }
+
+  /*common > mark*/
+  .ico-close{
+    background-image: url("../public/images/theme/dark/common/ico_close.svg") !important;
+  }
+  .ico-close-bold{
+    background-image: url("../public/images/theme/dark/common/ico_close_bold.svg") !important;
+  }
+  .ico-delete{
+    background-image: url("../public/images/theme/dark/common/ico_delete.svg") !important;
+  }
+  .ico-error{
+    background-image: url("../public/images/theme/dark/common/ico_error.svg") !important;
+  }
+  .ico-fail{
+    background-image: url("../public/images/theme/dark/common/ico_fail.svg") !important;
+  }
+  .ico-warning{
+    background-image: url("../public/images/theme/dark/common/ico_warning.svg") !important;
+  }
+  .ico-complete{
+    background-image: url("../public/images/theme/dark/common/ico_complete.svg") !important;
+  }
+  .ico-success{
+    background-image: url("../public/images/theme/dark/common/ico_success.svg") !important;
+  }
+  .ico-progress{
+    background-image: url("../public/images/theme/dark/common/ico_progress.svg") !important;
+  }
+  .ico-readying{
+    background-image: url("../public/images/theme/dark/common/ico_readying.svg") !important;
+  }
+  
+  /*common > arrow*/
+  .ico-arrow-top{
+    background-image: url("../public/images/theme/dark/common/ico_arrow_top.svg") !important;
+  }
+  .ico-arrow-right{
+    background-image: url("../public/images/theme/dark/common/ico_arrow_right.svg") !important;
+  }
+  .ico-arrow-bottom{
+    background-image: url("../public/images/theme/dark/common/ico_arrow_right.svg") !important;
+  }
+  .ico-arrow-left{
+    background-image: url("../public/images/theme/dark/common/ico_arrow_left.svg") !important;
+  }
+  .ico-arrow-top-bold{
+    background-image: url("../public/images/theme/dark/common/ico_arrow_top_bold.svg") !important;
+  }
+  .ico-arrow-right-bold{
+    background-image: url("../public/images/theme/dark/common/ico_arrow_right_bold.svg") !important;
+  }
+  .ico-arrow-bottom-bold{
+    background-image: url("../public/images/theme/dark/common/ico_arrow_bottom_bold.svg") !important;
+  }
+  .ico-arrow-left-bold{
+    background-image: url("../public/images/theme/dark/common/ico_arrow_left_bold.svg") !important;
+  }
+  .ico-dropdown-arrow{
+    background-image: url("../public/images/theme/dark/common/ico_dropdown_arrow.svg") !important;
+  }
+  .ico-arrow-blue{
+    background-image: url("../public/images/theme/dark/common/ico_arrow_blue.svg") !important;
+  }
+  .ico-arrow-red{
+    background-image: url("../public/images/theme/dark/common/ico_arrow_red.svg") !important;
+  }
+  .ico-bothsides{
+    background-image: url("../public/images/theme/dark/common/ico_bothsides.svg") !important;
+  }
+
+  /*flow*/
+  .ico-log{
+    background-image: url("../public/images/theme/dark/flow/ico_log.svg");
+  }
+  .ico-log-disabled{
+    background-image: url("../public/images/theme/dark/flow/ico_log_disabled.svg") ;
+  }              
+  .ico-log-db{
+    background-image: url("../public/images/theme/dark/flow/ico_log_db.svg");
+  }
+  .ico-log-db-disabled{
+    background-image: url("../public/images/theme/dark/flow/ico_log_db_disabled.svg");
+  }
+  .ico-database{
+    background-image: url("../public/images/theme/dark/flow/ico_database.svg");
+  }
+  .ico-database-disabled{
+    background-image: url("../public/images/theme/dark/flow/ico_database_disabled.svg");
+  }
+  .ico-flow-standard{
+    background-image: url("../public/images/theme/dark/flow/ico_flow_standard.svg");
+  }
+  .ico-standard-disabled{
+    background-image: url("../public/images/theme/dark/flow/ico_standard_disabled.svg");
+  }
+  .ico-flow-standard-editor{
+    background-image: url("../public/images/theme/dark/flow/ico_flow_standard_editor.svg");
+  }
+  .ico-flow-standard-editor-disabled{
+    background-image: url("../public/images/theme/dark/flow/ico_flow_standard_editor_disabled.svg");
+  }
+  .ico-folder{
+    background-image: url("../public/images/theme/dark/flow/ico_folder.svg");
+  }
+  .ico-folder-disabled{
+    background-image: url("../public/images/theme/dark/flow/ico_folder_disabled.svg");
+  }
+  .ico-file{
+    background-image: url("../public/images/theme/dark/flow/ico_file.svg");
+  }                             
+  .ico-file-disabled{
+    background-image: url("../public/images/theme/dark/flow/ico_file_disabled.svg");
+  }
+  .ico-flow-dashboard{
+    background-image: url("../public/images/theme/dark/flow/ico_flow_dashboard.svg");
+  }
+  .ico-flow-dashboard-disabled{
+    background-image: url("../public/images/theme/dark/flow/ico_flow_dashboard_disabled.svg");
+  }
+  .ico-flow-discovery{
+    background-image: url("../public/images/theme/dark/flow/ico_flow_discovery.svg") ;
+  }
+  .ico-flow-discovery-disabled{
+    background-image: url("../public/images/theme/dark/flow/ico_flow_discovery_disabled.svg") ;
+  }
+  .ico-flow-filter{
+    background-image: url("../public/images/theme/dark/flow/ico_filter.svg") ;
+  }
+  .ico-filter-disabled{
+    background-image: url("../public/images/theme/dark/flow/ico_filter_disabled.svg") ;
+  }
+  .ico-complete-disabled{
+    background-image: url("../public/images/theme/dark/flow/ico_complete_disabled.svg") ;
+  }
+  .ico-flow-mapping{
+    background-image: url("../public/images/theme/dark/flow/ico_flow_mapping.svg") ;
+  }
+  .ico-flow-mapping-disabled{
+    background-image: url("../public/images/theme/dark/flow/ico_flow_mapping_disabled.svg") ;
+  }
+  .ico-flow-data{
+    background-image: url("../public/images/theme/dark/flow/ico_flow_data.svg") ;
+  }
+  /*toolbar*/
+  .ico-undo{
+    background-image: url("../public/images/theme/dark/toolbar/ico_undo.svg") ;
+  }
+  .ico-redo{
+    background-image: url("../public/images/theme/dark/toolbar/ico_redo.svg") ;
+  }
+  .ico-clear{
+    background-image: url("../public/images/theme/dark/toolbar/ico_clear.svg") ;
+  }
+  .ico-svg{
+    background-image: url("../public/images/theme/dark/toolbar/ico_svg.svg") ;
+  }
+  .ico-png{
+    background-image: url("../public/images/theme/dark/toolbar/ico_png.svg") ;
+  }
+  .ico-full-screen{
+    background-image: url("../public/images/theme/dark/toolbar/ico_full_screen.svg") ;
+  }
+  .ico-front{
+    background-image: url("../public/images/theme/dark/toolbar/ico_front.svg") ;
+  }
+  .ico-back{
+    background-image: url("../public/images/theme/dark/toolbar/ico_back.svg") ;
+  }
+  .ico-graph-align{
+    background-image: url("../public/images/theme/dark/toolbar/ico_graph_align.svg") ;
+  }
+  .ico-zoom-fit{
+    background-image: url("../public/images/theme/dark/toolbar/ico_zoom_fit.svg") ;
+  }
+  .ico-error-report{
+    background-image: url("../public/images/theme/dark/toolbar/ico_error_report.svg") ;
+  }
+  /*img*/
+  .img-filter-time-01{
+    background-image: url("../public/images/theme/dark/content/img_filter_time_01.svg") !important;
+  }
+  .img-filter-time-02{
+    background-image: url("../public/images/theme/dark/content/img_filter_time_02.svg") !important;
+  }
+  .img-filter-time-03{
+    background-image: url("../public/images/theme/dark/content/img_filter_time_03.svg") !important;
+  }
+  .img-filter-time-04{
+    background-image: url("../public/images/theme/dark/content/img_filter_time_04.svg") !important;
+  }
+  .img-filter-time-05{
+    background-image: url("../public/images/theme/dark/content/img_filter_time_05.svg") !important;
+  }
+}

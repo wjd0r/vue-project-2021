@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* -------------------------
+Content Style Sheets
+: 컨텐츠 스타일시트
+------------------------- */
+
+.theme-blue{
+  .dataset-content{
+    > .content-header{
+      > .right-align{
+        .dropdown-toggle{
+          &::after{
+            content: url("../public/images/theme/blue/process/ico_filter.svg") !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*sidebar*/
+.nav-sub{
+  &.collapse{
+    &.show{
+      .nav-item{
+        &:first-child{
+          border-top: $border-width solid $border-sub-color;
+        }
+      }
+      .nav-link{
+        &:hover{
+          background-color: var(--hover-color) !important;
+          color: $font-color !important;
+        }
+        &.router-link-exact-active{
+          cursor: default;
+          &:hover{
+            background-color: var(--default-color) !important;
+            color: $white-color !important;
+          }
+        } 
+      }
+    }
+  }
+}
+
+/*variant*/
+.variant{
+  .progress-bar{
+    background-color: var(--progress-sub-color) !important;
+  }
+  &.active{
+    .progress-bar{
+      background-color: var(--progress-bar-color) !important;
+    }
+  }
+}
+
+/*table*/
+.ag-theme-balham{
+  .ag-row-selected{
+    background-color: var(--default-color) !important;
+    &:hover{
+      background-color: var(--default-color) !important;
+    }
+  }
+}

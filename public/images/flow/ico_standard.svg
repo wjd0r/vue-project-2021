@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-ico_standard">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="ico_standard" clip-path="url(#clip-ico_standard)">
+    <path id="패스_394" data-name="패스 394" d="M22.041,29.5H6.5V18H0V14H6.5V2.5H22.041A3,3,0,1,1,25.5,5.959V8H32v4H25.5v2H32v4H25.5v2H32v4H25.5v2.041A3,3,0,1,1,22.041,29.5ZM25,31a2,2,0,1,0-2-2A2,2,0,0,0,25,31Zm-2.959-2.5A3,3,0,0,1,24.5,26.042V24H18V20h6.5V18H18V14h6.5V12H18V8h6.5V5.959A3,3,0,0,1,22.041,3.5H7.5V14H14v4H7.5V28.5ZM19,23H31V21H19Zm0-6H31V15H19ZM1,17H13V15H1Zm18-6H31V9H19Zm6-6a2,2,0,1,0-2-2A2,2,0,0,0,25,5Z" fill="#5b48d9"/>
+  </g>
+</svg>

@@ -1,0 +1,466 @@
+@charset "UTF-8";
+
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* -------------------------
+Style Sheets Variable
+Common
+------------------------- */
+
+/* Image : Logo */
+$logo-iochord :                         url("../public/images/logo/logo_iochord.svg") !default;
+$logo-ipr :                             url("../public/images/logo/logo_ipr.svg") !default;
+$logo-ipr-w :                           url("../public/images/logo/logo_ipr_w.svg") !default;
+$logo-ipr-fullname :                    url("../public/images/logo/logo_ipr_fullname.svg") !default;
+
+$logo-chrome :                          url("../public/images/logo/logo_chrome.png") !default;
+$logo-firefox :                         url("../public/images/logo/logo_firefox.png") !default;
+$logo-safari :                          url("../public/images/logo/logo_safari.png") !default;
+$logo-edge :                            url("../public/images/logo/logo_ms_edge.png") !default;
+
+$logo-mysql:                            url("../public/images/logo/logo_mysql.png") !default;
+$logo-oracle:                           url("../public/images/logo/logo_oracle.png") !default;
+$logo-postgresql:                       url("../public/images/logo/logo_postgresql.png") !default;
+$logo-microsoftsql:                     url("../public/images/logo/logo_microsoftsql.png") !default;
+$logo-hadoop:                           url("../public/images/logo/logo_hadoop.png") !default;
+$logo-maria:                            url("../public/images/logo/logo_maria.png") !default;
+
+/* Image : Common */
+$loading:                               url("../public/images/common/loading.gif") !default;
+$ico-menubar:                           url("../public/images/common/ico_menubar.svg") !default;
+$ico-menubar-w:                         url("../public/images/common/ico_menubar_w.svg") !default;
+$ico-alarm:                             url("../public/images/common/ico_alarm.svg") !default;
+$ico-alarm-w:                           url("../public/images/common/ico_alarm_w.svg") !default;
+$ico-help:                              url("../public/images/common/ico_help.svg") !default;
+$ico-minus:                             url("../public/images/common/ico_minus.svg") !default;
+$ico-minus-w:                           url("../public/images/common/ico_minus_w.svg") !default;
+$ico-plus:                              url("../public/images/common/ico_plus.svg") !default;
+$ico-plus-w:                            url("../public/images/common/ico_plus_w.svg") !default;
+$ico-filter-setting:                    url("../public/images/common/ico_setting.svg") !default;
+$ico-title-menu:                        url("../public/images/common/ico_title_menu.svg") !default;
+$ico-title-menu-w:                      url("../public/images/common/ico_title_menu_w.svg") !default;
+$ico-user:                              url("../public/images/common/ico_user.svg") !default;
+$ico-download:                          url("../public/images/common/ico_download.svg") !default;
+$ico-upload:                            url("../public/images/common/ico_upload.svg") !default;
+$ico-play:                              url("../public/images/common/ico_play.svg") !default;
+$ico-pause:                             url("../public/images/common/ico_pause.svg") !default;
+$ico-dashbard-editor:                   url("../public/images/common/ico_dashbard_editor.svg") !default;
+$ico-logout:                            url("../public/images/common/ico_logout.svg") !default;
+$ico-search:                            url("../public/images/common/ico_search.svg") !default;
+$ico-check:                             url("../public/images/common/ico_checkbox_check.svg") !default;
+
+$ico-arrow-top:                         url("../public/images/common/ico_arrow_top.svg") !default;
+$ico-arrow-right:                       url("../public/images/common/ico_arrow_right.svg") !default;
+$ico-arrow-bottom:                      url("../public/images/common/ico_arrow_bottom.svg") !default;
+$ico-arrow-left:                        url("../public/images/common/ico_arrow_left.svg") !default;
+$ico-arrow-top-w:                       url("../public/images/common/ico_arrow_top_w.svg") !default;
+$ico-arrow-right-w:                     url("../public/images/common/ico_arrow_right_w.svg") !default;
+$ico-arrow-bottom-w:                    url("../public/images/common/ico_arrow_bottom_w.svg") !default;
+$ico-arrow-left-w:                      url("../public/images/common/ico_arrow_left_w.svg") !default;
+$ico-dropdown-arrow:                    url("../public/images/common/ico_dropdown_arrow.svg") !default;
+$ico-arrow-blue:                        url("../public/images/common/ico_arrow_blue.svg") !default;
+$ico-arrow-red:                         url("../public/images/common/ico_arrow_red.svg") !default;
+$ico-bothsides:                         url("../public/images/common/ico_bothsides.svg") !default;
+$ico-bothsides-w:                       url("../public/images/common/ico_bothsides_w.svg") !default;
+$ico-arrow-top-bold:                    url("../public/images/common/ico_arrow_top_bold.svg") !default;
+$ico-arrow-right-bold:                  url("../public/images/common/ico_arrow_right_bold.svg") !default;
+$ico-arrow-bottom-bold:                 url("../public/images/common/ico_arrow_bottom_bold.svg") !default;
+$ico-arrow-left-bold:                   url("../public/images/common/ico_arrow_left_bold.svg") !default;
+$ico-arrow-top-bold-w:                  url("../public/images/common/ico_arrow_top_bold_w.svg") !default;
+$ico-arrow-right-bold-w:                url("../public/images/common/ico_arrow_right_bold_w.svg") !default;
+$ico-arrow-bottom-bold-w:               url("../public/images/common/ico_arrow_bottom_bold_w.svg") !default;
+$ico-arrow-left-bold-w:                 url("../public/images/common/ico_arrow_left_bold_w.svg") !default;
+
+$ico-csv:                               url("../public/images/common/ico_csv.svg") !default;
+$ico-csv-w:                             url("../public/images/common/ico_csv_w.svg") !default;
+$ico-xlsx:                              url("../public/images/common/ico_xlsx.svg") !default;
+$ico-xlsx-w:                            url("../public/images/common/ico_xlsx_w.svg") !default;
+$ico-mxml:                              url("../public/images/common/ico_mxml.svg") !default;
+$ico-mxml-w:                            url("../public/images/common/ico_mxml_w.svg") !default;
+$ico-xes:                               url("../public/images/common/ico_xes.svg") !default;
+$ico-xes-w:                             url("../public/images/common/ico_xes_w.svg") !default;
+
+$ico-close:                             url("../public/images/common/ico_close.svg") !default;
+$ico-close-bold:                        url("../public/images/common/ico_close_bold.svg") !default;
+$ico-close-w:                           url("../public/images/common/ico_close_w.svg") !default;
+$ico-delete:                            url("../public/images/common/ico_delete.svg") !default;
+$ico-error:                             url("../public/images/common/ico_error.svg") !default;
+$ico-fail:                              url("../public/images/common/ico_fail.svg") !default;
+$ico-warning:                           url("../public/images/common/ico_warning.svg") !default;
+$ico-complete:                          url("../public/images/common/ico_complete.svg") !default;
+$ico-success:                           url("../public/images/common/ico_success.svg") !default;
+$ico-progress:                          url("../public/images/common/ico_progress.svg") !default;
+$ico-readying:                          url("../public/images/common/ico_readying.svg") !default;
+
+/* Image : Contents */
+$img-delimeter:                         url("../public/images/content/img_delimeter.svg") !default;
+$img-header-row-index:                  url("../public/images/content/img_header_row_index.svg") !default;
+$img-filter-time-01:                    url("../public/images/content/img_filter_time_01.svg") !default;
+$img-filter-time-02:                    url("../public/images/content/img_filter_time_02.svg") !default;
+$img-filter-time-03:                    url("../public/images/content/img_filter_time_03.svg") !default;
+$img-filter-time-04:                    url("../public/images/content/img_filter_time_04.svg") !default;
+$img-filter-time-05:                    url("../public/images/content/img_filter_time_05.svg") !default;
+
+/* Image : Toolbar */
+$ico-undo:                              url("../public/images/toolbar/ico_undo.svg") !default;
+$ico-redo:                              url("../public/images/toolbar/ico_redo.svg") !default;
+$ico-png:                               url("../public/images/toolbar/ico_png.svg") !default;
+$ico-svg:                               url("../public/images/toolbar/ico_svg.svg") !default;
+$ico-clear:                             url("../public/images/toolbar/ico_clear.svg") !default;
+$ico-full-screen:                       url("../public/images/toolbar/ico_full_screen.svg") !default;
+$ico-front:                             url("../public/images/toolbar/ico_front.svg") !default;
+$ico-back:                              url("../public/images/toolbar/ico_back.svg") !default;
+$ico-graph-align:                       url("../public/images/toolbar/ico_graph_align.svg") !default;
+$ico-zoom-fit:                          url("../public/images/toolbar/ico_zoom_fit.svg") !default;
+$ico-error-report:                      url("../public/images/toolbar/ico_error_report.svg") !default;
+
+/* Image : Flow */
+$ico-log:                               url("../public/images/flow/ico_log.svg") !default;
+$ico-log-disabled:                      url("../public/images/flow/ico_log_disabled.svg") !default;
+$ico-log-w:                             url("../public/images/flow/ico_log_w.svg") !default;
+$ico-log-db:                            url("../public/images/flow/ico_log_db.svg") !default;
+$ico-log-db-disabled:                   url("../public/images/flow/ico_log_db_disabled.svg") !default;
+$ico-log-db-w:                          url("../public/images/flow/ico_log_db_w.svg") !default;
+$ico-database:                          url("../public/images/flow/ico_database.svg") !default;
+$ico-database-disabled:                 url("../public/images/flow/ico_database_disabled.svg") !default;
+$ico-flow-standard:                     url("../public/images/flow/ico_flow_standard.svg") !default;
+$ico-standard-disabled:                 url("../public/images/flow/ico_standard_disabled.svg") !default;
+$ico-flow-standard-editor:              url("../public/images/flow/ico_flow_standard_editor.svg") !default;
+$ico-flow-standard-editor-disabled:     url("../public/images/flow/ico_flow_standard_editor_disabled.svg") !default;
+$ico-folder:                            url("../public/images/flow/ico_folder.svg") !default;
+$ico-folder-disabled:                   url("../public/images/flow/ico_folder_disabled.svg") !default;
+$ico-file:                              url("../public/images/flow/ico_file.svg") !default;
+$ico-file-w:                            url("../public/images/flow/ico_file_w.svg") !default;
+$ico-file-disabled:                     url("../public/images/flow/ico_file_disabled.svg") !default;
+$ico-flow-dashboard:                    url("../public/images/flow/ico_flow_dashboard.svg") !default;
+$ico-flow-dashboard-disabled:           url("../public/images/flow/ico_flow_dashboard_disabled.svg") !default;
+$ico-flow-discovery:                    url("../public/images/flow/ico_flow_discovery.svg") !default;
+$ico-flow-discovery-disabled:           url("../public/images/flow/ico_flow_discovery_disabled.svg") !default;
+$ico-flow-filter:                       url("../public/images/flow/ico_filter.svg") !default;
+$ico-flow-filter-disabled:              url("../public/images/flow/ico_filter_disabled.svg") !default;
+$ico-complete-disabled:                 url("../public/images/flow/ico_complete_disabled.svg") !default;
+$ico-flow-mapping:                      url("../public/images/flow/ico_flow_mapping.svg") !default;
+$ico-flow-mapping-disabled:             url("../public/images/flow/ico_flow_mapping_disabled.svg") !default;
+$ico-flow-data:                         url("../public/images/flow/ico_flow_data.svg") !default;
+
+/* Image : sidebar(white) */
+$ico-home-w:                            url("../public/images/theme/ico_home_w.svg") !default;
+$ico-discovery-w:                       url("../public/images/theme/ico_discovery_w.svg") !default;
+$ico-dashboard-w:                       url("../public/images/theme/ico_dashboard_w.svg") !default;
+$ico-delta-w:                           url("../public/images/theme/ico_delta_w.svg") !default;
+$ico-logreplay-w:                       url("../public/images/theme/ico_logreplay_w.svg") !default;
+$ico-matrix-w:                          url("../public/images/theme/ico_matrix_w.svg") !default;
+$ico-social-w:                          url("../public/images/theme/ico_social_w.svg") !default;
+$ico-dotted-w:                          url("../public/images/theme/ico_dotted_w.svg") !default;
+$ico-gantt-w:                           url("../public/images/theme/ico_gantt_w.svg") !default;
+
+$ico-datasource-w:                      url("../public/images/theme/ico_datasource_w.svg") !default;
+$ico-data-w:                            url("../public/images/theme/ico_data_w.svg") !default;
+$ico-standard-w:                        url("../public/images/theme/ico_standard_w.svg") !default;
+
+$ico-user-w:                            url("../public/images/common/ico_user_w.svg") !default;
+$ico-manage-w:                          url("../public/images/theme/ico_manage_w.svg") !default;
+$ico-setting-w:                         url("../public/images/theme/ico_setting_w.svg") !default;
+
+/* --------------------
+Color
+-------------------- */
+$font-color:                            #212121 !default;
+$font-hover-color:                      #4D4D4D !default;
+$white-color:                           #FFFFFF !default;
+$bg-color:                              #F2F2F2 !default;
+$placeholder-color:                     #BFBFBF !default;
+$disabled-color:                        #D9D9D9 !default;
+$bg-disabled-color:                     #D9D9D9 !default;
+$font-disabled-color:                   #737373 !default;
+$valid-color:                           #F23005 !default;
+$error-color:                           #F23005 !default;
+$invalid-color:                         #05A66B !default;
+$success-color:                         #05A66B !default;
+
+$border-default-color:                  #BFBFBF !default;
+$border-sub-color:                      #D1D1D2 !default;
+$border-focus-color:                    #8C8C8C !default;
+$border-valid-color:                    #F23005 !default;
+$border-invalid-color:                  #05A66B !default;
+
+$body-background:                       #F2F2F2 !default;
+$gray-color:                            #BFBFBF !default;
+$secondary-color:                       #BFBFBF !default;
+
+/*sidebar*/
+$sidebar-color:                         #F2F2F2 !default;
+
+$blue-color:                            #0476D9 !default;
+$blue-hover-color:                      #0568BE !default;
+$blue-disabled-color:                   #80B9EB !default; 
+$blue-bg-color:                         #F1F7FC !default;
+$red-color:                             #F23005 !default;
+$red-hover-color:                       #D92B2B !default;
+$red-disabled-color:                    #F89681 !default;
+$red-bg-color:                          #FFF4F2 !default;
+$yellow-color:                          #F2B705 !default;
+$yellow-hover-color:                    #F29F05 !default;
+$yellow-disabled-color:                 #F8DA81 !default;
+$yellow-bg-color:                       #FFFCF2 !default;
+$green-color:                           #05A66B !default;
+$green-hover-color:                     #6c8b80 !default;
+$green-disabled-color:                  #81D2B4 !default;
+$green-bg-color:                        #F1FAF6 !default;
+$gray-color:                            #A6A6A6 !default;
+$gray-hover-color:                      #8C8C8C !default;
+$gray-disabled-color:                   #D2D2D2 !default;
+$gray-bg-color:                         #FAFAFA !default;
+$purple-color:                          #5B48D9 !default;
+$purple-hover-color:                    #4632C5 !default;
+$purple-disabled-color:                 #ACA2EB !default;
+$purple-bg-color:                       #F6F4FC !default;
+$brown-color:                           #8C6151 !default;
+$brown-hover-color:                     #59403E !default;
+$brown-disabled-color:                  #C5AFA7 !default;
+$brown-bg-color:                        #F8F6F5 !default;
+$dark-color:                            #3B3B3B !default;
+$dark-hover-color:                      #303030 !default;
+$dark-disabled-color:                   #9C9C9C !default;
+$light-color:                           #F2F2F2 !default;
+$light-hover-color:                     #F0F0F0 !default;
+$light-disabled-color:                  #F8F8F8 !default;
+
+/* Button : Gray */
+$btn-color-gray:                        #BFBFBF !default;
+$btn-active-color-gray:                 #CBCBCB !default;
+$btn-hover-color-gray:                  #D8D8D8 !default;
+
+
+/* Box Shadow */
+$box-shabow-none:                       0px 0px 0px 0px !default;
+$box-shabow-header:                     0px 0px 6px 4px rgba(148,133,161,0.4) !default;
+$box-shabow-focus:                      0px 0px 5px 1px rgba(56, 61, 69, 0.2) !default;
+$box-shabow:                            0px 0px 5px 1px rgba(56, 61, 69, 0.2) !default;
+$box-shabow-blue:                       0px 0px 5px 1px rgba(46, 108, 181, 0.2) !default;
+$box-shabow-red:                        0px 0px 5px 1px rgba(237, 81, 82, 0.2) !default;
+$box-shabow-green:                      0px 0px 5px 1px rgba(5, 166, 107, 0.2) !default;
+$box-shabow-yellow:                     0px 0px 5px 1px rgba(242, 185, 15, 0.2) !default;
+$box-shabow-purple:                     0px 0px 5px 1px rgba(150, 84, 255, 0.2) !default;
+
+/* Border */
+$border-none:                           none !default;
+
+/* Border Width */
+$border-width:                          1px !default;
+$border-width-2:                        2px !default;
+$border-width-3:                        3px !default;
+$border-width-4:                        4px !default;
+$border-width-5:                        5px !default;
+$border-width-6:                        6px !default;
+$border-width-7:                        7px !default;
+$border-width-8:                        8px !default;
+$border-width-9:                        9px !default;
+$border-width-10:                       10px !default;
+
+/* Border Radius */
+$border-radius-none:                    0px 0px 0px 0px !default;
+$border-radius-5:                       5px !default;
+$border-radius-10:                      10px !default;
+$border-radius-15:                      15px !default;
+$border-radius-20:                      20px !default;
+$border-radius-25:                      25px !default;
+$border-radius-30:                      30px !default;
+
+$border-radius-top:                     10px 10px 0px 0px !default;
+$border-radius-right:                   0px 10px 10px 0px !default;
+$border-radius-bottom:                  0px 0px 10px 10px !default;
+$border-radius-left:                    10px 0px 0px 10px !default;
+
+$border-radius-top-left-edge:           10px 0px 0px 0px !default;
+$border-radius-top-right-edge:          0px 10px 0px 0px !default;
+$border-radius-bottom-right-edge:       0px 0px 10px 0px !default;
+$border-radius-bottom-left-edge:        0px 0px 0px 10px !default;
+
+/* Width */
+$width-0:                               0px !default;                     
+$width-5:                               5px !default;   
+$width-10:                              10px !default;
+$width-20:                              20px !default;                     
+$width-30:                              30px !default;                     
+$width-40:                              40px !default;                     
+$width-50:                              50px !default; 
+$width-60:                              60px !default; 
+$width-70:                              70px !default;                     
+$width-80:                              80px !default;                     
+$width-90:                              70px !default;                     
+$width-100:                             100px !default;                     
+$width-110:                             110px !default;                     
+$width-120:                             120px !default;   
+$width-130:                             130px !default;                     
+$width-140:                             140px !default;   
+$width-150:                             150px !default;                     
+$width-160:                             160px !default;                     
+$width-170:                             170px !default;   
+$width-180:                             180px !default;                     
+$width-190:                             190px !default;   
+$width-200:                             200px !default;  
+$width-220:                             220px !default;
+$width-240:                             240px !default;
+$width-260:                             260px !default;
+$width-280:                             280px !default;
+$width-300:                             300px !default;
+$width-400:                             400px !default;
+$width-500:                             500px !default;
+$width-600:                             600px !default;
+$width-700:                             700px !default;
+$width-800:                             800px !default;
+$width-900:                             900px !default;
+
+/* Height */
+$height-0:                              0px !default;
+$height-5:                              5px !default;
+$height-10:                             10px !default;
+$height-20:                             20px !default;
+$height-30:                             30px !default;
+$height-40:                             40px !default;
+$height-50:                             50px !default;
+$height-60:                             60px !default;
+$height-70:                             70px !default;
+$height-80:                             80px !default;
+$height-90:                             90px !default;
+$height-100:                            100px !default;
+$height-110:                            110px !default;
+$height-120:                            120px !default;
+$height-130:                            130px !default;
+$height-140:                            140px !default;
+$height-150:                            150px !default;
+$height-160:                            160px !default;
+$height-170:                            170px !default;
+$height-180:                            180px !default;
+$height-190:                            190px !default;
+$height-200:                            200px !default;
+$height-300:                            300px !default;
+$height-400:                            400px !default;
+$height-500:                            500px !default;
+$height-600:                            600px !default;
+$height-700:                            700px !default;
+$height-800:                            800px !default;
+$height-900:                            900px !default;
+
+/* Margin */
+$margin-0:                              0px !default;
+$margin-5:                              5px !default;
+$margin-10:                             10px !default;
+$margin-20:                             20px !default;
+$margin-30:                             30px !default;
+$margin-40:                             40px !default;
+$margin-50:                             50px !default;
+$margin-60:                             60px !default;
+$margin-70:                             70px !default;
+$margin-80:                             80px !default;
+$margin-90:                             90px !default;
+$margin-100:                            100px !default;
+$margin-200:                            200px !default;
+$margin-300:                            300px !default;
+$margin-400:                            400px !default;
+$margin-500:                            500px !default;
+$margin-600:                            600px !default;
+$margin-700:                            700px !default;
+$margin-800:                            800px !default;
+$margin-900:                            900px !default;
+
+/* Padding */
+$padding-0:                             0px !default;
+$padding-5:                             5px !default;
+$padding-10:                            10px !default;
+$padding-20:                            20px !default;
+$padding-30:                            30px !default;
+$padding-40:                            40px !default;
+$padding-50:                            50px !default;
+$padding-60:                            60px !default;
+$padding-70:                            70px !default;
+$padding-80:                            80px !default;
+$padding-90:                            90px !default;
+$padding-100:                           100px !default;
+$padding-200:                           200px !default;
+$padding-300:                           300px !default;
+$padding-400:                           400px !default;
+$padding-500:                           500px !default;
+$padding-600:                           600px !default;
+$padding-700:                           700px !default;
+$padding-800:                           800px !default;
+$padding-900:                           900px !default;
+
+/* Top / right / bottom / left */
+$top-0:                                 0px !default;
+$right-0:                               0px !default;
+$bottom-0:                              0px !default;
+$left-0:                                0px !default;
+
+/* Value */
+$value-0:                               0px !default; 
+$value-1:                               1px !default; 
+$value-2:                               2px !default; 
+$value-3:                               3px !default; 
+$value-4:                               4px !default; 
+$value-5:                               5px !default;
+$value-6:                               6px !default; 
+$value-7:                               7px !default; 
+$value-8:                               8px !default; 
+$value-9:                               9px !default; 
+
+/* Font Size */
+$font-size-10:                          10px !default;
+$font-size-11:                          11px !default;
+$font-size-12:                          12px !default;
+$font-size-13:                          13px !default;
+$font-size-14:                          14px !default;
+$font-size-15:                          15px !default;
+$font-size-16:                          16px !default;
+$font-size-17:                          17px !default;
+$font-size-18:                          18px !default;
+$font-size-19:                          19px !default;
+$font-size-20:                          20px !default;
+$font-size-21:                          21px !default;
+$font-size-22:                          22px !default;
+$font-size-23:                          23px !default;
+$font-size-24:                          24px !default;
+$font-size-25:                          25px !default;
+$font-size-26:                          26px !default;
+$font-size-27:                          27px !default;
+$font-size-28:                          28px !default;
+$font-size-29:                          29px !default;
+$font-size-30:                          30px !default;
+$font-size-32:                          32px !default;
+$font-size-34:                          34px !default;
+$font-size-36:                          36px !default;
+$font-size-38:                          38px !default;
+$font-size-40:                          40px !default;
+$font-size-50:                          50px !default;
+$font-size-60:                          60px !default;
+$font-size-70:                          70px !default;
+$font-size-80:                          80px !default;
+$font-size-90:                          90px !default;
+$font-size-100:                         100px !default;
+
+/* Font Wight */
+$font-weight-300:                       300 !default;
+$font-weight-400:                       400 !default;
+$font-weight-500:                       500 !default;
+$font-weight-600:                       600 !default;
+$font-weight-700:                       700 !default;
+
+/* Scroll */
+$scroll-button-color:                 rgba(190,191,190,0.5) !default; 
+$scroll-button-hover-color:           rgba(190,191,190,0.7) !default;
+$scrollbar-track:                     #E5E5E5 !default; /* 화살표를 제외한 스크롤 부분 */
+$scrollbar-track-piece:               #E5E5E5 !default; /* 스크롤 뒷배경 */
+$scrollbar-thumb:                     #626163 !default; /* 스크롤 움직이는 부분 */
+$scrollbar-button:                    #626163 !default;/* 스크롤 버튼 좌우상하 영역 */
+$scrollbar-corner:                    #f6f6f6 !default; /* 우측 하단의 코너 부분 */
+$scrollbar-thumb-hover:               #c2c2c2 !default;
+
+/* transition */
+$transition-10s : margin-left 0.10s, margin-right 0.10s, width 0.10s, flex 0.20s, -webkit-box-flex 0.10s, -ms-flex 0.10s !default;
+$transition-15s : margin-left 0.15s, margin-right 0.15s, width 0.15s, flex 0.15s, -webkit-box-flex 0.15s, -ms-flex 0.15s !default;
+$transition-20s : margin-left 0.20s, margin-right 0.20s, width 0.20s, flex 0.20s, -webkit-box-flex 0.20s, -ms-flex 0.20s !default;
+$transition-25s : margin-left 0.25s, margin-right 0.25s, width 0.25s, flex 0.25s, -webkit-box-flex 0.25s, -ms-flex 0.25s !default;
+$transition-30s : margin-left 0.30s, margin-right 0.30s, width 0.30s, flex 0.30s, -webkit-box-flex 0.30s, -ms-flex 0.30s !default;

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-ico_folder_dark">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="ico_folder_dark" clip-path="url(#clip-ico_folder_dark)">
+    <path id="ico-folder" d="M2.666,32A2.667,2.667,0,0,1,0,29.332V2.666A2.667,2.667,0,0,1,2.666,0H8V0l8,8H29.332A2.667,2.667,0,0,1,32,10.667V29.332A2.667,2.667,0,0,1,29.332,32Z" fill="#121212"/>
+  </g>
+</svg>

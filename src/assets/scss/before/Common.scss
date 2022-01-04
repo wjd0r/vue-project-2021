@@ -1,0 +1,1264 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* -------------------------
+
+Common Style Sheets
+: 공통 스타일시트
+------------------------- */
+
+/*body*/
+html, body{
+   width: 100%;
+   height: 100%;
+   color: $font-color !important;
+   margin: $margin-0 !important;
+   background-color: var(--body-background) !important;
+}
+
+/*main*/
+.main{
+   overflow-y: auto !important;
+   // overflow-x: auto !important;
+   overflow-x: hidden !important;
+   display: flex;
+   flex-direction: column;
+}
+.main .container-fluid {
+   padding: 0 !important;
+   width: 100%;
+   height: 100%;
+}
+
+/*app-body*/
+.app-body .main {
+   position: relative;
+}
+
+/*lang*/
+:lang(ko) {
+   font-family:'Noto Sans KR', 'Roboto';
+}
+:lang(en) {
+   font-family: 'Roboto', 'Noto Sans KR';
+}
+
+/* Align */
+.right{
+   float: right;
+   margin-left: auto;
+   text-align: right;
+}
+.left{
+   float: left;
+   margin-right: auto;
+   text-align: left;
+}
+
+/* -------------------------
+   아이콘
+------------------------- */
+.icon{
+   height: $height-50;
+   width: $width-50;
+   padding: $padding-10 + 2;
+   line-height: 1;
+}
+.b-icon{
+   &.bi{
+      width: $width-20 + 4;
+      height: $width-20 + 4;
+      color: var(--icon-color) !important;
+      cursor: pointer;
+      opacity: 0.7;
+      &:hover{
+         color: var(--icon-color) !important;
+         opacity: 1;
+      }
+   }
+} // end
+
+/* -------------------------
+   Breadcrumb
+------------------------- */
+.breadcrumb{
+   height: $height-40;
+   border-bottom: $border-none !important;
+   background-color: transparent !important;
+   margin-bottom: $margin-0 !important;
+   padding: $padding-10 $padding-30 $padding-0 $padding-30;
+   line-height: 2;
+   font-weight: $font-weight-600;
+   .breadcrumb-item{
+      &.active{
+         color: $breadcrumb-active-color;
+         font-weight: $font-weight-600;
+         cursor: default;
+      }
+   }
+} // end
+.breadcrumb-item+.breadcrumb-item{
+   &:before{
+      width: $width-10 + 2;
+      height: $width-10 + 2;
+      margin-left: $margin-10;
+      margin-right: $margin-10;
+      color: $breadcrumb-color !important;
+      // content: $breadcrumb-arrow !important;
+   }
+} // end
+
+/* -------------------------
+   card
+------------------------- */
+.card{
+   border: $border-none !important;
+   border-radius: $border-radius-10 !important;
+   box-shadow: $box-shabow !important;
+}
+
+/* -------------------------
+   content-header, content-body
+------------------------- */
+
+/* content-header */
+.content-header{
+   height: $height-40;
+   border-bottom: $border-width solid var(--default-color);
+   // 드레그 방지
+   // -ms-user-select: none; 
+   // -moz-user-select: -moz-none; 
+   // -webkit-user-select: none; 
+   // -khtml-user-select: none; 
+   // user-select:none;
+} // end
+
+.content-header{
+   display: flex;
+   flex-direction: row;
+   padding-left: $padding-20;
+   padding-right: $padding-20;
+   .title{
+      font-size: $font-size-28;
+      font-weight: $font-weight-600;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+   }
+   .right-align{
+      margin-left: auto;
+      .delete-selected{
+         font-size: $font-size-15;
+         line-height: 2.6;
+         cursor: pointer;
+      }
+      .count-text{
+         font-size: $font-size-15;
+         line-height: 2.6;
+         margin-left: $margin-5 !important;
+         cursor: default;
+      }
+   }
+} // end
+
+/* content-body */
+.content-body{
+   padding: $padding-20;
+}
+
+/* -------------------------
+   dropdown
+------------------------- */
+.dropdown{
+   outline: none !important;
+   .show{
+      &>.btn-secondary{
+         &.dropdown-toggle{
+            color: $font-color !important;
+            background-color: transparent !important;
+            border-color: transparent !important;
+         }
+      }
+   }
+   // dropdown-menu
+   .dropdown-menu{
+      min-width: 8rem !important;
+      color: $font-color !important;
+      border: $border-width solid $border-default-color !important;
+      box-shadow: $box-shabow !important;
+      font-size: $font-size-15 !important;
+      padding: $padding-0 !important;
+      border-radius: $border-radius-none !important;
+      .dropdown-divider{
+         margin: $margin-0 !important;
+      }
+      .dropdown-item{
+         color: $font-color !important;
+         padding: 8px $padding-10 !important;
+         min-width: auto !important;
+         &.active, &:active{
+            color: $font-color !important;
+            background-color: var(--active-color) !important;
+         }
+         &:hover{
+            background-color: var(--hover-color) !important;
+         }
+      }
+      // show
+      &.show{
+         width: 100%;
+      }
+   }
+} // end
+
+/* -------------------------
+   Table : default
+------------------------- */
+.table{
+   color: $font-color !important;
+   background-color: $white;
+   margin-bottom: $margin-0 !important;
+   th, td{
+      border: $border-none !important;
+      outline: none;
+   }
+   thead{
+      tr{
+         border-top: $border-width-2 solid var(--table-border-header-color) !important;
+         border-bottom: $border-width-2 solid var(--table-border-header-color) !important;
+      }
+      th{
+         border: $border-width solid var(--table-border-body-color) !important;
+         background-color: $white !important;
+         color: $font-color !important;
+      }
+   }
+   tbody{
+      tr{
+         border-bottom: $border-width solid var(--table-border-body-color) !important;
+         &:hover{
+            background-color: var(--hover-color);
+         }
+         &:active{
+            background-color: var(--active-color) !important;
+         }
+         &.selected{
+            background-color: var(--active-color) !important;
+         }
+      }
+   }
+   &.table-bordered{
+      border: $border-width solid var(--table-border-body-color) !important;
+      th, td{
+         border: $border-none !important;
+      }
+   }
+} // end
+
+/* -------------------------
+   Table : ag-grid
+------------------------- */
+.ag-theme-balham{
+   // header
+   .ag-header{
+      background-color: $white !important;
+      border-top: $border-width-2 solid var(--table-border-header-color) !important;
+      border-bottom: $border-width-2 solid var(--table-border-header-color) !important;
+      height: $height-40 !important;
+   }
+   //ag-header-cell-text
+   .ag-header-cell-text{
+      font-size: $font-size-15;
+      color: $font-color;
+      font-weight: $font-weight-600 !important;
+   }
+   // body
+   .ag-row{
+      color: $font-color !important;
+      background-color: $white;
+      border-color: var(--table-border-body-color) !important;
+      &:hover{
+         background-color: var(--hover-color) !important;
+      }
+
+   }
+   .ag-root-wrapper{
+      border: $border-width solid var(--table-border-header-color);
+      border-color: transparent !important;
+      background-color: $white;
+      .ag-root-wrapper-body{
+         border: $border-width solid var(--table-border-body-color) !important;
+      }
+   }
+   // selected
+   .ag-row-selected{
+      background-color: var(--active-color) !important;
+      &:hover{
+         background-color: var(--active-color) !important;
+      }
+   }
+   
+   // cell
+   .ag-ltr{
+      .ag-has-focus{
+         .ag-cell-focus{
+            &:not(.ag-cell-range-selected){
+               border: $border-width solid var(--default-color) !important;
+            }
+         }
+      }
+   }  
+} // end
+
+.ag-table{
+   .table-header{
+      background-color: #fff;
+      border: $border-width solid $border-default-color;
+      border-bottom: $border-none !important;
+      .ag-pagination{
+         .pagination{
+            margin-left: auto;
+         }
+      }
+   }
+   .ag-theme-balham{
+      .ag-header{
+         border-top: $border-none !important;
+         border-bottom: $border-width solid $border-default-color !important;
+      }
+      .ag-center-cols-container{
+         height: 100% !important;
+      }
+      .ag-full-width-container{
+         height: 100% !important;
+      }
+      .ag-root-wrapper{
+         border-color: $border-default-color !important;
+         .ag-root-wrapper-body{
+            border: $border-none !important;
+         }
+      }
+      .ag-cell{
+         font-size: $font-size-15;
+         line-height: 36px;
+      }
+   }
+} // end
+
+/* -------------------------
+   Button : Pagination
+------------------------- */
+.ag-pagination{
+   .pagination{
+      margin-bottom: $margin-0;
+      .page-item{
+         width: auto !important;
+         height: 32px !important;
+         &.disabled{
+            width: 32px !important;
+            height: 32px !important;
+            text-align: center;
+            &:nth-child(2),&:last-child{
+               .page-link{
+                  border-left: $border-none !important;
+               }
+            }
+            .page-link{
+               height: 32px !important;
+               padding: 0.5rem 0.75rem !important;
+               background-color: $disabled-color !important;
+               border-color: $border-default-color !important;
+               line-height: 1;
+            }
+         }
+         /*좌우 이동 버튼*/
+         &:first-child, &:nth-child(2), &:last-child, &:nth-last-child(2){
+            .page-link{
+               width: 32px !important;
+               padding: 0.5rem 0.75rem !important;
+               line-height: 1;
+               &:hover{
+                  background-color: #fff !important;
+                  color: var(--default-color) !important;
+               }
+            }
+         }
+         /*선택된 버튼*/
+         &.active{
+            .page-link{
+               background-color: var(--default-color) !important;
+               color: #fff !important;
+               border-color: var(--default-color) !important;
+               font-weight: $font-weight-500;
+               &:hover{
+                  background-color: var(--default-color) !important;
+                  color: #fff !important;
+               }
+            }
+         }
+         /*버튼 스타일*/
+         .page-link{
+            height: 32px !important;
+            color: $gray-color !important;
+            border: $border-width solid $border-default-color !important;
+            &:focus, &:active{
+               box-shadow: $box-shabow-none !important;
+            }
+            &:hover{
+               background-color: var(--hover-color) !important;
+               color: var(--default-color) !important;
+            }
+         }
+      }
+   }
+} // end
+
+/*테이블 페이지네이션*/
+.table-header{
+   height: auto;
+   padding: $padding-5;
+   .ag-pagination{
+      display: flex;
+      flex-direction: row;
+      .form-control{
+         height: 30px !important;
+         font-size: $font-size-14 !important;
+         text-align: center;
+         padding: $padding-5 !important;
+         margin-bottom: $margin-0 !important;
+         &:focus{
+            box-shadow: $box-shabow-none !important;
+         }
+      }
+      // 페이지 사이즈
+      .ag-value{
+         width: 150px;
+         margin-bottom: $margin-0 !important;
+         margin-left: auto;
+         .col-form-label{
+            height: 30px;
+            font-size: $font-size-14 !important;
+            flex: 0 0 70px;
+            max-width: 70px;
+         }
+      }
+      .btn-page{
+         width: auto;
+         display: flex;
+         flex-direction: row;
+         height: 30px !important;
+         margin-left: $padding-10;
+         margin-top: $padding-0;
+         .btn{
+            height: 30px !important;
+            padding: $padding-5 !important;
+            font-size: $font-size-14 !important;
+            border-color: $border-default-color !important;
+            &:hover{
+               background-color: var(--hover-color) !important;
+            }
+            &.btn-left{
+               margin-right: $margin-0;
+               border-radius: 5px 0px 0px 5px !important;
+               border-right: $border-none !important;
+            }
+            &.btn-right{
+               border-radius: 0px 5px 5px 0px !important;
+            }
+            &.btn-apply{
+               color: $font-color !important;
+               font-size: $font-size-13 !important;
+               width: 40px;
+            }
+            &:disabled{
+               background-color: $disabled-color !important;
+            }
+         }
+         .form-control{
+            width: 80px !important;
+            border-radius: $border-radius-none !important;
+         }
+         .b-icon.bi{
+            width: 16px;
+            height: 16px;
+            color: $gray-color !important;
+            opacity: 1;
+            vertical-align: text-top;
+         }
+      }
+   }
+} // end
+
+/* -------------------------
+   Tabs
+------------------------- */
+.tabs{
+   .nav-pills{
+      .nav-link{
+         outline: none;
+         &.active{
+            background-color : var(--btn-default-color) !important;
+            font-weight: $font-weight-600;
+         }
+      }
+   } 
+} // end
+
+/* -------------------------
+   Modal
+------------------------- */
+.modal-content{
+   border: $border-width solid $card-border-default-color !important;
+   box-shadow: $box-shabow !important;
+   border-radius: $border-radius-10 !important;
+   font-size: $font-size-16;
+   // modal-header
+   .modal-header{
+      padding: $padding-10 !important;
+      border-bottom: $border-none !important;
+      .modal-title{
+         font-weight: $font-weight-600;
+         font-size: $font-size-20;
+      }
+      .close{
+         display: none;
+      }
+   }
+   // modal-body
+   .modal-body{
+      // padding: $padding-20 !important;
+      line-height: 1;
+      form{
+         // padding: $padding-5 !important;
+      }
+   }
+   // modal-footer
+   .modal-footer{
+      padding: $padding-0 !important;
+      margin: $margin-10 !important;
+      border-top: $border-none !important;
+      .btn{
+         width: $width-100;
+         padding: $padding-0 !important;
+      }
+   }
+   // projec-modal-footer
+   .project-modal-footer{
+      margin: $margin-0 !important;
+      margin-top: $margin-10 !important;
+   }
+} // end
+
+/* -------------------------
+   Images
+------------------------- */
+
+/*logo-img*/
+.logo-iochord{
+   background-image: $logo-iochord;
+   background-repeat: no-repeat;
+   background-size: $width-180;
+   width:  $width-180;
+   height: $height-70;
+   background-position: center;
+}
+.logo-ipr{
+   background-image: $logo-ipr;
+   background-repeat: no-repeat;
+   background-size: $width-140;
+   width:  $width-140;
+   height: $height-70;
+   background-position: center;
+}
+
+.logo-ipr-fill{
+   background-image: $logo-ipr-fill;
+   background-repeat: no-repeat;
+   background-size: $width-140;
+   width:  $width-140;
+   height: $height-70;
+   background-position: center;
+}
+
+.logo-ipr-fullname{
+   background-image: var(--logo-ipr-fullname);
+   background-repeat: no-repeat;
+   background-size: $width-800;
+   width:  $width-800;
+   height: $height-100;
+   background-position: center;
+}
+
+.logo-mysql{
+   background-image: $logo-mysql;
+   background-repeat: no-repeat;
+   background-size: $width-60;
+   width:  $width-60;
+   height: $height-60;
+   background-position: center;
+}
+.logo-oracle{
+   background-image: $logo-oracle;
+   background-repeat: no-repeat;
+   background-size: $width-60;
+   width:  $width-60;
+   height: $height-60;
+   background-position: center;
+}
+.logo-postgresql{
+   background-image: $logo-postgresql;
+   background-repeat: no-repeat;
+   background-size: $width-60;
+   width:  $width-60;
+   height: $height-60;
+   background-position: center;
+}
+.logo-microsoftsql{
+   background-image: $logo-microsoftsql;
+   background-repeat: no-repeat;
+   background-size: $width-60;
+   width:  $width-60;
+   height: $height-60;
+   background-position: center;
+}
+.logo-hadoop{
+   background-image: $logo-hadoop;
+   background-repeat: no-repeat;
+   background-size: $width-60;
+   width:  $width-60;
+   height: $height-60;
+   background-position: center;
+}
+.logo-edge{
+   background-image: $logo-edge;
+   background-repeat: no-repeat;
+   background-size: $width-60;
+   width:  $width-60;
+   height: $height-60;
+   background-position: center;
+}
+.logo-chrome{
+   background-image: $logo-chrome;
+   background-repeat: no-repeat;
+   background-size: $width-60;
+   width:  $width-60;
+   height: $height-60;
+   background-position: center;
+}
+
+.logo-firefox{
+   background-image: $logo-firefox;
+   background-repeat: no-repeat;
+   background-size: $width-60;
+   width:  $width-60;
+   height: $height-60;
+}
+
+/*common-img*/
+.ico-title-menu{
+   background-image: $ico-title-menu;
+   background-size: $width-10 + 6;
+   width: $width-20 + 4;
+   height: $height-20  + 4;
+   background-repeat: no-repeat;
+   cursor: pointer;
+   background-position: center;
+}
+
+.ico-title-menu-w{
+   background-image: $ico-title-menu-w;
+   background-size: $width-10 + 6;
+   width: $width-20 + 4;
+   height: $height-20  + 4;
+   background-repeat: no-repeat;
+   cursor: pointer;
+   background-position: center;
+}
+
+.ico-breadcrumb-arrow{
+   background-image: $ico-breadcrumb-arrow;
+   background-size: $width-20 + 4;
+   width: $width-20 + 4;
+   height: $height-20  + 4;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.ico-dropdown-arrow{
+   background-image: $ico-dropdown-arrow;
+   background-size: $width-20 + 4;
+   width: $width-20 + 4;
+   height: $height-20  + 4;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.bg-paper-pattern{
+   background-image: $bg-paper-pattern;
+   background-size: $width-200 + 70;
+   width: $width-200 + 70;
+   height: $height-60;
+   background-position: center;
+}
+
+.ico-user{
+   background-image: $ico-user;
+   background-size: 40px;
+   width: 40px;
+   height: 40px;
+   background-repeat: no-repeat;
+}
+
+.ico-close{
+   background-image: $ico-close;
+   background-size: $width-30;
+   width: $width-30 + 2;
+   height: $width-30 + 2;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.ico-setting{
+   background-image: $ico-setting;
+   background-size: 16px;
+   width: $width-30 + 2;
+   height: $width-30 + 2;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.ico-sort-up{
+   background-image: $ico-sort-up;
+   background-size: 16px;
+   width: $width-30 + 2;
+   height: $width-30 + 2;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+.ico-sort-bown{
+   background-image: $ico-sort-bown;
+   background-size: 16px;
+   width: $width-30 + 2;
+   height: $width-30 + 2;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.ico-download{
+   background-image: $ico-download;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+.ico-upload{
+   background-image: $ico-upload;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.ico-error{
+   background-image: $ico-error;
+   background-size: 10em;
+   width: 10em;
+   height: 10em;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.ico-success{
+   background-image: $ico-success;
+   background-size: 10em;
+   width: 10em;
+   height: 10em;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.ico-home{
+   background-image: $ico-home;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.ico-dashboard{
+   background-image: $ico-dashboard;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.ico-discovery{
+   background-image: $ico-discovery;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.ico-delta{
+   background-image: $ico-delta;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.ico-play{
+   background-image: $ico-play;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.ico-matrix{
+   background-image: $ico-matrix;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.ico-social{
+   background-image: $ico-social;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.ico-dotted{
+   background-image: $ico-dotted;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+/*toolbar-img*/
+.ico-undo{
+   background-image: $ico-undo;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+.ico-redo{
+   background-image: $ico-redo;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+.ico-svg{
+   background-image: $ico-svg;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+.ico-png{
+   background-image: $ico-png;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+.ico-clear{
+   background-image: $ico-clear;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+.ico-full-screen{
+   background-image: $ico-full-screen;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+.ico-front{
+   background-image: $ico-front;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+.ico-back{
+   background-image: $ico-back;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+.ico-graph-align{
+   background-image: $ico-graph-align;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+.ico-zoom-fit{
+   background-image: $ico-zoom-fit;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+.ico-error-report{
+   background-image: $ico-error-report;
+   background-size: 24px;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+
+/*contents-img*/
+.img-excel{
+   background-image: $img-excel;
+   background-repeat: no-repeat;
+   background-size: $width-60;
+   width:  $width-60;
+   height: $height-60;
+   background-position: center;
+}
+
+.img-mxml{
+   background-image: $img-mxml;
+   background-repeat: no-repeat;
+   background-size: $width-60;
+   width:  $width-60;
+   height: $height-60;
+   background-position: center;
+}
+
+.img-xes{
+   background-image: $img-xes;
+   background-repeat: no-repeat;
+   background-size: $width-60;
+   width:  $width-60;
+   height: $height-60;
+   background-position: center;
+}
+
+.img-file{
+   background-image: $img-file;
+   background-repeat: no-repeat;
+   background-size: $width-60;
+   width:  $width-60;
+   height: $height-60;
+   background-position: center;
+}
+
+.img-header-row-index{
+   background-image: $img-header-row-index;
+   background-size: $width-300;
+   width: $width-300;
+   height: $height-200;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.img-delimeter{
+   background-image: $img-delimeter;
+   background-size: $width-400 + 60;
+   width: $width-400 + 60;
+   height: $height-200 + 20;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.img-fitness{
+   background-image: $img-fitness;
+   background-size: $width-500 + 80;
+   width: 580px;
+   height: 271px;
+   margin: auto;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.img-learn{
+   opacity: 0.9;
+}
+
+.img-learn-01{
+   background-image: $img-learn-01;
+   background-size: $width-200 + 30;
+   background-repeat: no-repeat;
+   background-position: top;
+   width: 100%;
+   height: $height-100 + 40;
+   margin-bottom: $margin-10;
+}                   
+.img-learn-02{
+   background-image: $img-learn-02;
+   background-size: $width-200 + 30;
+   background-repeat: no-repeat;
+   background-position: top;
+   width: 100%;
+   height: $height-100 + 40;
+   margin-bottom: $margin-10;
+}
+.img-learn-03{
+   background-image: $img-learn-03;
+   background-size: $width-200 + 30;
+   background-repeat: no-repeat;
+   background-position: top;
+   width: 100%;
+   height: $height-100 + 40;
+   margin-bottom: $margin-10;
+}
+.img-learn-04{
+   background-image: $img-learn-04;
+   background-size: $width-200 + 30;
+   background-repeat: no-repeat;
+   background-position: top;
+   width: 100%;
+   height: $height-100 + 40;
+   margin-bottom: $margin-10;
+}
+.img-learn-05{
+   background-image: $img-learn-05;
+   background-size: $width-200 + 30;
+   background-repeat: no-repeat;
+   background-position: top;
+   width: 100%;
+   height: $height-100 + 40;
+   margin-bottom: $margin-10;
+}
+.img-learn-06{
+   background-image: $img-learn-06;
+   background-size: $width-200 + 30;
+   background-repeat: no-repeat;
+   background-position: top;
+   width: 100%;
+   height: $height-100 + 40;
+   margin-bottom: $margin-10;
+}
+
+/*theme-img*/
+.ico-filter{
+   background-image: var(--ico-filter);
+   background-size: 24px;
+   width:  $width-40;
+   height: 34px;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+.ico-list{
+   background-image: var(--ico-list);
+   background-size: 24px;
+   width:  $width-40;
+   height: 34px;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+.ico-editor{
+   background-image: var(--ico-editor);
+   background-size: 24px;
+   width:  $width-40;
+   height: 34px;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.ico-horizontal{
+   background-image: var(--ico-horizontal);
+   background-size: 24px;
+   width:  $width-40;
+   height: 34px;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+.ico-vertical{
+   background-image: var(--ico-vertical);
+   background-size: 24px;
+   width:  $width-40;
+   height: 34px;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.ico-map-show{
+   background-image: var(--ico-map-show);
+   background-size: 24px;
+   width:  $width-40;
+   height: 34px;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.ico-map-hide{
+   background-image: var(--ico-map-hide);
+   background-size: 24px;
+   width:  $width-40;
+   height: 34px;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.ico-table{
+   background-image: var(--ico-table);
+   background-size: 24px;
+   width:  $width-40;
+   height: 34px;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.ico-bottleneck{
+   background-image: var(--ico-bottleneck);
+   background-size: 28px;
+   width:  $width-40;
+   height: 34px;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.ico-rework{
+   background-image: var(--ico-rework);
+   background-size: 24px;
+   width:  $width-40;
+   height: 34px;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.iochord-ipr-graph-control-button-play{
+   background-image: var(--ico-play) !important;
+   width:  $width-40;
+   height: $height-40;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.iochord-ipr-graph-control-button-pause{
+   background-image: var(--ico-pause) !important;
+   width:  $width-40;
+   height: $height-40;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+/* -------------------------
+   Scroll
+------------------------- */
+
+/* Scroll-Style : Chrome */
+::-webkit-scrollbar{
+   width: $value-7;  /* 세로축 스크롤바 길이 */
+   height: $value-7;  /* 가로축 스크롤바 길이 */
+}
+::-webkit-scrollbar-track { /* 화살표를 제외한 스크롤 부분 */
+   background-color: $scrollbar-track !important;
+}
+::-webkit-scrollbar-track-piece { /* 스크롤 뒷배경 */
+   background-color: $scrollbar-track-piece !important;
+}
+::-webkit-scrollbar-thumb { /* 스크롤 움직이는 부분 */
+   border-radius: $border-radius-10;
+   cursor: pointer;
+   background-color: $scrollbar-thumb !important;
+   -webkit-transition: color 0.2s ease;
+   transition: color 0.2s ease;
+}
+::-webkit-scrollbar-button { /* 스크롤 버튼 좌우상하 영역 */
+   background-color: $scrollbar-button !important;
+   width: $value-7;
+   height: $value-7;
+}
+::-webkit-scrollbar-button:start { /* top, left 방향의 이동 버튼 */
+   display: none;
+}
+::-webkit-scrollbar-button:end { /* Bottom, Right 방향의 이동버튼 */
+   display: none; 
+}
+::-webkit-scrollbar-corner { /* 우측 하단의 코너 부분 */
+   background-color: $scrollbar-corner !important;
+}
+::-webkit-scrollbar-thumb:hover{
+   background: $scrollbar-thumb-hover !important;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+   background: $scrollbar-track;
+}
+
+/* 
+   Scroll-Style : edge
+   -ms-overflow-style: auto;
+*/
+
+/* 
+   Scroll-Style : firefox
+   scrollbar-width: thin; 
+*/
+// html,
+// .main,
+// .variant,
+// .case-table,
+// .ag-theme-balham,
+// .ag-body-horizontal-scroll-viewport // ag-grid scroll 가로
+// {
+//    scrollbar-width: thin !important; 
+// }
+// // ag-grid scroll 세로
+// .ag-body-viewport{
+//    &.ag-layout-normal{
+//       scrollbar-width: thin !important; 
+//    }
+// }
+// // 매핑 테이블 스크롤
+// .mapping-contents{
+//    .mapping-table-frame{
+//       scrollbar-width: thin !important; 
+//    }
+// }

@@ -1,0 +1,772 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* -------------------------
+
+Enterprise Style Sheets
+i
+Common
+  - 공통 스타일시트
+  - 이미지 정의
+
+------------------------- */
+/*body*/
+html, body{
+  width: 100%;
+  height: 100%;
+  color: $font-color !important;
+  margin: $margin-0 !important;
+  background-color: $body-background !important; 
+}
+
+/*lang*/
+:lang(ko) {
+  font-family:'Noto Sans KR', 'Roboto';
+}
+:lang(en) {
+  font-family: 'Roboto', 'Noto Sans KR';
+}
+
+/* -------------------------
+  Images
+------------------------- */
+
+/* Image : Logo */
+.logo-iochord{
+  background-image: $logo-iochord;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-180;
+  width:  $width-180;
+  height: $height-70;
+}
+.logo-ipr{
+  background-image: $logo-iochord;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-140;
+  width:  $width-140;
+  height: $height-70;
+}
+.logo-ipr-w{
+  background-image: $logo-iochord;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-140;
+  width:  $width-140;
+  height: $height-70;
+}
+.logo-ipr-fullname{
+  background-image: var(--logo-ipr-fullname);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-800;
+  width:  $width-800;
+  height: $height-100;
+}
+
+/* Image : Logo > site */
+.logo-chrome{
+  background-image: $logo-chrome;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.logo-firefox{
+  background-image: $logo-firefox;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.logo-edge{
+  background-image: $logo-edge;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.logo-safari{
+  background-image: $logo-safari;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+
+/* Image : Logo > DB */
+.logo-mysql{
+  background-image: $logo-mysql;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.logo-oracle{
+  background-image: $logo-oracle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.logo-postgresql{
+  background-image: $logo-postgresql;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.logo-microsoftsql{
+  background-image: $logo-microsoftsql;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.logo-hadoop{
+  background-image: $logo-hadoop;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+
+/* Image : Common */
+.ico-alarm{
+  background-image: $ico-alarm;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-help{
+  background-image: $ico-help;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-minus{
+  background-image: $ico-minus;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-plus{
+  background-image: $ico-plus;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-setting{
+  background-image: $ico-setting;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-setting-w{
+  background-image: $ico-setting-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-title-menu{
+  background-image: $ico-title-menu;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-title-menu-w{
+  background-image: $ico-title-menu-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-user{
+  background-image: $ico-user;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-download{
+  background-image: $ico-download;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-upload{
+  background-image: $ico-upload;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+/* Image : Common : arrow*/
+.ico-arrow-top{
+  background-image: $ico-arrow-top;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-right{
+  background-image: $ico-arrow-right;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-bottom{
+  background-image: $ico-arrow-bottom;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-left{
+  background-image: $ico-arrow-left;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-dropdown-arrow{
+  background-image: $ico-dropdown-arrow;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.ico-close{
+  background-image: $ico-close;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-delete{
+  background-image: $ico-delete;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-error{
+  background-image: $ico-error;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-fail{
+  background-image: $ico-fail;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.ico-complete{
+  background-image: $ico-complete;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.ico-success{
+  background-image: $ico-success;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-progress{
+  background-image: $ico-progress;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+/* Image : Common : file*/
+.ico-csv{
+  background-image: $ico-csv;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.ico-csv-w{
+  background-image: $ico-csv-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.ico-xlsx{
+  background-image: $ico-xlsx;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.ico-xlsx-w{
+  background-image: $ico-xlsx-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.ico-mxml{
+  background-image: $ico-mxml;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.ico-mxml-w{
+  background-image: $ico-mxml-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.ico-xes{
+  background-image: $ico-xes;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.ico-xes-w{
+  background-image: $ico-xes-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+
+/* Image : Contents*/
+.img-header-row-index{
+  background-image: $img-header-row-index;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-300;
+  width: $width-300;
+  height: $height-200;
+}
+
+.img-delimeter{
+  background-image: $img-delimeter;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $width-400 + 60;
+  width: $width-400 + 60;
+  height: $height-200 + 20;
+}
+
+/* Image : Toolbar*/
+.ico-undo{
+  background-image: $ico-undo;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-redo{
+  background-image: $ico-redo;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-svg{
+  background-image: $ico-svg;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-png{
+  background-image: $ico-png;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-clear{
+  background-image: $ico-clear;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-full-screen{
+  background-image: $ico-full-screen;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-front{
+  background-image: $ico-front;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-back{
+  background-image: $ico-back;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-graph-align{
+  background-image: $ico-graph-align;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-zoom-fit{
+  background-image: $ico-zoom-fit;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-error-report{
+  background-image: $ico-error-report;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+/* Image : Theme : sidebar */
+.ico-home{
+  background-image: var(--ico-home);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ico-discovery{
+  background-image: var(--ico-discovery);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ico-dashboard{
+  background-image: var(--ico-dashboard);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ico-delta{
+  background-image: var(--ico-delta);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ico-logreplay{
+  background-image: var(--ico-logreplay);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ico-matrix{
+  background-image: var(--ico-matrix);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ico-social{
+  background-image: var(--ico-social);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ico-dotted{
+  background-image: var(--ico-dotted);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Image : sidebar(white) */
+.ico-home-w{
+  background-image: $ico-home-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-discovery-w{
+  background-image: $ico-discovery-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-dashboard-w{
+  background-image: $ico-dashboard-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-delta-w{
+  background-image: $ico-delta-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-logreplay-w{
+  background-image: $ico-logreplay-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-matrix-w{
+  background-image: $ico-matrix-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-social-w{
+  background-image: $ico-social-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-dotted-w{
+  background-image: $ico-dotted-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+/* Image : Theme : process */
+.ico-filter{
+  background-image: var(--ico-filter);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-list{
+  background-image: var(--ico-list);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-editor{
+  background-image: var(--ico-editor);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-horizontal{
+  background-image: var(--ico-horizontal);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-vertical{
+  background-image: var(--ico-vertical);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-map-show{
+  background-image: var(--ico-map-show);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-map-hide{
+  background-image: var(--ico-map-hide);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-table{
+  background-image: var(--ico-table);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-bottleneck{
+  background-image: var(--ico-bottleneck);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-rework{
+  background-image: var(--ico-rework);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.iochord-ipr-graph-control-button-play{
+  background-image: var(--ico-play) !important;
+  width:  $width-40;
+  height: $height-40;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.iochord-ipr-graph-control-button-pause{
+  background-image: var(--ico-pause) !important;
+  width:  $width-40;
+  height: $height-40;
+  background-repeat: no-repeat;
+  background-position: center;
+}

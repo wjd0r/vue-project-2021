@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-ico_flow_dashboard">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="ico_flow_dashboard" clip-path="url(#clip-ico_flow_dashboard)">
+    <path id="ico-flow-dashboard" d="M35-2934v-8H57v8Zm-10,0v-26h8v26Zm22-10v-16H57v16Zm-12,0v-7H45v7Zm0-9v-7H45v7Zm-10-9v-4H57v4Z" transform="translate(-25 2965.998)" fill="#2c9cfe"/>
+  </g>
+</svg>

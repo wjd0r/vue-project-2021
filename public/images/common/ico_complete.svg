@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_complete">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_complete" clip-path="url(#clip-ico_complete)">
+    <path id="iconmonstr-check-mark-7" d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0ZM10.75,16.518,6.25,12.2l1.4-1.435L10.724,13.7l6.105-6.218L18.25,8.892Z" fill="#05a66b"/>
+  </g>
+</svg>

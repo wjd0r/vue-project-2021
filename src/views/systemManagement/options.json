@@ -1,0 +1,206 @@
+{
+  "notification": {},
+  "workspace": {
+    "whenEventLogIsClicked": [
+      { "value": "Dashboard", "text": "dashboard" },
+      { "value": "ProcessDiscovery", "text": "processDiscovery" },
+      { "value": "DeltaAnalysis", "text": "deltaAnalysis" },
+      { "value": "LogReplay", "text": "logReplay" },
+      { "value": "SocialAnalysis", "text": "socialAnalysis" },
+      { "value": "MatrixModel", "text": "matrixModel" },
+      { "value": "Dotted", "text": "dotted" },
+      { "value": "ProcessFlow", "text": "processFlow"}
+    ],
+    "defaultWorkspace": [
+    ]
+  },
+  "global": {
+    "defaultAnalysisPeriod": [
+      { "value": "all", "text": "all" },
+      { "value": "month", "text": "month" },
+      { "value": "year", "text": "year" }
+    ],
+    "keepCases": [
+      { "value": "STARTED", "text": "Start" },
+      { "value": "COMPLETED", "text": "Complete" },
+      { "value": "INTERSECTING", "text": "Intersecting" },
+      { "value": "CONTAINED", "text": "Contained" },
+      { "value": "TRIM", "text": "Trim" }
+    ],
+    "variantType": [
+      { "value": "STANDARD", "text": "standard" },
+      { "value": "ES_MONTHLY", "text": "esMonthly" }
+    ]
+  },
+  "dashboard": {
+    "defaultTab": [
+      { "value": "OverviewTab", "text": "dashboard" },
+      { "value": "ActivityTab", "text": "activity" }
+    ],
+    "kpiItem": [
+      { "value": "item01", "text": "item01" },
+      { "value": "item02", "text": "item02" },
+      { "value": "item03", "text": "item03" }
+    ],
+    "kpiLayoutPosition": [
+      { "value": "pos1", "text": "pos1" },
+      { "value": "pos2", "text": "pos2" },
+      { "value": "pos3", "text": "pos3" }
+    ],
+    "chartItem": [
+      { "value": "chart01", "text": "chart01" },
+      { "value": "chart02", "text": "chart02" },
+      { "value": "chart03", "text": "chart03" }
+    ],
+    "chartLayoutPosition": [],
+    "chartType": [
+      { "value": "bar", "text": "bar" },
+      { "value": "pie", "text": "pie" },
+      { "value": "line", "text": "line" }
+    ],
+    "chartTypeChartThemeColor": [],
+    "chartTypeTitle": [],
+    "chartTypeDefault": [
+      { "value": "all", "text": "all" },
+      { "value": "top10", "text": "top10" },
+      { "value": "top5", "text": "top5" }
+    ]
+  },
+  "process": {
+    "model": {
+      "eventBag": [
+        { "value": false, "text": "Directly follow" },
+        { "value": true, "text": "Temporal event bag" }
+      ]
+    },
+    "discovery": {
+      "nodeText": [
+        { "value": "statistics.count", "text": "count" },
+        { "value": "statistics.total", "text": "total" },
+        { "value": "statistics.min", "text": "min" },
+        { "value": "statistics.max", "text": "max" },
+        { "value": "statistics.average", "text": "average" },
+        { "value": "statistics.q2", "text": "q2" },
+        { "value": "reworks.total", "text": "reworksTotal" }
+      ],
+      "arcText": [
+        { "value": "statistics.d", "text": "d" },
+        { "value": "statistics.count", "text": "count" },
+        { "value": "statistics.total", "text": "total" },
+        { "value": "statistics.min", "text": "min" },
+        { "value": "statistics.max", "text": "max" },
+        { "value": "statistics.average", "text": "average" },
+        { "value": "statistics.q2", "text": "q2" },
+        { "value": "bottlenecks", "text": "bottlenecks" }
+      ]
+    },
+    "delta": {
+      "nodeText": [
+        { "value": "statistics.count", "text": "count" },
+        { "value": "statistics.total", "text": "total" },
+        { "value": "statistics.min", "text": "min" },
+        { "value": "statistics.max", "text": "max" },
+        { "value": "statistics.average", "text": "average" },
+        { "value": "statistics.q2", "text": "q2" }
+      ],
+      "arcText": [
+        { "value": "d", "text": "d" },
+        { "value": "statistics.count", "text": "count" },
+        { "value": "statistics.total", "text": "total" },
+        { "value": "statistics.min", "text": "min" },
+        { "value": "statistics.max", "text": "max" },
+        { "value": "statistics.average", "text": "average" },
+        { "value": "statistics.q2", "text": "q2" }
+      ],
+      "viewMode": [
+        { "value": "merged", "text": "merged" },
+        { "value": "twoView", "text": "twoView" }
+      ]
+    },
+    "animation": {
+      "nodeText": [
+        { "value": "statistics.count", "text": "count" },
+        { "value": "statistics.total", "text": "total" },
+        { "value": "statistics.min", "text": "min" },
+        { "value": "statistics.max", "text": "max" },
+        { "value": "statistics.average", "text": "average" },
+        { "value": "statistics.q2", "text": "q2" }
+      ],
+      "arcText": [
+        { "value": "statistics.d", "text": "d" },
+        { "value": "statistics.count", "text": "count" },
+        { "value": "statistics.total", "text": "total" },
+        { "value": "statistics.min", "text": "min" },
+        { "value": "statistics.max", "text": "max" },
+        { "value": "statistics.average", "text": "average" },
+        { "value": "statistics.q2", "text": "q2" },
+        { "value": "bottlenecks", "text": "bottlenecks" }
+      ]
+    },
+    "flow": {
+      "variantType": [
+        { "value": "STANDARD", "text": "standard2" },
+        { "value": "ES_MONTHLY", "text": "esMonthly" }
+      ],
+      "barSeries": [
+        { "value": "ea", "text": "activity" }
+      ],
+      "sortBy": [
+        { "value": "ccnt", "text": "ccnt" },
+        { "value": "vs", "text": "vs" },
+        { "value": "vc", "text": "vc" },
+        { "value": "vdurAsc", "text": "vdurAsc" },
+        { "value": "vdurDesc", "text": "vdurDesc" }
+      ]
+    }
+  },
+  "analysis": {
+    "social": {
+      "layout": [
+        { "value": "d3-force", "text": "d3Force" },
+        { "value": "circle", "text": "circle" }
+      ],
+      "colEventActivity": [{ "value": "ea", "text": "activity" }]
+    },
+    "matrix": {
+      "selectedX": [
+        { "value": "ea", "text": "activity" },
+        { "value": "edf", "text": "edf" },
+        { "value": "esm", "text": "esm" }
+      ],
+      "selectedY": [
+        { "value": "ea", "text": "activity" },
+        { "value": "edf", "text": "edf" }
+      ],
+      "selectedColorBy": [
+        { "value": "count", "text": "count" },
+        { "value": "countCases", "text": "ccnt" },
+        { "value": "total", "text": "total" },
+        { "value": "min", "text": "min" },
+        { "value": "max", "text": "max" },
+        { "value": "average", "text": "average" },
+        { "value": "total2", "text": "total2" }
+      ]
+    },
+    "gantt": {
+      "variantType": [
+        { "value": "STANDARD", "text": "standard2" },
+        { "value": "ES_MONTHLY", "text": "esMonthly" }
+      ],
+      "barSeries": [
+        { "value": "ea", "text": "activity" }
+      ],
+      "sortBy": [
+        { "value": "ccnt", "text": "ccnt" },
+        { "value": "vs", "text": "vs" },
+        { "value": "vc", "text": "vc" },
+        { "value": "vdurAsc", "text": "vdurAsc" },
+        { "value": "vdurDesc", "text": "vdurDesc" }
+      ]
+    },
+    "dotted": {
+      "component": [{ "value": "ci", "text": "ci" }],
+      "value": [{ "value": "ea", "text": "activity" }]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_logout">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_logout" clip-path="url(#clip-ico_logout)">
+    <path id="ico-logout" d="M25-2953.248a11.241,11.241,0,0,1,8.25-10.844v1.844a9.481,9.481,0,0,0-6.487,9,9.472,9.472,0,0,0,9.487,9.484,9.472,9.472,0,0,0,9.488-9.484,9.433,9.433,0,0,0-6.487-9v-1.844a11.241,11.241,0,0,1,8.25,10.844A11.239,11.239,0,0,1,36.25-2942,11.239,11.239,0,0,1,25-2953.248Zm10.312-6V-2966h1.875v6.75Z" transform="translate(-24 2965.998)" fill="#a4a4a4"/>
+  </g>
+</svg>

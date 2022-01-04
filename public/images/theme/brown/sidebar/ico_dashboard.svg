@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_dashboard">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_dashboard" clip-path="url(#clip-ico_dashboard)">
+    <path id="합치기_8" data-name="합치기 8" d="M32.5-2942v-6H49v6Zm-7.5,0v-19.5h6v19.5Zm16.5-7.5v-12H49v12Zm-9,0v-5.25H40v5.25Zm0-6.75v-5.25H40v5.25ZM25-2963v-3H49v3Z" transform="translate(-25 2965.998)" fill="#8c8079"/>
+  </g>
+</svg>

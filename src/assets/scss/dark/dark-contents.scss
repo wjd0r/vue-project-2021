@@ -1,0 +1,1055 @@
+@charset "UTF-8";
+
+/* -------------------------
+Contents Style Sheets
+------------------------- */
+.theme-dark{
+
+/*btn*/
+.btn-test{
+  .spinner-border{
+    border-color: var(--font-black-color) !important;
+    border-right-color: transparent !important;
+  }
+}
+
+/*header*/
+.header-component{
+  background-color: var(--header-color) !important;
+  border-bottom-color: var(--border-default-color) !important;
+  box-shadow: var(--box-shadow);
+  color: var(--font-color) !important;
+  .navbar{
+    border-bottom: $border-none !important;
+  }
+  .navbar-brand{
+    background-image: var(--logo-ipr) !important;
+    background-size: 60px !important;
+    background-repeat: no-repeat !important;
+  }
+  .ico-alarm-w{
+    background-image: $ico-alarm !important;
+  }
+  .user-name-content{
+    color: var(--font-color) !important;
+  }
+  .user-navigation{
+    .language-content{
+      #languageSelection{
+        .dropdown-toggle{
+          color: var(--font-color) !important;
+        }
+      }
+    }
+  }
+}
+
+/*sidebar*/
+.sidebar-component{
+  background-color: var(--sidebar-color) !important;
+  border-right-color: var(--border-default-color) !important;
+}
+
+.nav-menu{
+  .nav-item{
+    border-bottom-color: var(--border-default-color) !important;
+    &:first-child{
+      border-top-color: var(--border-default-color) !important;
+    }
+    .nav-title{
+      color: var(--nav-link) !important;
+    }
+    .nav-link{
+      color: var(--nav-link) !important;
+      &.active{
+        .nav-title{
+          color: var(--font-black-color) !important;
+        }
+      }
+    }
+  }
+}
+
+.nav-item{
+  .nav-link{
+    &.active{
+      .ico-arrow-top{
+        background-image: $ico-arrow-top-dark !important;
+      }
+    }
+    &.collapsed{
+      &.active{
+        .ico-arrow-top{
+          background-image: $ico-arrow-bottom-dark !important;
+        }
+      }
+    }
+  }
+}
+
+.nav-sub{
+  .nav-link{
+    &.active{
+      background-color: transparent !important;
+    }
+    &.router-link-exact-active{
+      &.active{
+        border-top: $border-none !important;
+        border-bottom: $border-none !important;
+        color: var(--default-color) !important;
+      }
+    }
+  }
+}
+
+.nav-bottom{
+  background-color: var(--sidebar-color) !important;
+  border-top-color: var(--border-default-color) !important;
+  .nav-title{
+    color: var(--font-color) !important;
+  }
+}
+
+/*top, bottom*/
+.top-component, .bottom-component{
+  border-top-color: var(--border-default-color) !important;
+}
+
+/*top*/
+.top-component{
+  background-color: var(--container-color) !important;
+  .top-content{
+    border-bottom-color: var(--border-default-color) !important;
+    .group-content{
+      border-right-color: var(--border-default-color) !important;
+    }
+  }
+}
+
+/*back*/
+.back-component{
+  background-color: var(--container-color) !important;
+  border-bottom-color: var(--border-default-color) !important;
+}
+
+/*left*/
+.left-component{
+  border-right-color: var(--border-default-color) !important;
+}
+
+/*bottom*/
+.bottom-component{
+  //background-color: var(--container-color) !important;
+  background-color: transparent !important;
+}
+
+/* -------------------------
+  create / flow
+------------------------- */
+
+/*flow*/
+.flowbar-component{
+  .flowbar-content{
+    border-color: var(--border-default-color) !important;
+    background-color: var(--card-color) !important;
+  }
+}
+
+.create-flow-component{
+  .create-flow-content{
+    background-color: var(--container-color) !important;
+    border-color: var(--border-default-color) !important;
+    .content-footer{
+      border-top-color: var(--border-default-color) !important;
+    }
+  }
+}
+
+/*create*/
+.create-component{
+  .form-content{
+    .form-control{
+      &.is-valid{
+        border-color: var(--green-color) !important;
+      }
+      &.is-invalid{
+        border-color: var(--red-color) !important;
+      }
+    }
+  }
+  .bottom-component{
+    background-color: transparent !important;
+  }
+}
+
+/*inf-content*/
+.inf-content{
+  .content-header{
+    color: var(--font-black-color) !important;
+  }
+  .content-body{
+    background-color: var(--container-color) !important;
+    border-color: var(--border-default-color) !important;
+    color: var(--font-color) !important;
+  }
+}
+
+/* -------------------------
+  home
+------------------------- */
+#HomeDetail{
+  .modal-body{
+    .inf-component{
+      border-top-color: var(--border-sub-color) !important;
+      border-bottom-color: var(--border-sub-color) !important;
+    }
+  }
+}
+
+/* -------------------------
+  dataset / evet log
+------------------------- */
+/*dataset create*/
+.file-filter{
+  .img-delimeter, .img-header-row-index{
+    height: 133px;
+  }
+}
+
+/*이벤트 목록 테이틀*/
+.event-table-component{
+  .event-table-content{
+    .table-component{
+      .table-content{
+        background-color: var(--table-color) !important;
+      }
+    }
+  }
+}
+
+/*데이터 필터*/
+.dataset-table-component{
+  .table-component{
+    .btn-pagination{
+      border-bottom-color: var(--border-default-color) !important;
+    }
+  }
+}
+
+/*파일 임폴트*/
+.importing-content{
+  .title{
+    .text-error{
+      color: var(--red-color) !important;
+    }
+  }
+}
+
+/*필터 실패 / 매핑 실패 메세지*/
+.error-list-content{
+  background-color: var(--container-color) !important;
+  border-color: var(--border-default-color) !important;
+}
+
+/* -------------------------
+  filter
+------------------------- */
+/*이벤트 필터*/
+.event-filter-component{
+  background-color: var(--bg-color) !important;
+  .filter-component{
+    border-top: var(--border-default-color) !important;
+  }
+  .filter-content{
+    background-color: var(--card-color) !important;
+  }
+  .left-component{
+    .left-content{
+      > .content-header{
+        border-bottom-color: var(--border-default-color) !important;
+      }
+      .content-footer{
+        border-top-color: var(--border-default-color) !important;
+      }
+    }
+  }
+  /*right*/
+  .filter-setting-component{
+    .filter-setting-content{
+      > .content-header{
+        border-bottom-color: var(--border-default-color) !important;
+      }
+    }
+    /*시간 필터*/
+    .select-content{
+      .vc-container{
+        &.vc-border{
+          border-color: var(--border-form-color) !important;
+        }
+      }
+      .vc-bg-white{
+        background-color: var(--form-color) !important;
+      }
+      /*m월 yyyy*/
+      .vc-text-gray-800{
+        color: var(--default-color) !important;
+      }
+      /*화살표*/
+      .vc-text-gray-600{
+        color: var(--default-color) !important;
+      }
+      /*요일*/
+      .vc-text-gray-500{
+        color: var(--font-color) !important;
+      }
+      /*일*/
+      .vc-text-gray-900{
+        color: var(--font-color) !important;
+      }
+      .vc-focusable{
+        &.vc-text-white{
+          color: var(--font-black-color) !important;
+        }
+      }
+    }
+    /*시간 필터 > 케이스 포함 타입*/
+    .timestamp-component{
+      .type-content{
+        .img-timestamp{
+          border-color: var(--border-default-color) !important;
+        }
+      }
+    }
+    /*프로세스 그룹*/
+    .selection-list{
+      .btn-multi{
+        border-top-color: var(--border-default-color) !important;
+      }
+      .item-text{
+        &.cast-text, &.variant-text{
+          border-right-color: var(--border-default-color) !important;
+        }
+      }
+    }
+  }
+}
+
+/*필터 선택*/
+#EventfilterSelect{
+  border-bottom-color: var(--border-default-color) !important;
+  background-color: var(--card-color) !important;
+  .dropdown-toggle{
+    background-color: var(--card-color) !important;
+  }
+}
+
+
+/* -------------------------
+  importing
+------------------------- */
+.importing-content{
+  .title{
+    .text-success{
+      color: var(--green-color) !important;
+    }
+    .text-error{
+      color: var(--red-color) !important;
+    }
+  }
+}
+
+/* -------------------------
+  매핑
+------------------------- */
+/*매핑 확인*/
+.mapping-check-component{
+  .mapping-check-content{
+    .mapping-error{
+      .title{
+        color: var(--red-color) !important;
+      }
+    }
+    .mapping-success{
+      .title{
+        color: var(--greed-color) !important;
+      }
+    }
+  }
+}
+
+.error-list-content{
+  .colunm{
+    .error-text{
+      color: var(--red-color) !important;
+    }
+  }
+}
+/* -------------------------
+  standard
+------------------------- */
+
+
+/* -------------------------
+  data source / database
+------------------------- */
+.database-component{
+  .bottom-component{
+    background-color: transparent !important;
+  }
+}
+
+/*데이터 소스 : 모바일*/
+#mobileFlie, #mobileDatabase{
+  .db{
+    &.active{
+      background-color: var(--default-color) !important;
+    }
+  }
+}
+
+/* -------------------------
+  process
+------------------------- */
+.content-common-component{
+  background-color: var(--bg-color) !important;
+  .filter-component, .variant-component{
+    background-color: var(--container-color) !important;
+    border-color: var(--default-color) !important;
+  }
+  .content-header{
+    .filter-info-component{
+      .ico-close-w{
+        background-image: $ico-close-dark !important;
+      }
+    }
+  }
+  .variant-component{
+    .variant-content{
+      > .content-header{
+        border-bottom-color: var(--border-default-color) !important;
+      }
+      .content-footer{
+        border-top-color: var(--border-default-color) !important;
+      }
+    }
+  }
+  .option-component{
+    .left-option-component, .right-option-component{
+      background-color: var(--bg-color) !important;
+    }
+  }
+  /*목록*/
+  .right-table-component{
+    background-color: var(--container-color) !important;
+    border-color: var(--default-color) !important;
+    &.detail-component{
+      .table-detail-component{
+        .table-detail-content{
+          .ag-pagination{
+            border-top-color: var(--border-default-color) !important;
+          }
+        }
+      }
+    }
+  }
+  /*차트*/
+  .chart-component{
+    #flow-chart{
+      background-color: var(--bg-color) !important;
+    }
+  }
+  /*loading*/
+  .filter-component, .variant-component, .right-table-component{
+    .content-body{
+      &.b-overlay-wrap{
+        background-color: var(--container-color) !important;
+      }
+      .b-overlay{
+        .position-absolute{
+          background-color: var(--container-color) !important;
+        }
+      }
+    }
+  }
+}
+
+/*case table*/
+.right-table-component{
+  &.detail-component{
+    .ag-pagination{
+      border-bottom-color: var(--card-color) !important;
+    }
+    .table-detail-component{
+      .table-detail-content{
+        border-color: var(--card-color) !important;
+      }
+    }
+  }
+}
+
+/*dashboard*/
+.dashboard-component{
+  .dashboard-content{
+    > .content-header{
+      .btn-editor{
+        background-color: var(--card-color) !important;
+        border-color: var(--border-sub-color) !important;
+      }
+      .btn-group{
+        .btn-tab{
+          border-color: var(--border-sub-color) !important;
+          background-color: var(--bg-color) !important;
+          color: var(--nav-link);
+          &.active{
+            background-color: var(--default-color) !important;
+            color: var(--font-black-color) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*데이터요약 - 케이스 별 소요시간*/
+.duration-component{
+  .duration-content{
+    background-color: var(--card-color) !important;
+    border-color: var(--default-color) !important;
+    .times-content{
+      .max-time{
+        border-left-color: var(--border-default-color) !important;
+        border-right-color: var(--border-default-color) !important;
+      }
+    }
+    .times-form-content{
+      .btn-group{
+        .btn{
+          border-color: var(--border-default-color) !important;
+          background-color: var(--form-color) !important;
+        }
+      }
+    }
+  }
+}
+
+/*chart > 케이스 추이 버튼*/
+.chart{
+  .content-header{
+    .right-align{
+      .btn{
+        &.active{
+          color: var(--font-black-color) !important;
+        }
+      }
+    }
+  }
+}
+
+
+/* -------------------------
+  프로세스 분석
+------------------------- */
+.delta-component{
+  .divider{
+    border-right-color: var(--border-default-color) !important;
+  }
+}
+
+.graph-info{
+  background-color: var(--container-color) !important;
+  border-color: var(--border-default-color) !important;
+}
+
+/* -------------------------
+  프로세스 애니메이션
+------------------------- */
+.animation-component{
+  .iochord-ipr-graph-control-container{
+    background-color: var(--container-color) !important;
+    border-top-color: var(--border-default-color) !important;
+  }
+}
+
+/*플레이 바*/
+.vue-slider-marks{
+  background-color: var(--bg-color) !important;
+}
+.vue-slider-mark-step{
+  box-shadow: 0 0 0 2px var(--default-color) !important;
+  background-color: var(--default-color) !important;
+}
+.vue-slider-dot-tooltip-text{
+  color: var(--font-black-color) !important;
+}
+
+/* -------------------------
+  dashboard editor
+------------------------- */
+.editor-component{
+  .vue-grid-layout-content{
+    background-color: var(--bg-color) !important;
+  }
+  .editor-content{
+    .top-component{
+      .content-body{
+        .btn-group{
+          .btn{
+            background-color: var(--container-color) !important;
+            border-color: var(--border-disabled-color) !important;
+            border-bottom-color: var(--border-default-color) !important;
+          }
+        }
+        .toolbar-container{
+          .btn-group{
+            .btn{
+              &:first-child{
+                border-left: $border-width solid transparent !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.editor-sidebar-component{
+  background-color: var(--sidebar-color) !important;
+  .content-header{
+    border-color: var(--border-default-color) !important;
+    color: var(--font-black-color) !important;
+    &.collapsed{
+      .ico-arrow-top{
+        background-image: $ico-arrow-bottom-dark !important;
+      }
+    }
+    .ico-arrow-top{
+      background-image: $ico-arrow-top-dark !important;
+    }
+  }
+  .sidebar-inf, .sidebar-tool, .sidebar-editor{
+    .content-header{
+      &.collapsed{
+        .ico-arrow-bottom{
+          background-image: $ico-arrow-bottom-dark !important;
+        }
+      }
+      .ico-arrow-bottom{
+        background-image: $ico-arrow-top-dark !important;
+      }
+    }
+  }
+  .sidebar-inf{
+    .form-content{
+      .form-group{
+        .form-control{
+          background-color: var(--disabled-color) !important;
+          border-color: var(--border-disabled-color) !important;
+          color: var(--font-disabled-color) !important;
+        }
+      }
+    }
+  }
+  .list-component{
+    .list-content{
+      background-color: var(--container-color) !important;
+      border-color: var(--border-default-color) !important;
+    }
+  }
+  /*Palette*/
+  #colorPalette{
+    border-color: var(--border-form-color) !important;
+    .dropdown-menu{
+      .dropdown-item{
+        &.active{
+          background-color: var(--container-color) !important;
+          border-color: var(--default-color) !important
+        }
+        &:hover{
+          background-color: var(--hover-color) !important;
+        }
+      }
+    }
+  }
+}
+
+.list-group{
+  .list-group-item{
+      background-color: var(--card-color) !important;
+      color: var(--font-color) !important;
+    &.disabled{
+      background-color: var(--disabled-color) !important;
+      color: var(--font-disabled-color) !important;
+    }
+  }
+}
+
+/*chart*/
+.iochord-ipr-graph-container{
+  background-color: var(--bg-color) !important;
+}
+.joint-paper{
+  background-color: var(--bg-color) !important;
+}
+.iochord-ipr-graph-navigator{
+  background-color: var(--bg-color) !important;
+}
+.joint-navigator{
+  background-color: var(--bg-color) !important;
+  border-color: var(--border-disabled-color) !important;
+}
+
+/* -------------------------
+  breadcrumb
+------------------------- */
+.breadcrumb-content{
+  border-top-color: var(--border-default-color) !important;
+  border-bottom-color: var(--border-default-color) !important;
+}
+
+/* -------------------------
+  notification
+------------------------- */
+.notification-component{
+  border-color: var(--border-disabled-color) !important;
+  .notification-content{
+    background-color: var(--container-color) !important;
+    border-color: var(--default-color) !important;
+    border-bottom-color: var(--border-default-color) !important;
+    > .content-header{
+      border-bottom-color: var(--border-disabled-color) !important;
+    }
+    .list-content{
+      > div{
+        border-bottom-color: var(--sub-color) !important;
+      }
+    }
+  }
+  > .content-footer{
+    background-color: var(--container-color) !important;
+    border-color: var(--border-disabled-color) !important;
+    .btn-reset{
+      border-left-color: var(--border-default-color) !important;
+      background-color: var(--form-color) !important;
+    }
+  }
+}
+
+/* -------------------------
+  login
+------------------------- */
+.login-component{
+  .content-body{
+    .form-content{
+      .content-explain{
+        .form-group{
+          .form-control{
+            &.is-invalid{
+              border-color: var(--red-color) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------
+  login
+------------------------- */
+
+
+/* -------------------------
+  user
+------------------------- */
+.user-component{
+  .user-content{
+    .user{
+      background-color: var(--container-color) !important;
+      > .content-header{
+        border-color: var(--border-default-color) !important;
+      }
+    }
+  }
+  .profil-component, .modify-component, .usage-status-component{
+    background-color: var(--container-color) !important;
+    border-color: var(--border-default-color) !important;
+  }
+}
+
+/*user > Workspace*/
+.usage-status{
+  .status{
+    .count-text{
+      .count{
+        color: var(--blue-color) !important;
+      }
+    }
+  }
+}
+
+/* -------------------------
+  setting
+------------------------- */
+.user-setting-component{
+  background-color: var(--card-color) !important;
+  .form-content{
+    .content-header{
+      background-color: var(--sub-color) !important;
+    }
+  }
+  .m-config{
+    #mobileConfig{
+      border-bottom-color: var(--border-default-color) !important;
+    }
+  }
+}
+.configuration-content, .setting-content {
+  > .content-header{
+    border-bottom-color: var(--border-default-color) !important;
+  }
+}
+
+#mobileConfig{
+  .dropdown-header{
+    background-color: var(--container-color) !important;
+    border-top-color: var(--border-default-color) !important;
+  }
+  .active{
+    .dropdown-item{
+      background-color: var(--default-color) !important;
+      color: var(--font-black-color) !important;
+      font-weight: $font-weight-600;
+    }
+  }
+}
+
+.text-muted{
+  color: var(--notice-color) !important;
+}
+
+/* -------------------------
+  manage
+------------------------- */
+.manage-component{
+  .manage-content{
+    /*검색*/
+    .top-component{
+      .search-component{
+        border-right-color: var(--border-default-color) !important;
+      }
+    }
+    /*목록*/
+    .table-component{
+      background-color: var(--card-color) !important;
+      .table-title{
+        background-color: var(--card-color) !important;
+      }
+    }
+    /*페이지네이션*/
+    .btn-pagination{
+      .btn{
+        color: var(--font-color) !important;
+        &.active{
+          color: var(--font-black-color) !important;
+        }
+      }
+    }
+  }
+  /*폼*/
+  .manage-form-component{
+    background-color: var(--card-color) !important;
+  }
+}
+
+/* -------------------------
+  topologe
+------------------------- */
+.topologe-common-component{
+  .topologe-component{
+    .table-component{
+      background-color: transparent !important;
+    }
+    .table{
+      border-top: $border-width solid var(--border-default-color) !important;
+      border-bottom: $border-width solid var(--border-default-color) !important;
+    }
+  }
+  .bottom-component{
+    background-color: transparent !important;
+  }
+}
+.instance-component{
+  border-top-color: var(--border-default-color) !important;
+  .configuration-content{
+    .content-footer{
+      border-top-color: var(--border-default-color) !important;
+    }
+  }
+}
+.topologe-component{
+  .topologe-content{
+    > .content-header{
+      border-bottom-color: var(--border-default-color) !important;;
+    }
+  }
+}
+
+.topologe-instance-component{
+  &.modify{
+    .instance-form-component{
+      .content-header{
+        border-bottom-color: var(--border-default-color) !important;
+      }
+      .form-component{
+        .content-header{
+          border-top-color: var(--border-default-color) !important;
+        }
+      }
+    }
+  }
+
+  .list-modify-content{
+    // .content-body{
+    //   .configuration{
+    //     &.sub{
+    //       &.active{
+    //         &:hover{
+    //           background-color: var(--default-color) !important;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+    .sub-list{
+      .configuration{
+        &.active{
+          .title{
+            color: var(--font-color) !important;
+          }
+        }
+        &.sub{
+          &.active{
+            .title{
+              color: var(--font-black-color) !important;
+            }
+            background-color: var(--default-color) !important;
+            &:hover{
+              background-color: var(--default-color) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.join-stream-component{
+  .database-component{
+    .database-content{
+      border-color: var(--border-default-color) !important;
+      > .content-header{
+        border-bottom-color: var(--border-default-color) !important;
+      }
+    }
+  }
+  .btn-add{
+    background-color: var(--form-color) !important;
+    border-color: var(--border-form-color) !important;
+  }
+}
+
+.template-input-component{
+  .flow-description-content{
+    .content-header, .content-body{
+      background-color: var(--container-color) !important;
+      border-color: var(--border-default-color) !important;
+    }
+  }
+}
+
+/* -------------------------
+  help
+------------------------- */
+.help-common-component{
+  .header-component{
+    border-bottom: $border-width solid var(--border-default-color);
+  }
+  .help-sidebar{
+    .nav{
+      .nav-menu{
+        .nav-link{
+          &.active{
+            background-color: var(--container-color) !important;
+            .nav-title{
+              color: var(--default-color) !important;
+            }
+          }
+          &:hover{
+            .nav-title{
+              color: var(--font-color) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.help-component{
+  border-bottom-color: var(--border-default-color) !important;
+  .help-content {
+    /*link*/
+    .link{
+      color: var(--blue-color) !important;
+    }
+    /*ico*/
+    .help-ico{
+      background-color: var(--container-color) !important;
+      border-color: var(--border-default-color) !important;
+      .btn-delete{
+        border-color: var(--border-disabled-color) !important;
+        color: var(--font-color) !important;
+        cursor: default;
+      }
+    }
+    /*table*/
+    .table{
+      th{
+        color: var(--font-black-color) !important;
+        border-right-color: var(--border-default-color) !important;
+        font-weight: $font-weight-600;
+      }
+      tbody{
+        tr{
+          &:nth-child(even){
+            background-color: var(--form-color) !important;
+            &:hover{
+              background-color: var(--form-color) !important;
+            }
+          }
+        }
+        td{
+          border-color: var(--border-default-color) !important;
+        }
+      }
+    }
+  }
+}
+
+.help{
+  .content-text, a{
+    color: var(--font-color) !important;
+  }
+}
+
+/* -------------------------
+  modal
+------------------------- */
+#modalTable{
+  .detail-component{
+    .table-detail-component{
+      border-top-color: var(--border-default-color) !important;
+    }
+  }
+}
+} // theme

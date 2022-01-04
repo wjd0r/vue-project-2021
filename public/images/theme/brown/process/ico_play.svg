@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_play">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_play" clip-path="url(#clip-ico_play)">
+    <path id="ico_play_brown" d="M2,24V0L22,12Z" fill="#8c8079"/>
+  </g>
+</svg>

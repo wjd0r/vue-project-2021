@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_editor">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_editor" clip-path="url(#clip-ico_editor)">
+    <path id="합치기_64" data-name="합치기 64" d="M25-2942v-24H41.542v11.025l-3.226,3.225H28v1.5h8.777l-1.5,1.5H28v1.5h6.49l-1.013,2.962,3.976-1.312,4.051-4.05v7.65Zm3-2.25h5.252v-1.5H28Zm0-9H38.5v-1.5H28Zm0-3H38.5v-1.5H28Zm0-3H38.5v-1.5H28Zm0-3H38.5v-1.5H28Zm17.441,3.413.675-.675a.906.906,0,0,1,1.312,0l1.313,1.313a1.074,1.074,0,0,1,.037,1.35l-.675.675Z" transform="translate(-25 2966)" fill="#6f6f7a"/>
+  </g>
+</svg>

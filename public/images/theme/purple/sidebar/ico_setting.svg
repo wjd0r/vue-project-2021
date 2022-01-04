@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_setting">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_setting" clip-path="url(#clip-ico_setting)">
+    <path id="ico-setting" d="M17.059,18.31l-4-4.416C12,12.8,13.024,11.581,15.6,11.317a7.583,7.583,0,0,0-3.019-.719,3.828,3.828,0,0,0-2.384.745c-1.224.942-.973,1.7-1.525,2.26a.862.862,0,0,1-1.114.076l-.875.895L9.161,17.1l.874-.895s-.361-.636.037-1.042a.865.865,0,0,1,1.285.053c.195.2,4.148,4.452,4.148,4.452A1.033,1.033,0,0,0,17.059,18.31ZM24,13.273H21V23.5H3V13.273H0L12,1,24,13.273ZM20,7.726,17,4.658V2.024h3Z" fill="#2a0b44" fill-rule="evenodd"/>
+  </g>
+</svg>

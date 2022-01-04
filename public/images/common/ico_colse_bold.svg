@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_colse_bold">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_colse_bold" clip-path="url(#clip-ico_colse_bold)">
+    <path id="ico_colse_bold-2" data-name="ico_colse_bold" d="M23.954,21.03l-9.184-9.1,9.092-9.174L21.03-.046,11.94,9.133,2.764.045l-2.81,2.81,9.186,9.1-9.1,9.184,2.81,2.81,9.112-9.192,9.18,9.1Z" transform="translate(0.046 0.046)"/>
+  </g>
+</svg>

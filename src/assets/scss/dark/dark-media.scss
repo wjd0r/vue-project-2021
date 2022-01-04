@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* -------------------------
+Media Style Sheets
+------------------------- */
+.theme-dark{
+
+/* -------------------------
+  Data Source
+------------------------- */
+@media all and (max-width: 1099px){
+  #DatabaseDetail{
+    .bottom-component{
+      background-color: transparent !important;
+    }
+  }
+} // end
+
+/* -------------------------
+  event filter
+------------------------- */
+@media all and (max-width:1099px) {
+  .event-filter-component{
+    .left-component{
+      .left-content{
+        .content-footer{
+          border-bottom-color: var(--border-default-color) !important;
+          border-top-color: var(--border-default-color) !important;
+        }
+      }
+    }
+    .filter-component{
+      .content-footer{
+        border-bottom-color: var(--border-default-color) !important;
+      }
+      .filter-content{
+        .list-content{
+          .event-filter{
+            border-bottom-color: var(--border-default-color) !important;
+          }
+        }
+      }
+    }
+  }
+} // end
+
+@media all and (max-height:600px) {
+  .event-filter-component{
+    &.create, &.modify{
+      .filter-component{
+        .content-footer{
+          border-bottom-color: var(--border-default-color) !important;
+        }
+      }
+    }
+  }
+} // end
+
+/* -------------------------
+  selection-list
+------------------------- */
+@media all and (max-width: 767px){
+  .selection-list{
+    .left-content, .middle-content{
+      border-bottom-color: var(--border-default-color) !important;
+    }
+    .middle-content{
+      border-top-color: var(--border-default-color) !important;
+    }
+    .btn-group {
+      .btn-move{
+        &:last-child{
+          border-bottom-color: var(--border-default-color) !important;
+        }
+      }
+    }
+  }
+} // end
+
+/* -------------------------
+  content-common-component
+------------------------- */
+@media all and (max-width: 767px) and (max-height: 775px){
+  .content-common-component{
+    .filter-component{
+      .btn-group{
+        border-top-color: var(--border-default-color) !important
+      }
+    }
+  }
+} // end
+
+/* -------------------------
+  manage
+------------------------- */
+@media all and (max-width: 767px){
+  .manage-component{
+    .manage-content{
+      .top-component{
+        .group-search{
+          border-bottom-color: var(--border-default-color) !important;
+        }
+        .search-component{
+          border-right: $border-none !important;
+        }
+      }
+    }
+  }
+} // end
+
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-ico_dashbard_editor">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="ico_dashbard_editor" clip-path="url(#clip-ico_dashbard_editor)">
+    <path id="패스_445" data-name="패스 445" d="M25.333,32V26.666h-20v-20H0V5.333H5.333V0H6.667V5.333h20v20H32v1.333H26.666V32ZM6.667,25.333H25.333V6.667H6.667Zm10.667-2.666V16h5.333v6.666Zm-8,0v-4h5.333v4Zm0-6.666V9.333h5.333V16Zm8-2.668v-4h5.333v4Z" fill="#a6a6a6"/>
+  </g>
+</svg>

@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* -------------------------
+
+Enterprise Style Sheets
+
+Content
+
+------------------------- */
+
+.header-fixed{
+  .app-body{
+    margin-top: $margin-50 !important;
+  }
+}
+
+.contents-components{
+  height: 100%;
+}
+
+/* -------------------------
+  header
+------------------------- */
+.header-component{
+  height: 50px !important;
+  border-bottom: $border-none !important;
+  background-color: var(--header-color) !important;
+  .menu-logo-content{
+    height: 50px !important;
+  }
+  .navbar-toggler{
+    position: absolute;
+    z-index: 6;
+    height: 50px;
+    width: 50px;
+    padding: $padding-0 !important;
+    outline: none;
+    span{
+      margin: $margin-0 !important;
+    }
+    .b-icon.bi{
+        color: $white-color !important;
+    }
+  }
+  .navbar-brand{
+    width: 150px !important;
+    height: 50px !important;
+    background-size: 120px auto !important;
+    background-color: transparent !important;
+    border-bottom: $border-none !important;
+    background-image: $logo-ipr !important;
+    background-position: center left !important;
+    margin-left: $margin-50;
+    padding: $padding-0 !important;
+  }
+  .navigation-content{
+    padding-right: 20px;
+    .user-name{
+      color: $white-color;
+      text-align: right;
+      line-height: 1.2;
+      cursor: default;
+    }
+    .ico-alarm{
+      width: 32px;
+      height: 32px;
+      margin-left: $margin-10;
+      margin-right: $margin-10;
+    }
+    .language-select{
+      background-color: transparent !important;
+      border: $border-none !important;
+      color: $white-color !important;
+    }
+  }
+}
+
+/* -------------------------
+  sidebar
+------------------------- */
+.sidebar-component{
+  height: calc(100vh - 50px) !important;
+  background-color: var(--sidebar-color) !important;
+  box-shadow: $box-shabow-none !important;
+  border-right: $border-width solid $border-default-color !important;
+  .nav-item{
+    display: flex;
+    &:hover{
+      background-color: var(--hover-color) !important;
+    }
+  }
+  .nav-ico{
+    width: 40px;
+    height: 40px;
+  }
+  .sidebar-header{
+    padding: $padding-5;
+    text-align: left;
+    background-color: transparent !important;
+    color: var(--default-color) !important;
+    font-weight: $font-weight-500;
+    border-top: $border-width solid $border-default-color !important;
+  }
+  .nav-link{
+    color: $font-color !important;
+    &:hover{
+      background-color: transparent !important;
+    }
+    &.active{
+      border-bottom: $border-width solid $border-default-color !important;
+    }
+    &:active, &.active{
+      color: $white-color !important;
+      .ico-side{
+        .ico-home{
+          background-image: $ico-home-w !important;
+        }
+        .ico-dashboard{
+          background-image: $ico-dashboard-w !important;
+        }
+        .ico-discovery{
+          background-image: $ico-discovery-w !important;
+        }
+        .ico-delta{
+          background-image: $ico-delta-w !important;
+        }
+        .ico-play{
+          background-image: $ico-logreplay-w !important;
+        }
+        .ico-social{
+          background-image: $ico-social-w !important;
+        }
+        .ico-matrix{
+          background-image: $ico-matrix-w !important;
+        }
+        .ico-dotted{
+          background-image: $ico-dotted-w !important;
+        }
+      }
+    }
+  }
+  /*side bottom*/
+  .nav-bottom{
+    height: 40px;
+    color: $font-color !important;
+    border-top: $border-width solid $border-default-color;
+    background-color: $body-background !important;
+    &:hover{
+      background-color: transparent !important;
+    }
+    .ico-help{
+      height: 40px;
+      width: 40px;
+    }
+    .ico-logout{
+      height: 40px;
+      width: 40px;
+      margin-left: auto;
+    }
+    .nav-name{
+      line-height: 40px;
+    }
+  }
+}
+
+/* -------------------------
+  kpi-component
+------------------------- */
+.kpi-component{
+  .kpi-content{
+    margin: $margin-0 !important;
+    padding: $padding-10;
+    .kpi{
+      background-color: $white-color;
+      border: $border-width solid $border-default-color;
+      margin: $margin-10;
+      padding: $padding-0;
+      flex: 0 0 30.9% !important;
+      max-width: 30.9% !important;
+      .content-header{
+        height: 40px;
+        padding-left: $padding-10;
+        padding-right: $padding-10;
+        line-height: 40px;
+        .title{
+          margin: $margin-0;
+        }
+      }
+      .content-body{
+        height: 60px;
+        padding: $padding-10;
+        .value{
+          margin: $margin-0;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------
+  search-content
+------------------------- */
+.search-content{
+  padding: $padding-0 $padding-10;
+  .search{
+    padding: $padding-0 $padding-10;
+    width: 50%;
+  }
+}
+
+
+/* -------------------------
+  main
+------------------------- */
+/*main : common*/
+.main-common-component{
+  height: 100%;
+  .main-common-content{
+    height: 100%;
+    margin: $margin-0;
+  }
+  .left-component{
+    border-right: $border-width solid $border-default-color;
+    padding: $padding-0;
+  }
+  .right-component{
+    padding: $padding-0;
+  }
+}
+
+/*main : home*/
+.home-component{
+  .home-content{
+    
+  }
+}
+
+
+/* -------------------------
+  process
+------------------------- */
+
+/* -------------------------
+  sso
+------------------------- */
+
+/* -------------------------
+  manage
+------------------------- */
+
+body{
+  //background:   !important;
+}
+.dashboard-component .dashboard-content .chart-component .chart-content .chart{
+  
+  //background-color: #2D2D2D !important;
+}

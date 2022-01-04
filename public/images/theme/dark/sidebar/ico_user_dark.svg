@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_user_dark">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_user_dark" clip-path="url(#clip-ico_user_dark)">
+    <path id="ico-user" d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm7.753,18.305a2.371,2.371,0,0,0-1.871-1.241c-2.293-.529-4.428-.993-3.393-2.945C17.634,8.177,15.322,5,12,5,8.612,5,6.356,8.3,9.511,14.119c1.066,1.964-1.148,2.427-3.393,2.945A2.355,2.355,0,0,0,4.251,18.31a10,10,0,1,1,15.5,0Z" fill="#121212"/>
+  </g>
+</svg>

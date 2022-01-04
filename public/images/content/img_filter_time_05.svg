@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="123" viewBox="0 0 200 123">
+  <defs>
+    <clipPath id="clip-img_filter_time_05">
+      <rect width="200" height="123"/>
+    </clipPath>
+  </defs>
+  <g id="img_filter_time_05" clip-path="url(#clip-img_filter_time_05)">
+    <rect width="200" height="123" fill="#fff"/>
+    <path id="filter" d="M-2740,3800v-15h20v15Zm1-1h18v-13h-18Zm-122,1v-15h100v15Zm-19-20v-15h130v15Zm70-20v-15h85v15Zm1-1h83v-13h-83Zm-96-7v-15h47v15Zm21-20v-15h82v15Zm-26,0v-15h20v15Zm1-1h18v-13h-18Z" transform="translate(2915 -3697)" fill="#a6a6a6"/>
+    <path id="line" d="M0,0H1V103H0Z" transform="translate(30 10)" fill="#bfbfbf"/>
+    <path id="line-2" data-name="line" d="M0,0H1V103H0Z" transform="translate(169 10)" fill="#bfbfbf"/>
+  </g>
+</svg>

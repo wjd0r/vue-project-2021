@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-ico_dropdown_arrow">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="ico_dropdown_arrow" clip-path="url(#clip-ico_dropdown_arrow)">
+    <g id="ico-dropdown-arrow" transform="translate(12 13)">
+      <path id="다각형_7" data-name="다각형 7" d="M3.168,1.248a1,1,0,0,1,1.664,0l2.131,3.2A1,1,0,0,1,6.131,6H1.869a1,1,0,0,1-.832-1.555Z" transform="translate(8 6) rotate(180)" fill="#a4a4a4"/>
+    </g>
+  </g>
+</svg>

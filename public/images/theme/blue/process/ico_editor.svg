@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_editor">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_editor" clip-path="url(#clip-ico_editor)">
+    <path id="ico-editor" d="M2025-1167v-24h16.542v11.025l-3.226,3.225H2028v1.5h8.778l-1.5,1.5H2028v1.5h6.49l-1.013,2.963,3.976-1.312,4.051-4.051V-1167Zm3-2.25h5.252v-1.5H2028Zm0-9h10.5v-1.5H2028Zm0-3h10.5v-1.5H2028Zm0-3h10.5v-1.5H2028Zm0-3h10.5v-1.5H2028Zm17.441,3.413.675-.675a.906.906,0,0,1,1.313,0l1.312,1.312a1.074,1.074,0,0,1,.038,1.35l-.675.675Z" transform="translate(-2025 1191)" fill="#0367a6"/>
+  </g>
+</svg>

@@ -1,0 +1,3504 @@
+@charset "UTF-8";
+
+/* -------------------------
+Common Style Sheets
+: 공통 스타일시트
+------------------------- */
+
+/* -------------------------
+  common
+------------------------- */
+/*html / body*/
+html, body{
+  width: 100%;
+  height: 100%;
+  color: $font-color !important;
+  margin: $margin-0 !important;
+  background-color: $body-background !important;
+  font-size: $font-size-15;
+}
+
+/*lang*/
+:lang(ko) {
+  font-family:'Noto Sans KR', 'Roboto';
+}
+:lang(en) {
+  font-family: 'Roboto', 'Noto Sans KR';
+}
+
+/*drag*/
+::selection{
+  background-color: var(--drag-color) !important;
+  color: $font-color !important;
+}
+
+/* -------------------------
+  touch-action
+  - 드래그/터치
+------------------------- */
+.cssTransforms{
+  touch-action: manipulation !important;
+}
+
+/* -------------------------
+  text
+------------------------- */
+/*nodata*/
+.nodata-text{
+  font-size: $font-size-14;
+  text-align: center;
+  word-break: keep-all;
+}
+
+/*badge text*/
+.or-text{
+  font-size: $font-size-15;
+  font-weight: 600;
+}
+
+/*notice*/
+.notice-text{
+  font-size: $font-size-13;
+}
+
+/*test btn > notice text*/
+.test-text{
+  font-size: $font-size-13;
+  &.success, &.green{
+    color: $green-color;
+  }
+  &.error, &.fail, &.red{
+    color: $red-color;
+  }
+}
+
+/*badge text*/
+.badge-text{
+  margin: $margin-5 $margin-10;
+  line-height: 30px;
+  font-weight: $font-weight-500;
+  flex: 0 0 auto;
+}
+
+.or-text{
+  font-size: $font-size-15;
+  font-weight: 600;
+}
+
+/* -------------------------
+  color
+------------------------- */
+/*green*/
+.success, .success-text{
+  color: $green-color;
+}
+
+.green-text{
+  color: $green-color;
+}
+
+/*red*/
+.error, .fail, .fail-text, .error-text{
+  color: $red-color;
+}
+
+.red-text{
+  color: $red-color;
+}
+
+/*blue*/
+.blue-text{
+  color: $blue-color;
+}
+
+/* -------------------------
+  align
+------------------------- */
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+
+/* -------------------------
+  collapse
+------------------------- */
+.collapsed{
+  cursor: pointer;
+  .right-align{
+    .ico-header{
+      background-image: $ico-arrow-top;
+    }
+  }
+  .ico-arrow-top{
+    background-image: $ico-arrow-bottom !important;
+  }
+  .ico-arrow-top-bold{
+    background-image: $ico-arrow-bottom-bold !important;
+  }
+}
+
+/* -------------------------
+  transform : 방향 변환
+------------------------- */
+.trans-up{
+  transform: rotate(180deg);
+}
+.trans-down{
+  transform: rotate(0deg);
+}
+.trans-left{
+  transform: rotate(90deg);
+}
+.trans-right{
+  transform: rotate(-90deg);
+}
+
+/* -------------------------
+  overflow : 스크롤
+------------------------- */
+.overflow-x{
+  overflow-x: auto;
+}
+.overflow-y{
+  overflow-y: auto;
+}
+.overflow-auto{
+  overflow: auto;
+}
+.overflow-hidden{
+  overflow: hidden;
+}
+.overflow-overly{
+  overflow: overlay;
+}
+
+/* -------------------------
+  spinner / loading
+------------------------- */
+.spinner-border{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border: $border-width-4 solid var(--default-color);
+  border-right-color: transparent !important;
+  &.white{
+    border-color: $white-color;
+  }
+}
+
+.loading{
+  width: 100%;
+  height: calc(100vh - 50px - 80px - 25px);
+  background-color: $bg-color;
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  .spinner-border{
+    display: block;
+    text-align: center;
+  }
+}
+
+/*overlay > flow*/
+.overlay-loading{
+  .b-overlay{
+    top: 0 !important;
+  }
+  .position-absolute{
+    padding: $padding-0 !important;
+    top: 0 !important;
+    .position-absolute{
+      top: 0 !important;
+    }
+  }
+  .spinner-border{
+    display: block;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+}
+
+/* -------------------------
+  content-header / content-middle / content-body / content-footer
+------------------------- */
+/*content-header*/
+.content-header{
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  cursor: default;
+  .header-group{
+    display: flex;
+    flex-direction: row;
+  }
+  .title{
+    line-height: 40px;
+    font-weight: $font-weight-600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .count-text{
+    font-size: $font-size-14;
+    line-height: 40px;
+    margin-left: $margin-5 !important;
+  }
+  .ico-header{
+    height: 40px !important;
+    &:disabled, &.disabled{
+      cursor: default !important;
+    }
+  }
+  .multi-select{
+    margin-right: $margin-10;
+    span{
+      line-height: 40px;
+      font-size: $font-size-14;
+    }
+    .selected{
+      cursor: pointer;
+      margin-left: $margin-10 !important;
+    }
+  }
+  .right-align{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    .dropdown-toggle{
+      height: 100%;
+      background-color: transparent !important;
+      border: $border-none;
+      padding: $padding-0 !important;
+      &::after{
+        content: $ico-title-menu !important;
+        border: $border-none !important;
+        height: 24px;
+      }
+    }
+  }
+  .btn-create{
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &.sub{
+    height: 30px;
+    display: block;
+    .title{
+      font-size: $font-size-18;
+      line-height: 30px;
+    }
+  }
+  &.btn-toggle{
+    cursor: pointer;
+  }
+}
+
+.left-align{
+  display: flex;
+  flex-direction: row;
+}
+
+.right-align{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  .dropdown-toggle{
+    height: 100%;
+    background-color: transparent !important;
+    border: $border-none;
+    padding: $padding-0 !important;
+    &::after{
+      content: $ico-title-menu !important;
+      border: $border-none !important;
+      height: 24px;
+    }
+  }
+  .notice-text, .count-text{
+    display: block;
+    margin-left: auto;
+  }
+}
+
+/*content-body*/
+.content-body{
+  padding-top: $padding-5;
+  padding-bottom: $padding-5;
+  cursor: default;
+  .nodata-text{
+    text-align: center;
+  }
+}
+
+/*content-footer*/
+.content-footer{
+  padding: $padding-10;
+  .btn-group{
+    display: block;
+    text-align: right;
+    .btn{
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+}
+
+/*sub*/
+.content-sub-header{
+  .title{
+    font-size: $font-size-16;
+    font-weight: $font-weight-600 !important;
+  }
+}
+.content-sub-body{
+  font-size: $font-size-14;
+}
+
+/* -------------------------
+  card
+------------------------- */
+/*생성 > card style*/
+.card-created{
+  cursor: pointer;
+  .content-header{
+    padding: $padding-0 $padding-5 !important;
+    cursor: pointer;
+    .title{
+      margin-left: $margin-10;
+      flex-basis: 100%;
+    }
+    .ico-card{
+      width: 24px;
+      height: 40px;
+      background-size: 20px;
+      flex-basis: 30px;
+    }
+    .defaulf-stadard{
+      line-height: 40px;
+      padding-left: $padding-5;
+      .badge{
+        background-color: var(--default-color);
+        color: $white-color;
+        width: auto;
+        padding: 2px $padding-10 !important;
+        height: 26px;
+        font-size: $font-size-12 !important;
+        border-radius: 28px;
+      }
+    }
+  }
+  .content-body{
+    padding: $padding-5;
+    cursor: pointer;
+  }
+  .last-update{
+    font-size: $font-size-12;
+    color: $gray-color;
+  }
+  .content-footer{
+    padding: $padding-0 $padding-10 $padding-10;
+    display: flex;
+    flex-direction: row;
+    .user-inf{
+      font-size: $font-size-13;
+    }
+    .count-text{
+      font-size: $font-size-12;
+      margin-left: auto;
+    }
+  }
+  /*dataset*/
+  &.dataset{
+    .last-update{
+      padding: $padding-0 $padding-5 !important;
+    }
+  }
+  /*event*/
+  &.event{
+    .content-header, .content-body{
+      cursor: pointer;
+    }
+    .content-body{
+      height: 30px;
+    }
+    .content-footer{
+      display: flex;
+      flex-direction: row;
+      .last-update{
+        margin-left: auto;
+      }
+    }
+  }
+  /*standard*/
+  &.standard{
+    .content-footer{
+      display: flex;
+      flex-direction: row;
+      .last-update{
+        margin-left: auto;
+      }
+    }
+    &.list{
+      margin: $margin-5;
+      padding-left: $padding-5;
+      .content-header{
+        .title{
+          flex-basis: auto;
+          margin-left: $margin-0 !important;
+        }
+        .ico-card{
+          background-position: center left;
+        }
+      }
+      &:first-child{
+        margin-top: $margin-0;
+      }
+      &:last-child{
+        margin-bottom: $margin-5 !important;
+      }
+      .content-footer{
+        .user-inf{
+          line-height: 34px;
+        }
+        .btn{
+          margin-left: auto;
+          font-size: $font-size-13;
+          height: 34px;
+        }
+      }
+    }
+  }
+  /*home*/
+  &.home{
+    .content-body{
+      padding-top: $padding-0;
+      .standard-inf{
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    .content-footer{
+      padding: $padding-0;
+      flex-direction: column;
+      .user-inf{
+        padding: $padding-5 $padding-10;
+      }
+      .last-update{
+        border-top: $border-width solid $border-default-color;
+        padding: $padding-5 $padding-10;
+      }
+    }
+  }
+  /*sample*/
+  &.sample{
+    .content-header{
+      display: block;
+      .title{
+        font-size: $font-size-16;
+      }
+    }
+  }
+  /*데이터소스*/
+  &.database{
+    .content-header{
+      .right-align{
+        width: 50%;
+        .type-text{
+          text-align: right;
+          font-size: $font-size-13;
+          line-height: 40px;
+          width: 100%;
+        }
+      }
+    }
+    .content-footer{
+      display: flex;
+      flex-direction: row;
+      .last-update{
+        margin-left: auto;
+      }
+    }
+  }
+  /*표준 프로세스 표시*/
+  .standard-inf{
+    display: flex;
+    flex-direction: row;
+    .count-text{
+      margin-left: $margin-5;
+      font-size: $font-size-13;
+    }
+    .ico-card{
+      width: 20px;
+      height: 20px;
+      background-size: 16px;
+    }
+  }
+  /*효과*/
+  &:hover{
+    background-color: var(--hover-color);
+  }
+  &.active{
+    background-color: $blue-bg-color;
+    border-color: $blue-color !important;
+    cursor: default;
+    .content-header, .content-body{
+      cursor: default;
+      .ico-card{
+        cursor: default;
+      }
+    }
+  }
+}
+
+/*upload card*/
+.upload, .db{
+  display: flex;
+  flex-direction: row;
+  padding: $padding-5;
+  margin-right: $margin-10;
+  margin-bottom: $margin-10 !important;
+  cursor: pointer;
+  &:first-child{
+    margin-left: $margin-10;
+  }
+  .ico-flieup{
+    width: 32px;
+    height: 32px;
+    background-size: 32px;
+  }
+  .ico-db{
+    height: 32px;
+    &.logo-postgresql{
+      background-size: 36px;
+    }
+    &.logo-microsoftsql{
+      background-size: 36px;
+    }
+  }
+  .text-content{
+    margin-left: $margin-10;
+    .title{
+      font-weight: $font-weight-600;
+      font-size: $font-size-16;
+      line-height: 32px;
+    }
+    .sub-title{
+      font-size: $font-size-13;
+      color: $gray-color;
+    }
+  }
+  /*효과*/
+  &:hover{
+    background-color: var(--hover-color);
+  }
+  &.active{
+    background-color: $blue-bg-color;
+    border-color: $blue-color !important;
+    cursor: default;
+  }
+  &.disabled, &:disabled{
+    background-color: $bg-disabled-color;
+    .title{
+      color: $font-disabled-color;
+    }
+    cursor: default;
+  }
+}
+
+.upload{
+  width: 160px;
+}
+
+.db{
+  margin: $margin-0 !important;
+  &.disabled, &:disabled{
+    .ico-db{
+      opacity: 0.5;
+    }
+  }
+}
+
+/*dropdown-menu*/
+.m-inf{
+  display: none;
+}
+
+/* -------------------------
+  variant
+------------------------- */
+.variant{
+  border-bottom: $border-width solid $border-default-color;
+  cursor: pointer;
+  &:last-child{
+    border-bottom: $border-none;
+  }
+  .content-header, .content-body{
+    cursor: pointer;
+  }
+  .content-header{
+    font-size: $font-size-18;
+    font-weight: $font-weight-600;
+    height: 30px;
+    line-height: 30px;
+  }
+  .content-body{
+    padding: $padding-10 !important;
+    .count-text{
+      text-align: right;
+      font-size: $font-size-13;
+    } 
+    .progress{
+      margin-bottom: $margin-0 !important;
+    }
+  }
+  &:hover{
+    background-color: var(--hover-color);
+  }
+  &.active{
+    background-color: $blue-bg-color;
+    .progress-bar{
+      background-color: $blue-color !important;
+    }
+  }
+}
+
+/* -------------------------
+  chart
+------------------------- */
+/*chart*/
+.card{
+  &.chart{
+    &.editor{
+      .content-header{
+        .ico-header{
+          height: 36px !important;
+        }
+        .btn-clear{
+          padding: $padding-0 !important;
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------
+  Kpi
+------------------------- */
+.kpi{
+  padding: $padding-10;
+  .content-header{
+    display: block;
+    height: auto;
+    padding-bottom: $padding-5;
+    .title{
+      line-height: 1.2;
+      font-weight: $font-weight-400;
+      font-size: $font-size-14;
+    }
+    .ico-header{
+      height: auto !important;
+      background-size: 21px !important;
+      background-position-x: right;
+    }
+  }
+  .content-body{
+    padding: $padding-0;
+    .value-text{
+      text-align: right;
+      font-size: $font-size-26;
+    }
+  }
+  .title, .value-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &.blue{
+    .content-body{
+      .value-text, .content-text{
+        color: $blue-color;
+      }
+    }
+  }
+  &.red{
+    .content-body{
+      .value-text, .content-text{
+        color: $red-color;
+      }
+    }
+  }
+  .content-text{
+    font-size: $font-size-22 !important;
+    &.long-value{
+      font-size: $font-size-18 !important;
+      span{
+        font-size: $font-size-16 !important;
+        font-weight: $font-weight-500;
+      }
+    }
+    &.blue{
+      color: $blue-color;
+    }
+    &.red{
+      color: $red-color;
+    }
+  }
+}
+
+/* -------------------------
+  notification
+------------------------- */
+/*notifi > list*/
+.notification-content{
+  > .content-header{
+    .title{
+      font-size: $font-size-18;
+    }
+  }
+  > .content-body{
+    padding: $padding-0;
+    text-align: left;
+  }
+  .card{
+    border: $border-none;
+    padding: $padding-10;
+    border-bottom: $border-width solid $disabled-color !important;
+    &:last-child{
+      border-bottom: $border-none !important;
+    }
+    &.gray{
+      .notification{
+        border-left-color: var(--default-color) !important;
+      }
+    }
+    &.blue{
+      .notification{
+        border-left-color: $blue-color !important;
+      }
+    }
+    &.red{
+      .notification{
+        border-left-color: $red-color !important;
+      }
+    }
+    &.green{
+      .notification{
+        border-left-color: $green-color !important;
+      }
+    }
+  }
+  .notifi{
+    border-bottom: $border-width solid $disabled-color !important;
+    &:last-child{
+      border-bottom: $border-none !important;
+    }
+  }
+}
+
+/*notifi > card*/
+.notification{
+  border-left: $border-width-4 solid;
+  padding-left: $padding-10;
+  .content-header{
+    height: auto;
+    cursor: pointer;
+  }
+  .date-text, .request-update{
+    line-height: 24px;
+    font-size: $font-size-12;
+  }
+  .title{
+    font-size: $font-size-16;
+    font-weight: $font-weight-500;
+    line-height: 1.2;
+  }
+  .ico-notification{
+    background-size: 14px;
+    height: auto;
+    opacity: 0.6;
+  }
+  .content-middle{
+    margin-bottom: $margin-5;
+    .ico-notification{
+      opacity: 1 !important;
+      width: 20px;
+      height: auto;
+      background-position: left;
+    }
+  }
+  .notification-content{
+    font-size: $font-size-13;
+  }
+  .notification-text{
+    display: flex;
+    flex-direction: row;
+    font-size: $font-size-12;
+    margin-bottom: $margin-5;
+    &:last-child{
+      margin-bottom: $margin-0;
+    }
+  }
+  .error{
+    border: $border-width solid $red-color;
+    padding: $padding-5;
+    margin-top: $margin-5;
+    font-size: $font-size-12;
+    display: block;
+    color: $font-color !important;
+  }
+  .notifi-title{
+    width: 120px;
+    flex: 0 0 120px;
+  }
+  .notifi-content{
+    text-align: justify;
+    width: 200px;
+  }
+  .content-footer{
+    padding: $padding-0;
+    padding-top: $padding-5;
+    text-align: right;
+    .btn{
+      height: 26px;
+      padding: $padding-5 $padding-10 + 5 !important;
+      font-size: $font-size-12;
+      line-height: 15px;
+    }
+  }
+}
+
+/* -------------------------
+  top/right/bottom/left
+------------------------- */
+/*top*/
+.top-component{
+  width: 100%;
+  background-color: $white-color;
+}
+
+/*bottom*/
+.bottom-component{
+  width: 100%;
+  background-color: $body-background;
+  border-top: $border-width solid $border-sub-color;
+  .bottom-content{
+    display: flex;
+    flex-direction: row;
+    padding: $padding-5;
+    .btn{
+      margin-left: auto;
+      padding: $padding-5 15px !important;
+    }
+    .btn-analysis{
+      margin-left: auto;
+    }
+    .btn-group{
+      margin-left: auto;
+      .btn{
+        &:last-child{
+          margin-left: $margin-10 !important;
+        };
+      }
+    }
+  }
+}
+
+/* -------------------------
+  top > search / back
+------------------------- */
+/*seatch > 워크페이스 선택*/
+#groupSelect{
+  .custom-select{
+    height: 29px !important;
+    font-size: $font-size-14;
+    line-height: 19px;
+  }
+}
+
+#DateFilter{
+  padding: $padding-0;
+  .form-control{
+    height: 29px !important;
+    font-size: $font-size-14;
+  }
+}
+
+/*search > input box*/
+.search{
+  width: 100%;
+  padding: $padding-10;
+  .custom-select{
+    height: 29px !important;
+    font-size: $font-size-14;
+    width: 140px;
+    border-right: $border-none;
+    &:focus{
+      border-right: $border-width solid var(--border-focus-color);
+    }
+  }
+  .form-control{
+    background-image: $ico-search;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: calc(100% - 5px) 50% !important;
+    padding-right: $padding-30 !important;
+    height: 29px !important;
+    font-size: $font-size-14;
+  }
+  .btn-search{
+    border-radius: $border-radius-none;
+    font-size: $font-size-14;
+    height: 29px !important;
+    line-height: 18px;
+    padding: $padding-5 $padding-10 + 5 !important;
+  }
+}
+
+/*back*/
+.back{
+  display: inline-flex;
+  flex-direction: row;
+  cursor: pointer;
+  .ico-arrow-left{
+    background-size: 18px;
+    height: 30px;
+  }
+  .back-text{
+    padding-left: $padding-5;
+    font-size: $font-size-13;
+    line-height: 30px;
+  }
+}
+
+/* -------------------------
+  breadcrumb : 경로
+------------------------- */
+.breadcrumb{
+  border-radius: $border-radius-none !important;
+  padding: $padding-0 $padding-10;
+  margin-bottom: $margin-0 !important;
+  .breadcrumb-item{
+    font-size: $font-size-13;
+    color: $font-color;
+    line-height: 40px;
+    cursor: default;
+    a{
+      cursor: default;
+    }
+    &.active{
+      font-weight: $font-weight-600;
+    }
+    &::before{
+      content: none !important;
+    }
+    &::after{
+      content: '';
+      float: right;
+      padding-left: $padding-10;
+      background-image: $ico-arrow-right !important;
+      background-size: 16px;
+      width: 30px;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &:last-child{
+      &::after{
+        display: none;
+      }
+    }
+    &.workspace{
+      a{
+        color: $gray-color !important;
+      }
+    }
+    &.dataset{
+      a{
+        color: $blue-color !important;
+      }
+    }
+    &.event{
+      a{
+        color: $brown-color !important;
+      }
+    }
+    &.standard{
+      a{
+        color: $purple-color !important;
+      }
+    }
+    &.gray{
+      a{
+        color: $gray-color !important;
+      }
+    }
+  }
+}
+.breadcrumb-item{
+  & + .breadcrumb-item{
+    padding-left: $padding-0 !important;
+  }
+}
+
+/* -------------------------
+  dropdown
+------------------------- */
+.dropdown{
+  .dropdown-header{
+    color: var(--default-color);
+    font-size: $font-size-13;
+    font-weight: $font-weight-600;
+    padding: $padding-10;
+    background-color: $white-color;
+    border-bottom: $border-none;
+    border-top: $border-width solid $border-default-color;
+  }
+  .dropdown-toggle{
+    padding: 7px $padding-0;
+    height: auto;
+    background-color: transparent !important;
+    border: $border-none;
+    border-radius: $border-radius-none;
+    outline: none;
+    color: $font-color;
+    &:focus{
+      outline: none;
+      box-shadow: $box-shabow-none !important;
+    }
+  }
+  &.show{
+    .dropdown-menu{
+      min-width: 100px;
+      padding: $padding-0;
+      margin: $margin-0;
+      border-radius: $border-radius-none;
+      border-color: $border-sub-color !important;
+      .dropdown-item{
+        padding: $padding-10;
+        font-size: $font-size-13;
+        &:hover{
+          background-color: var(--hover-color) !important;
+        }
+      }
+      .item-apply{
+        .dropdown-item{
+          background-color: $white-color !important;
+          cursor: default;
+        }
+      }
+      .dropdown-divider{
+        margin: $margin-0;
+      }
+    }
+  }
+  .b-dropdown-form{
+    padding: $padding-5 !important;
+  }
+  /*필터 선택*/
+  &.multiselect{
+    .dropdown-toggle{
+      max-width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .item{
+      &:hover{
+        background-color: var(--hover-color);
+      }
+    }
+  }
+}
+
+/* -------------------------
+  list
+------------------------- */
+/*list-group > 편집 > 목록*/
+.list-group{
+  border-radius: $border-radius-none;
+  .list-group-item{
+    padding: $padding-5 $padding-10 !important;
+    font-size: $font-size-13;
+    cursor: pointer;
+    border-radius: $border-radius-none;
+    border-left: $border-none;
+    border-right: $border-none;
+    &:hover{
+      background-color: var(--hover-color);
+    }
+    &:disabled, &.disabled{
+      background-color: $bg-disabled-color;
+      color: $font-disabled-color;
+    }
+    &:first-child{
+      border-top: $border-none;
+    }
+    &:last-child{
+      border-bottom: $border-none;
+    }
+    .item{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+/*selection-list*/
+.selection-list{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  background-color: $white-color;
+  border: $border-width solid $border-default-color;
+  padding: $padding-0 !important;
+  .content-header{
+    height: 40px !important;
+    line-height: 40px !important;
+    display: block;
+    border-bottom: $border-width solid $border-default-color !important;
+    text-align: center;
+    font-weight: $font-weight-600;
+  }
+  .content-body{
+    padding: $padding-0;
+    height: 240px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  .item{
+    display: flex;
+    flex-direction: row;
+    background-color: $white-color;
+    padding: $padding-5;
+    cursor: pointer;
+    height: 34px;
+    &:hover{
+      background-color: var(--hover-color);
+    }
+    &:disabled, &.disabled{
+      background-color: $bg-disabled-color;
+      color: $font-disabled-color;
+      cursor: default;
+      .ico-item{
+        cursor: default;
+      }
+      &.active{
+        background-color: $bg-disabled-color !important;
+        color: $font-disabled-color !important;
+        .ico-database{
+          background-image: $ico-database !important;
+        }
+        .ico-log{
+          background-image: $ico-log !important;
+        }
+        .ico-flow-standard{
+          background-image: $ico-flow-standard !important;
+        }
+      }
+    }
+    &.active{
+      background-color: var(--active-color);
+      color: $white-color;
+      cursor: default;
+      .ico-item{
+        cursor: default;
+      }
+      .ico-file{
+        background-image: $ico-file-w !important;
+      }
+      .ico-database{
+        background-image: $ico-datasource-w !important;
+      }
+      .ico-log{
+        background-image: $ico-log-w !important;
+      }
+      .ico-log-db{
+        background-image: $ico-log-db-w !important;
+      }
+      .ico-flow-standard{
+        background-image: $ico-standard-w !important;
+      }
+    }
+    .item-text{
+      font-size: $font-size-14;
+      padding: $padding-0 $padding-5;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .ico-item{
+      width: 20px;
+      height: 20px;
+      background-size: 16px;
+      flex: 0 0 20px;
+    }
+  }
+  .btn-group{
+    display: flex;
+    flex-direction: column;
+    margin-left: $margin-0;
+    .btn{
+      &:first-child{
+        border-top: $border-none;
+      }
+      &:last-child{
+        margin-left: $margin-0 !important;
+        border-top: $border-none;
+        border-bottom: $border-none;
+      }
+    }
+    .btn-move{
+      width: 40px;
+      height: 40px;
+    }
+    &.btn-multi{
+      .btn{
+        border-top: $border-none;
+        margin-left: $margin-0 !important;
+      }
+      .btn-plus{
+        &:hover{
+          &.ico-plus{
+            background-image: $ico-plus-w !important;
+          }
+        }
+      }
+      .btn-minus{
+        &:hover{
+          &.ico-minus{
+            background-image: $ico-minus-w !important;
+          }
+        }
+      }
+      .btn-bothsides{
+        .ico-bothsides{
+          width: 100%;
+        }
+        &:hover{
+          .ico-bothsides{
+            background-image: $ico-bothsides-w !important;
+          }
+        }
+      }
+    }
+  }
+  .left-content, .right-content, .middle-content{
+    width: 50%;
+    overflow: hidden;
+  }
+  .middle-content{
+    border-left: $border-width solid $border-default-color
+  }
+  /*등록된 표준프로세스 : 기본설정 추가*/
+  .regist-standard{
+    .content-header{
+      display: flex;
+      flex-direction: row;
+      padding: $padding-0 !important;
+      .title{
+        &.left{
+          flex: 0 0 calc(100% - 100px);
+          border-right: $border-width solid $border-default-color;
+        }
+        &.right{
+          flex: 0 0 100px;
+        }
+      }
+    }
+    .content-body{
+      display: flex;
+      flex-direction: row;
+      overflow-y :overlay;
+      .list-content{
+        flex: 0 0 calc(100% - 101px);
+      }
+      .form-content{
+        flex: 0 0 101px;
+        border-left: $border-width solid $border-default-color;
+        .defualt-setting{
+          justify-content: center;
+          border-left: $border-width solid $border-default-color;
+          margin-left: -1px;
+        }
+      }
+      .custom-checkbox{
+        .custom-control-label{
+          &::before, &::after{
+            left: -1.2rem !important;
+            top: 0.3rem !important;
+          }
+        }
+        .custom-control-input{
+          height: 28px !important;
+        }
+      }
+    }
+  }
+  /*프로세스 그룹 필터*/
+  .table{
+    border-bottom: $border-none !important;
+    tr{
+      cursor: pointer;
+      border-bottom: $border-none;
+      &:hover{
+        background-color: var(--hover-color);
+      }
+    }
+    .item{
+      padding: $padding-0;
+      white-space: nowrap;
+    }
+    td{
+      white-space: nowrap;
+      border-right: $border-width solid $border-sub-color;
+      cursor: pointer;
+    }
+    .item-text{
+      white-space: nowrap;
+    }
+  }
+}
+
+/* -------------------------
+  Flow
+------------------------- */
+/*flowbar*/
+.flowbar-4{
+  .flowbar{
+    width: 24%;
+  }
+}
+.flowbar-3{
+  .flowbar{
+    width: 34%;
+  }
+}
+
+.flowbar{
+  .content-header{
+    display: block;
+    height: auto;
+    padding-top: $padding-5 !important;
+    padding-bottom: $padding-0;
+  }
+  .ico-flow{
+    margin: 0 auto;
+    cursor: default;
+    width: 24px;
+    height: 24px;
+    background-size: 20px;
+  }
+  .content-body{
+    padding: $padding-5 !important;
+    .title{
+      text-align: center;
+      font-size: $font-size-13;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      white-space: normal;
+      word-wrap: break-word;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  }
+  .content-footer{
+    padding: $padding-0;
+    .bar{
+      height: 6px;
+    }
+  }
+  /*색상*/
+  &.blue{
+    .content-footer{
+      .bar{
+        background-color: $blue-color;
+      }
+    }
+  }
+  &.purple{
+    .content-footer{
+      .bar{
+        background-color: $purple-color;
+      }
+    }
+  }
+  &.brown{
+    .content-footer{
+      .bar{
+        background-color: $brown-color;
+      }
+    }
+  }
+  &.green{
+    .content-footer{
+      .bar{
+        background-color: $green-color;
+      }
+    }
+  }
+  /*disabled*/
+  &.disabled, &:disabled, &.position-none{
+    cursor: default;
+    background-color: transparent !important;
+    &:hover{
+      opacity: 1;
+    }
+    .content-body{
+      padding: $padding-5;
+    }
+    .content-footer{
+      .bar{
+        background-color: transparent;
+      }
+    }
+    .ico-log{
+      background-image: $ico-log-disabled !important;
+    }
+    .ico-database{
+      background-image: $ico-database-disabled !important;
+    }
+    .ico-flow-standard{
+      background-image: $ico-standard-disabled !important;
+    }
+    .ico-flow-standard-editor{
+      background-image: $ico-flow-standard-editor-disabled !important;
+    }
+    .ico-folder{
+      background-image: $ico-folder-disabled !important;
+    }
+    .ico-file{
+      background-image: $ico-file-disabled !important;
+    }
+    .ico-flow-dashboard{
+      background-image: $ico-flow-dashboard-disabled !important;
+    }
+    .ico-flow-discovery{
+      background-image: $ico-flow-discovery-disabled !important;
+    } 
+    .ico-flow-filter{
+      background-image: $ico-flow-filter-disabled !important;
+    }
+    .ico-complete{
+      background-image: $ico-complete-disabled !important;
+    }
+    .ico-flow-mapping{
+      background-image: $ico-flow-mapping-disabled !important;
+    }
+  }
+}
+
+/*flowbox*/
+.flow{
+  width: 16%;
+  height: 360px;
+  border: $border-width solid $border-default-color;
+  margin-left: $margin-10;
+  margin-right: $margin-10;
+  padding: $padding-20;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-around;
+  &.disabled, &:disabled{
+    .content-header, .content-middle, .content-body{
+      cursor: default;
+    }
+  }
+  .content-header, .content-middle, .content-body{
+    cursor: pointer;
+  }
+  .content-header{
+    display: block;
+    width: 100%;
+    .title{
+      text-align: center;
+      white-space: break-spaces;
+      word-break: keep-all;
+    }
+  }
+  .content-middle{
+    padding-top: $padding-10;
+    padding-bottom: $padding-10;
+    .ico-flow{
+      text-align: center;
+      margin: $margin-0 auto;
+    }
+  }
+  .content-body{
+    height: 120px;
+  }
+  p{
+    font-size: $font-size-12;
+    text-align: justify;
+  }
+  .ico-flow{
+    width: 32px;
+    height: 32px;
+    background-size: 32px;
+  }
+  /*색상*/
+  &.blue{
+    background-color: $blue-bg-color !important;
+    border-color: $blue-color !important;
+  }
+  &.purple{
+    background-color: $purple-bg-color !important;
+    border-color: $purple-color !important;
+  }
+  &.brown{
+    background-color: $brown-bg-color !important;
+    border-color: $brown-color !important;
+  }
+  &.green{
+    background-color: $green-bg-color !important;
+    border-color: $green-color !important;
+  }
+  /*현재위치*/
+  &.position{
+    opacity: 1;
+  }
+  &.position-none{
+    opacity: 0.5;
+  }
+  /*효과*/
+  &:hover{
+    opacity: 0.8;
+  }
+  &.disabled, &:disabled{
+    cursor: default;
+    &:hover{
+      opacity: 1;
+    }
+    &.blue{
+      background-color: $bg-disabled-color !important;
+      border-color: $gray-color !important;
+      color: $font-disabled-color !important;
+    }
+    &.purple{
+      background-color: $bg-disabled-color !important;
+      border-color: $gray-color !important;
+      color: $font-disabled-color !important;
+    }
+    &.brown{
+      background-color: $bg-disabled-color !important;
+      border-color: $gray-color !important;
+      color: $font-disabled-color !important;
+    }
+    &.green{
+      background-color: $bg-disabled-color !important;
+      border-color: $gray-color !important;
+      color: $font-disabled-color !important;
+    }
+    .ico-log{
+      background-image: $ico-log-disabled !important;
+    }
+    .ico-database{
+      background-image: $ico-database-disabled !important;
+    }
+    .ico-flow-standard{
+      background-image: $ico-standard-disabled !important;
+    }
+    .ico-flow-standard-editor{
+      background-image: $ico-flow-standard-editor-disabled !important;
+    }
+    .ico-folder{
+      background-image: $ico-folder-disabled !important;
+    }
+    .ico-file{
+      background-image: $ico-file-disabled !important;
+    }
+    .ico-flow-dashboard{
+      background-image: $ico-flow-dashboard-disabled !important;
+    }
+    .ico-flow-discovery{
+      background-image: $ico-flow-discovery-disabled !important;
+    } 
+    .ico-flow-filter{
+      background-image: $ico-flow-filter-disabled !important;
+    }
+    .ico-complete{
+      background-image: $ico-complete-disabled !important;
+    }
+    .ico-flow-mapping{
+      background-image: $ico-flow-mapping-disabled !important;
+    }
+  }
+}
+
+/*생성과정 > 전체 폼*/
+.overlay-flow{
+  margin-top: $margin-50;
+  height: calc(100vh - 50px);
+  overflow: auto;
+  .position-absolute{
+    top: 0 !important;
+    left: 0 !important;
+    transform: translateX(0%) translateY(0%) !important;
+    height: 100%;
+    width: 100%;
+    padding-left: 200px;
+    min-height: 540px;
+  }
+  .bg-light{
+    opacity: 1 !important;
+  }
+  .flowbox-component{
+    height: calc(100vh - 50px);
+    .flow{
+      cursor: default;
+      .content-header, .content-middle, .content-body{
+        cursor: default;
+      }
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/*생성과정 > 과정 설명 폼*/
+.create-flow-component{
+  margin-left: 10%;
+  margin-right: 10%;
+  .create-flow-content{
+    display: flex;
+    flex-direction: column;
+    background-color: $white-color;
+    border: $border-width solid $border-default-color;
+    .content-header{
+      padding: $padding-0 $padding-10 !important;
+    }
+    .content-body{
+      padding: $padding-20;
+      .create-flow{
+        justify-content: center;
+      }
+      .flow{
+        width: 20%;
+        height: 320px;
+      }
+      .ico-flow-arrow{
+        height: 100% !important;
+      }
+    }
+    .content-footer{
+      display: flex;
+      flex-direction: row;
+      border-top: $border-width solid $border-sub-color;
+      .day-hide{
+        line-height: 36px;
+        /*체크박스 위치 수정*/
+        .custom-control-label{
+          &::before{
+            top: 10px !important;
+          }
+          &::after{
+            top: 10px !important;
+          }
+        }
+        .custom-control{
+          line-height: 36px;
+        }
+      }
+      .btn-next{
+        margin-left: auto;
+        padding: $padding-5 $padding-10 + 5 !important;
+      }
+    }
+  }
+}
+
+/* -------------------------
+  topologe > stream
+- 생성 과정(플로우) 설명
+------------------------- */
+.stream{
+  height: 200px;
+  &:hover{
+    opacity: 1;
+  }
+  .content-header{
+    background-color: transparent !important;
+    .title{
+      font-size: $font-size-16;
+    }
+  }
+  .content-body{
+    height: auto !important;
+    text-align: center;
+  }
+  .ico-flow{
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 30px !important;
+  }
+}
+
+/* -------------------------
+inf-component
+- 정보 표시
+------------------------- */
+.inf-content{
+  display: flex;
+  flex-direction: row;
+  .content-header{
+    height: auto;
+    width: 200px;
+    padding: $padding-5;
+    font-size: $font-size-14;
+    text-align: center;
+    display: block;
+    background-color: var(--default-color);
+    border: $border-width solid var(--default-color);
+    color: $white-color;
+  }
+  .content-body{
+    width: 100%;
+    text-align: right;
+    font-weight: $font-weight-600;
+    color: $font-color;
+    padding: $padding-5;
+    background-color: $white-color;
+    border: $border-width solid var(--default-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* -------------------------
+dataset table / filter
+------------------------- */
+.filtering{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: $margin-5;
+  .content-header{
+    width: 200px;
+    height: 30px;
+    .title{
+      line-height: 30px;
+    }
+  }
+  .content-body{
+    width: 100%;
+    background-color: $white-color;
+    border: $border-width solid $border-default-color;
+    padding: $padding-5;
+    .filtering-text{
+      font-size: $font-size-14;
+    }
+  }
+}
+
+/* -------------------------
+subevent / filter
+------------------------- */
+.event-filter{
+  background-color: $white-color;
+  cursor: pointer;
+  .content-header, .content-body{
+    cursor: pointer;
+  }
+  .content-header{
+    border-bottom: $border-none !important;
+    .title{
+      font-size: $font-size-15;
+      font-weight: $font-weight-400;
+    }
+    .right-align{
+      .ico-close{
+        background-size: 20px;
+        height: 40px;
+        opacity: 0.5;
+      }
+    }
+    .case-text{
+      line-height: 40px;
+      padding-right: $padding-10;
+      text-align: right;
+      color: $font-color;
+    }
+  }
+  .content-body{
+    border-bottom: $border-width solid $border-sub-color;
+    padding: $padding-0 $padding-10 $padding-10 !important;
+    .filter-text{
+      font-size: $font-size-12;
+      color: $gray-color;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  &.active{
+    background-color: $blue-color;
+    cursor: default;
+    .content-header, .content-body{
+      cursor: default;
+    }
+    .content-header{
+      .title{
+        font-weight: $font-weight-600;
+        color: $white-color;
+      }
+      .case-text{
+        color: $blue-color;
+      }
+      .right-align{
+        .ico-close{
+          background-image: $ico-close-w !important;
+          opacity: 1;
+        }
+      }
+    }
+    .content-body{
+      .filter-text{
+        color: $blue-color;
+      }
+    }
+    &:hover{
+      background-color: $blue-color;
+    }
+  }
+  &:hover{
+    background-color: var(--hover-color);
+    .content-header{
+      .right-align{
+        .ico-close{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------
+  manage
+- left list
+------------------------- */
+/*configuration*/
+.configuration{
+  background-color: $white-color;
+  border-bottom: $border-width solid $border-sub-color;
+  padding: $padding-10;
+  cursor: pointer;
+  .content-header{
+    height: 30px;
+    cursor: pointer;
+    .title{
+      line-height: 30px;
+      font-weight: $font-weight-400;
+      font-size: $font-size-15;
+    }
+  }
+  .ico-configuration{
+    height: 100%;
+  }
+  /*dropmenu*/
+  &.dropmenu{
+    > .content-header{
+      .title{
+        font-weight: $font-weight-600 !important;
+      }
+    }
+    &.collapsed{
+      > .content-header{
+        .title{
+          font-weight: $font-weight-400 !important;
+        }
+      }
+    }
+  }
+  /*효과*/
+  &:hover{
+    background-color: var(--hover-color);
+  }
+  &.active{
+    background-color: $blue-color;
+    border-bottom: $border-none;
+    cursor: default;
+    &:hover{
+      background-color: $blue-color;
+    }
+    .content-header{
+      .title{
+        font-weight: $font-weight-600;
+        color: $white-color;
+      }
+    }
+  }
+  &:disabled, &.disabled{
+    cursor: default;
+    .content-header{
+      cursor: default;
+    }
+  }
+}
+
+/*sub-configuration*/
+.sub-configuration{
+  padding-left: $padding-20;
+  background-color: $white-color;
+  cursor: pointer;
+  .content-header{
+    cursor: pointer;
+    .title{
+      font-size: $font-size-14;
+      font-weight: $font-weight-400;
+    }
+  }
+  &:last-child{
+    border-bottom: $border-width solid $border-sub-color;
+  }
+  /*효과*/
+  &:hover{
+    background-color: var(--hover-color);
+  }
+  &.active{
+    background-color: $blue-color;
+    .content-header{
+      .title{
+        font-weight: $font-weight-600;
+        color: $white-color;
+      }
+    }
+  }
+}
+
+/* -------------------------
+데이터 사용 현황 : 워크스페이스
+------------------------- */
+.usage-status{
+  display: flex;
+  flex-direction: column;
+  .content-header{
+    height: 30px;
+    padding: $padding-0 $padding-5;
+    .title{
+      line-height: 30px;
+    }
+  }
+  .content-body{
+    padding: $padding-0;
+  }
+  .status{
+    display: flex;
+    flex-direction: row;
+    padding: $padding-0 $padding-5;
+    .title{
+      font-size: $font-size-14;
+      line-height: 23px;
+    }
+    .count-text{
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      .count{
+        color: $blue-color;
+        font-weight: $font-weight-600;
+      }
+      .fix-count{
+        font-size: $font-size-16;
+      }
+    }
+    &.datasource-status{
+      .count-text{
+        .count{
+          margin-right: $margin-0;
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------
+  custom-switch
+------------------------- */
+.custom-control-input{
+  &[disabled], &:disabled{
+    ~ .custom-control-label{
+      &::before{
+        background-color: $disabled-color;
+      }
+    }
+  }
+}
+
+#btnControl{
+  padding: $padding-0;
+  text-align: center;
+  .custom-switch{
+    font-size: $font-size-11;
+    padding-left: $padding-40;
+    .custom-control-input{
+      &:checked{
+        &~ .custom-control-label{
+          &::after{
+            transform: translateX(2.3em) !important;
+          }
+        }
+      }
+    }
+  }
+  .bv-no-focus-ring{
+    display: flex;
+    flex-direction: row;
+  }
+  .col-form-label, .custom-control-label{
+    font-size: $font-size-11;
+    line-height: 30px;
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+  .custom-control-label{
+    padding-left: $padding-20;
+  }
+}
+
+/* -------------------------
+  graph-info : 프로세스 비교
+------------------------- */
+.graph-info{
+  right: 10px !important;
+  padding: $padding-5 !important;
+  font-size: $font-size-14 !important;
+  font-weight: $font-weight-600;
+  label{
+    font-size: $font-size-14;
+    font-weight: $font-weight-400;
+  }
+  h5{
+    font-size: $font-size-18 !important;
+    height: 30px !important;
+    line-height: 30px !important;
+  }
+}
+
+
+/* -------------------------
+  Images
+------------------------- */
+/* Image : Logo */
+.logo-iochord{
+  background-image: $logo-iochord;
+  background-repeat: no-repeat;
+  background-size: 180px;
+  width:  180px;
+  height: 50px;
+  background-position: center;
+}
+
+.logo-ipr{
+  background-image: $logo-iochord;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 140px;
+  width:  140px;
+  height: 50px;
+}
+.logo-ipr-w{
+  background-image: $logo-iochord;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 140px;
+  width:  140px;
+  height: 50px;
+}
+.logo-ipr-fullname{
+  background-image: var(--logo-ipr-fullname);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 800px;
+  width:  800px;
+  height: 100px;
+}
+
+/* Image : Logo > Site */
+.logo-chrome{
+  background-image: $logo-chrome;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.logo-firefox{
+  background-image: $logo-firefox;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.logo-edge{
+  background-image: $logo-edge;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.logo-safari{
+  background-image: $logo-safari;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+
+/* Image : Logo > DB */
+.logo-mysql{
+  background-image: $logo-mysql;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.logo-oracle{
+  background-image: $logo-oracle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.logo-postgresql{
+  background-image: $logo-postgresql;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.logo-microsoftsql{
+  background-image: $logo-microsoftsql;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.logo-hadoop{
+  background-image: $logo-hadoop;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.logo-maria{
+  background-image: $logo-maria;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+
+/* Image : Common */
+.ico-menubar{
+  background-image: $ico-menubar;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-menubar-w{
+  background-image: $ico-menubar-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  opacity: 0.6;
+  &:hover{
+    opacity: 1;
+  }
+}
+.ico-alarm{
+  background-image: $ico-alarm;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-alarm-w{
+  background-image: $ico-alarm-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-help{
+  background-image: $ico-help;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-minus{
+  background-image: $ico-minus;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-minus-w{
+  background-image: $ico-minus-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-plus{
+  background-image: $ico-plus;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-plus-w{
+  background-image: $ico-plus-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-filter-setting{
+  background-image: $ico-filter-setting;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-setting{
+  background-image: var(--ico-setting);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-setting-w{
+  background-image: $ico-setting-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-title-menu{
+  background-image: $ico-title-menu;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-title-menu-w{
+  background-image: $ico-title-menu-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-user{
+  background-image: var(--ico-user);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-user-w{
+  background-image: $ico-user-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-download{
+  background-image: $ico-download;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-logout{
+  background-image: $ico-logout;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-upload{
+  background-image: $ico-upload;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-search{
+  background-image: $ico-search;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-check{
+  background-image: $ico-check;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-manage{
+  background-image: var(--ico-manage);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-manage-w{
+  background-image: $ico-manage-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-top{
+  background-image: $ico-arrow-top;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-right{
+  background-image: $ico-arrow-right;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-bottom{
+  background-image: $ico-arrow-bottom;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-left{
+  background-image: $ico-arrow-left;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-top-w{
+  background-image: $ico-arrow-top-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-right-w{
+  background-image: $ico-arrow-right-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-bottom-w{
+  background-image: $ico-arrow-bottom-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-top-bold{
+  background-image: $ico-arrow-top-bold;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-right-bold{
+  background-image: $ico-arrow-right-bold;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-bottom-bold{
+  background-image: $ico-arrow-bottom-bold;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-left-bold{
+  background-image: $ico-arrow-left-bold;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-red{
+  background-image: $ico-arrow-red;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-blue{
+  background-image: $ico-arrow-blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-arrow-left-w{
+  background-image: $ico-arrow-left-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-dropdown-arrow{
+  background-image: $ico-dropdown-arrow;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-bothsides{
+  background-image: $ico-bothsides;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+.ico-bothsides-w{
+  background-image: $ico-bothsides-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.ico-close{
+  background-image: $ico-close;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-close-bold{
+  background-image: $ico-close-bold;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-close-w{
+  background-image: $ico-close-w;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-delete{
+  background-image: $ico-delete;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-error{
+  background-image: $ico-error;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-fail{
+  background-image: $ico-fail;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-warning{
+  background-image: $ico-warning;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.ico-complete{
+  background-image: $ico-complete;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.ico-success{
+  background-image: $ico-success;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-progress{
+  background-image: $ico-progress;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-readying{
+  background-image: $ico-readying;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-dashbard-editor{
+  background-image: $ico-dashbard-editor;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-play{
+  background-image: $ico-play;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-pause{
+  background-image: $ico-pause;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+/* Image : Common : file*/
+.ico-csv{
+  background-image: $ico-csv;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.ico-csv-w{
+  background-image: $ico-csv-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.ico-xlsx{
+  background-image: $ico-xlsx;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $width-60;
+  width:  $width-60;
+  height: $height-60;
+}
+.ico-xlsx-w{
+  background-image: $ico-xlsx-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.ico-mxml{
+  background-image: $ico-mxml;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.ico-mxml-w{
+  background-image: $ico-mxml-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.ico-xes{
+  background-image: $ico-xes;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+.ico-xes-w{
+  background-image: $ico-xes-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  width:  60px;
+  height: 60px;
+}
+
+/* Image : Contents*/
+.img-header-row-index{
+  background-image: $img-header-row-index;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 300px;
+  width: 300px;
+  height: 140px;
+}
+
+.img-delimeter{
+  background-image: $img-delimeter;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 300px;
+  width: 300px;
+  height: 140px;
+}
+
+.img-filter-time-01{
+  background-image: $img-filter-time-01;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 300px;
+  height: 100px;
+}
+
+.img-filter-time-02{
+  background-image: $img-filter-time-02;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 300px;
+  height: 100px;
+}
+
+.img-filter-time-03{
+  background-image: $img-filter-time-03;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 300px;
+  height: 100px;
+}
+
+.img-filter-time-04{
+  background-image: $img-filter-time-04;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  width: 300px;
+  height: 100px;
+}
+
+.img-filter-time-05{
+  background-image: $img-filter-time-05;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  width: 300px;
+  height: 100px;
+}
+
+
+/* Image : Toolbar*/
+.ico-undo{
+  background-image: $ico-undo;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-redo{
+  background-image: $ico-redo;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-svg{
+  background-image: $ico-svg;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-png{
+  background-image: $ico-png;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-clear{
+  background-image: $ico-clear;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-full-screen{
+  background-image: $ico-full-screen;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-front{
+  background-image: $ico-front;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-back{
+  background-image: $ico-back;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-graph-align{
+  background-image: $ico-graph-align;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-zoom-fit{
+  background-image: $ico-zoom-fit;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-error-report{
+  background-image: $ico-error-report;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+/* Image : Flow*/
+.ico-log{
+  background-image: $ico-log;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-log-disabled{
+  background-image: $ico-log-disabled;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-log-w{
+  background-image: $ico-log-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-log-db{
+  background-image: $ico-log-db;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-log-db-disabled{
+  background-image: $ico-log-db-disabled;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-log-db-w{
+  background-image: $ico-log-db-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-database{
+  background-image: $ico-database;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-database-disabled{
+  background-image: $ico-database-disabled;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-flow-standard{
+  background-image: $ico-flow-standard;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-standard-disabled{
+  background-image: $ico-standard-disabled;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-flow-standard-editor{
+  background-image: $ico-flow-standard-editor;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-flow-standard-editor-disabled{
+  background-image: $ico-flow-standard-editor-disabled;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-folder{
+  background-image: $ico-folder;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-folder-disabled{
+  background-image: $ico-folder-disabled;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-file{
+  background-image: $ico-file;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-file-w{
+  background-image: $ico-file-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-file-disabled{
+  background-image: $ico-file-disabled;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-flow-dashboard{
+  background-image: $ico-flow-dashboard;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-flow-dashboard-disabled{
+  background-image: $ico-flow-dashboard-disabled;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-flow-discovery{
+  background-image: $ico-flow-discovery;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-flow-discovery-disabled{
+  background-image: $ico-flow-discovery-disabled;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-flow-filter{
+  background-image: $ico-flow-filter;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-flow-filter-disabled{
+  background-image: $ico-flow-filter-disabled;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-complete-disabled{
+  background-image: $ico-complete-disabled;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-flow-mapping{
+  background-image: $ico-flow-mapping;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-flow-mapping-disabled{
+  background-image: $ico-flow-mapping-disabled;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-flow-data{
+  background-image: $ico-flow-data;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+/* Image : Theme : sidebar */
+.ico-home{
+  background-image: var(--ico-home);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.active{
+    background-image: $ico-home-w !important;
+  }
+}
+.ico-discovery{
+  background-image: var(--ico-discovery);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.active{
+    background-image: $ico-discovery-w !important;
+  }
+}
+.ico-dashboard{
+  background-image: var(--ico-dashboard);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.active{
+    background-image: $ico-discovery-w !important;
+  }
+}
+.ico-delta{
+  background-image: var(--ico-delta);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.active{
+    background-image: $ico-delta-w !important;
+  }
+}
+.ico-logreplay{
+  background-image: var(--ico-logreplay);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.active{
+    background-image: $ico-logreplay-w !important;
+  }
+}
+.ico-matrix{
+  background-image: var(--ico-matrix);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.active{
+    background-image: $ico-matrix-w !important;
+  }
+}
+.ico-social{
+  background-image: var(--ico-social);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.active{
+    background-image: $ico-social-w !important;
+  }
+}
+.ico-dotted{
+  background-image: var(--ico-dotted);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.active{
+    background-image: $ico-dotted-w !important;
+  }
+}
+.ico-gantt{
+  background-image: var(--ico-gantt);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.active{
+    background-image: $ico-gantt-w !important;
+  }
+}
+.ico-data{
+  background-image: var(--ico-data);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-standard{
+  background-image: var(--ico-standard);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+.ico-datasource{
+  background-image: var(--ico-datasource);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+/* Image : sidebar(white) */
+.ico-home-w{
+  background-image: $ico-home-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-discovery-w{
+  background-image: $ico-discovery-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-dashboard-w{
+  background-image: $ico-dashboard-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-delta-w{
+  background-image: $ico-delta-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-logreplay-w{
+  background-image: $ico-logreplay-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-matrix-w{
+  background-image: $ico-matrix-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-social-w{
+  background-image: $ico-social-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-dotted-w{
+  background-image: $ico-dotted-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-gantt-w{
+  background-image: $ico-gantt-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.ico-datasource-w{
+  background-image: $ico-datasource-w;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+/* Image : Theme : process */
+.ico-filter{
+  background-image: var(--ico-filter);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-list{
+  background-image: var(--ico-list);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-editor{
+  background-image: var(--ico-editor);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-horizontal{
+  background-image: var(--ico-horizontal);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-vertical{
+  background-image: var(--ico-vertical);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-map-show{
+  background-image: var(--ico-map-show);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-map-hide{
+  background-image: var(--ico-map-hide);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-table{
+  background-image: var(--ico-table);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-bottleneck{
+  background-image: var(--ico-bottleneck);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-rework{
+  background-image: var(--ico-rework);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.iochord-ipr-graph-control-button-play{
+  background-image: $ico-play !important;
+  width:  $width-40;
+  height: $height-40;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.iochord-ipr-graph-control-button-pause{
+  background-image: $ico-pause !important;
+  width:  $width-40;
+  height: $height-40;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ico-standard-editor{
+  background-image: var(--ico-standard-editor);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-option-align{
+  background-image: var(--ico-graph-align);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+.ico-option-log{
+  background-image: var(--ico-option-log);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 24px;
+  width:  32px;
+  height: 32px;
+}
+
+/* -------------------------
+Scroll
+------------------------- */
+/* Scroll-Style : Chrome */
+::-webkit-scrollbar{
+  width: $value-7;  /* 세로축 스크롤바 길이 */
+  height: $value-7;  /* 가로축 스크롤바 길이 */
+}
+::-webkit-scrollbar-track { /* 화살표를 제외한 스크롤 부분 */
+  background-color: $scrollbar-track !important;
+}
+::-webkit-scrollbar-track-piece { /* 스크롤 뒷배경 */
+  background-color: $scrollbar-track-piece !important;
+}
+::-webkit-scrollbar-thumb { /* 스크롤 움직이는 부분 */
+  border-radius: $border-radius-10;
+  cursor: pointer;
+  background-color: $scrollbar-thumb !important;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+::-webkit-scrollbar-button { /* 스크롤 버튼 좌우상하 영역 */
+  background-color: $scrollbar-button !important;
+  width: $value-7;
+  height: $value-7;
+}
+::-webkit-scrollbar-button:start { /* top, left 방향의 이동 버튼 */
+  display: none;
+}
+::-webkit-scrollbar-button:end { /* Bottom, Right 방향의 이동버튼 */
+  display: none; 
+}
+::-webkit-scrollbar-corner { /* 우측 하단의 코너 부분 */
+  background-color: $scrollbar-corner !important;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: $scrollbar-thumb-hover !important;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: $scrollbar-track;
+}

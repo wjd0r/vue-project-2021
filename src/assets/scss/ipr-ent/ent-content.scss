@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* -------------------------
+Content Style Sheets
+: 컨텐츠 커스텀 스타일시트
+------------------------- */
+
+/* -------------------------
+  main theme color : ent
+------------------------- */
+.theme-gray{
+  .dataset-content{
+    > .content-header{
+      > .right-align{
+        .dropdown-toggle{
+          &::after{
+            content: url("../public/images/theme/gray/process/ico_filter.svg") !important;
+          }
+        }
+      }
+    }
+  }
+}
+

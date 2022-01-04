@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_table">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_table" clip-path="url(#clip-ico_table)">
+    <path id="ico_table_brown" d="M22,0H2A2.006,2.006,0,0,0,0,2V22a2.006,2.006,0,0,0,2,2H22a2.006,2.006,0,0,0,2-2V2A2.006,2.006,0,0,0,22,0ZM7,22H2V18H7Zm0-6H2V12H7Zm0-6H2V6H7Zm7.5,12h-5V18h5Zm0-6h-5V12h5Zm0-6h-5V6h5ZM22,22H17V18h5Zm0-6H17V12h5Zm0-6H17V6h5Z" fill="#a4a4a4"/>
+  </g>
+</svg>

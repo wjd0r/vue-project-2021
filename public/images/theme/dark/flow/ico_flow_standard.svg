@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-ico_flow_standard">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="ico_flow_standard" clip-path="url(#clip-ico_flow_standard)">
+    <path id="ico-flow-standard" d="M27,4a4,4,0,1,0-5.267,3.776c.224,5.727-2.695,6.352-6.664,7.188-2.279.48-4.856,1.033-6.736,2.78V7.755a4,4,0,1,0-2.667,0V24.244a4,4,0,1,0,2.7.012c.36-5.229,3.427-5.877,7.249-6.683,4.051-.853,9.032-1.923,8.772-9.836A3.989,3.989,0,0,0,27,4ZM4.6,4A2.4,2.4,0,1,1,7,6.4,2.4,2.4,0,0,1,4.6,4ZM9.4,28A2.4,2.4,0,1,1,7,25.6,2.4,2.4,0,0,1,9.4,28ZM23,6.4A2.4,2.4,0,1,1,25.4,4,2.4,2.4,0,0,1,23,6.4Z" transform="translate(1)" fill="#6768ff"/>
+  </g>
+</svg>

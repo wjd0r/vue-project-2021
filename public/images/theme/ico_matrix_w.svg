@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_matrix_w">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_matrix_w" clip-path="url(#clip-ico_matrix_w)">
+    <path id="합치기_6" data-name="합치기 6" d="M26.5-2942H25v-24h1.5v22.5H49v1.5Zm16.5-3v-6h6v6Zm-7.5,0v-6h6v6Zm.6-.6h4.8v-4.8H36.1Zm-8.1.6v-6h6v6Zm15-7.5v-6h6v6Zm.6-.6h4.8v-4.8H43.6Zm-8.1.6v-6h6v6Zm-7.5,0v-6h6v6Zm.6-.6h4.8v-4.8H28.6ZM43-2960v-6h6v6Zm-7.5,0v-6h6v6Zm.6-.6h4.8v-4.8H36.1Zm-8.1.6v-6h6v6Z" transform="translate(-25 2965.998)" fill="#fff"/>
+  </g>
+</svg>

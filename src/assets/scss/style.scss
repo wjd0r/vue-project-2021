@@ -1,0 +1,53 @@
+/*!
+ * CoreUI - Open Source Bootstrap Admin Template
+ * @version v1.0.11
+ * @link http://coreui.io
+ * Copyright (c) 2018 creativeLabs Łukasz Holeczek
+ * @license MIT
+ */
+
+// Override Boostrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap source files
+@import "~bootstrap/scss/bootstrap";
+
+// Override core variables
+@import "core-variables";
+
+// Import core styles
+@import "core/core";
+
+// IPR Common Style
+@import "common-variables";
+
+// IPR Common
+@import "ipr-common/ipr-ui-style";
+@import "ipr-common/ipr-common";
+@import "ipr-common/ipr-content";
+@import "ipr-common/ipr-media";
+
+// IPR Common Sub Style
+@import "ipr-sub-content";
+
+// IPR Enterprise Style : theme gray / brown
+@import "ipr-ent/ent-variables";
+@import "ipr-ent/ent-content";
+
+// IPR Pro Style : theme blue
+@import "ipr-pro/pro-variables";
+@import "ipr-pro/pro-content";
+
+// IPR SaaS Style : theme purple
+@import "ipr-saas/saas-variables";
+@import "ipr-saas/saas-content";
+
+// IPR Dark Style : theme dark
+@import "./dark/dark-variables";
+@import "./dark/dark-ui-style";
+@import "./dark/dark-common";
+@import "./dark/dark-contents";
+@import "./dark/dark-media";
+
+// IPR theme Style : theme brown
+@import "./brown/brown-variables";

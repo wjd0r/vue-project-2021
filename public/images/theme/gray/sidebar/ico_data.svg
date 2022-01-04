@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-ico_data">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="ico_data" clip-path="url(#clip-ico_data)">
+    <path id="iconmonstr-archive-9" d="M8.919,6.667H23.083L23.527,8H8.475l.444-1.333Zm-.775-4H23.857l2.667,8h2.809L25.779,0H6.223L2.667,10.667H5.477l2.667-8ZM9.808,4,9.364,5.333H22.639L22.193,4H9.808ZM7.585,10.667H24.416l-.444-1.333H8.029ZM2,21.333l-2-8H32l-2,8Zm11.333-4h5.333V16H13.333ZM32,24l-2,8H2L0,24ZM18.667,26.667H13.333V28h5.333Z" fill="#6f6f7a"/>
+  </g>
+</svg>

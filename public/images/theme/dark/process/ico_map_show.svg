@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_map_show">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_map_show" clip-path="url(#clip-ico_map_show)">
+    <path id="ico-map-show" d="M25-2942v-24H49v24Zm2-2H47v-20H27Zm2-2v-2H45v2Zm11.2-4.6-5.171-5.171L33.6-2954.2l-.7-2.7-.5-2.7,2.7.5,2.7.7-1.676,1.524L41.3-2951.7a.484.484,0,0,1,0,.7l-.4.4a.765.765,0,0,1-.4.2C40.4-2950.4,40.3-2950.5,40.2-2950.6Z" transform="translate(-25 2966)" fill="#a4a4a4"/>
+  </g>
+</svg>

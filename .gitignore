@@ -1,0 +1,42 @@
+.DS_Store
+node_modules
+/dist
+/public/ipr-env.js
+/coverage
+/storybook-static
+
+/tests/e2e/reports/
+selenium-debug.log
+chromedriver.log
+
+package-lock.json
+
+.npmrc
+prerelease.bat
+
+# local tgz files
+*.tgz
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+.package-lock.json
+/package-lock.json
+

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_vertical_sort">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_vertical_sort" clip-path="url(#clip-ico_vertical_sort)">
+    <path id="ico-vertical" d="M25-2942v-24H49v24Zm2-2H47v-20H27Zm9-1v-3H30v-4h6v-3H33v-4h3v-4h2v4h3v4H38v3h6v4H38v3Z" transform="translate(-25 2966)" fill="#2a0b44"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ico_dashboard">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ico_dashboard" clip-path="url(#clip-ico_dashboard)">
+    <path id="ico-dashbard" d="M2025-1167v-19.5h6v19.5Zm7.5,0v-6H2049v6Zm9-7.5v-12h7.5v12Zm-9,0v-5.25h7.5v5.25Zm0-6.75v-5.25h7.5v5.25ZM2025-1188v-3h24v3Z" transform="translate(-2025 1191)" fill="#2a0b44"/>
+  </g>
+</svg>
